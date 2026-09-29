@@ -1,0 +1,32 @@
+# Papers (copyrighted PDFs, keep local only)
+papers/*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# Datasets, weights, outputs
+data/
+datasets/
+checkpoints/
+weights/
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+outputs/
+logs/
+wandb/
+
+# External repos (official code cloned locally)
+external/
+third_party/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

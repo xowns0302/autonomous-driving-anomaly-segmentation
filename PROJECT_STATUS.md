@@ -528,3 +528,71 @@ Your next task is to help me prepare the repository and start the DetSeg paper/c
 - Decided repository name should clearly show autonomous driving and anomaly segmentation.
 - Recommended repository name: `autonomous-driving-anomaly-segmentation`.
 - Created this shared status document for ChatGPT-Claude collaboration.
+- Created repository skeleton (Claude): `README.md`, `.gitignore`, `papers/README.md`, `notes/01~05` templates, `experiments/` (plan, result log, failure cases), `src/README.md`, `assets/`.
+- Decided paper PDFs stay local only (`papers/*.pdf` is git-ignored); paper list/links tracked in `papers/README.md`.
+- Official code is cloned into `external/` (git-ignored). DetSeg: `external/DetSeg-official` (github.com/huachao0124/DetSeg-official).
+- Role split: Claude = coding / repo / experiments, ChatGPT = paper analysis / study.
+- Checked DetSeg official code (Claude):
+  - Framework: MMDetection 3.x fork (Grounding DINO Swin-B). Tested env: Python 3.8, PyTorch 2.1.0 + CUDA 11.8, MMCV 2.1.0, MMEngine 0.10.7.
+  - Released checkpoint `ckpts/detseg_swin-b_coco_20260623-207453f5.pth` (~937MB) is a Git LFS pointer in the clone; needs `git lfs pull`.
+  - Evaluation entry points: `configs/detseg/detseg-r_swin-b_external.py` (DetSeg-R on external score maps), `detseg-r_swin-b_internal.py`, `detseg-s_swin-b.py` (SAM, `facebook/sam-vit-base`).
+  - DetSeg-R (external) needs precomputed baseline score maps under `other_score_results/<method>/<dataset>/` (M2A, RbA, UNO, RPL+CoroCL, PEBAL). These are NOT included in the repo; must be generated with baseline code (`tools/baselines/save_uno_scores.py`, `save_energy_scores.py`) or obtained elsewhere. -> Main reproduction risk.
+  - README reports released-checkpoint results (AUROC/AP/FPR95) for RoadAnomaly, FS Static, FS Lost & Found — usable as reproduction targets.
+  - Local machine is Apple M4 Pro (no CUDA). Execution moves to the Windows RTX 3070 Ti desktop (see Section 11).
+
+---
+
+## 11. Execution Environment Plan
+
+### Development / Editing Environment
+
+```text
+MacBook Apple Silicon M4
+Role: code editing, paper review, Markdown documentation, lightweight script editing
+Not intended for full DetSeg training/evaluation because CUDA is not available.
+```
+
+### Main Execution Environment
+
+```text
+Windows desktop with NVIDIA GeForce RTX 3070 Ti
+Role: main DetSeg execution environment for CUDA-based inference/evaluation
+```
+
+### Current Environment Decision
+
+- The Mac will be used mainly for writing code, reading papers, editing Markdown files, and managing the repository.
+- Actual DetSeg execution should be done on the Windows desktop with the NVIDIA RTX 3070 Ti.
+- The first technical goal is to verify whether DetSeg can run on the Windows + RTX 3070 Ti environment.
+- Because DetSeg is based on MMDetection / Grounding DINO / PyTorch CUDA dependencies, environment setup should prioritize the Windows GPU machine rather than the Mac.
+
+### Environment Setup TODO
+
+```text
+1. Check Windows GPU driver and CUDA compatibility.
+2. Check whether DetSeg can be installed directly on native Windows.
+3. If native Windows causes dependency issues, use WSL2 Ubuntu with NVIDIA CUDA support.
+4. Match the DetSeg-tested environment as closely as possible:
+   - Python 3.8
+   - PyTorch 2.1.0 + CUDA 11.8
+   - MMCV 2.1.0
+   - MMEngine 0.10.7
+5. Download official DetSeg checkpoint using Git LFS or direct release link.
+6. Run a minimal inference/evaluation command before attempting full reproduction.
+```
+
+### Environment Risk Notes
+
+- Native Windows may cause issues with MMDetection, MMCV, custom CUDA operators, or path handling.
+- WSL2 Ubuntu is likely safer if native Windows setup fails.
+- RTX 3070 Ti should be sufficient for initial inference and small-scale evaluation, but full benchmark reproduction may require careful VRAM management.
+- DetSeg-S using SAM may require more VRAM than DetSeg-R.
+
+
+### Claude Review of Environment Plan (2026-09-29)
+
+- Agree: Mac for editing/docs, Windows RTX 3070 Ti (8GB VRAM) for execution.
+- Suggest going **WSL2 Ubuntu first** instead of trying native Windows first. DetSeg's tools (`dist_train.sh`, `download_baseline_weights.sh`) and MMCV CUDA ops assume Linux; native Windows is likely to cost time for little benefit.
+- 8GB VRAM should be enough for batch-1 inference of Grounding DINO Swin-B at 800x1333 and SAM ViT-B. Training (COCO fine-tuning) is out of scope; use the released checkpoint.
+- Mac <-> Windows sync: push this repo to GitHub and `git pull` on the Windows/WSL2 side. `external/`, `data/`, and checkpoints are git-ignored, so clone DetSeg, download datasets, and pull the LFS checkpoint directly inside WSL2.
+- Keep datasets and checkpoints on the WSL2 Linux filesystem (e.g. `~/`), not under `/mnt/c/`, for I/O speed.
