@@ -1,0 +1,38 @@
+{
+  "config": "configs/detseg/detseg-s_swin-b.py",
+  "checkpoint": "ckpts/detseg_swin-b_coco_20260623-207453f5.pth",
+  "cfg_options": null,
+  "images": 100,
+  "images_with_ood": 99,
+  "iou_mean_per_image": 14.26,
+  "f1_mean_per_image": 18.53,
+  "iou_mean_ood_images_only": 14.4,
+  "iou_global": 6.19,
+  "iou_percentiles": {
+    "10": 0.0,
+    "25": 0.0,
+    "50": 0.68,
+    "75": 17.31,
+    "90": 56.53
+  },
+  "images_iou_zero": 44,
+  "images_no_pred_box": 0,
+  "boxes_per_image_mean": 10.51,
+  "gt_components": 188,
+  "box_recall": 50.0,
+  "box_recall_iou_thr": 0.5,
+  "box_recall_by_area": {
+    "[0,1024)": {
+      "n": 116,
+      "recall": 32.76
+    },
+    "[1024,9216)": {
+      "n": 56,
+      "recall": 78.57
+    },
+    "[9216,inf)": {
+      "n": 16,
+      "recall": 75.0
+    }
+  }
+}

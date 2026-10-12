@@ -1,0 +1,75 @@
+IE-NMS bars overridden: [0.2, 0.2, 0.2, 0.2, 1.0, 1.0, 1.0, 1.0, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2, 0.2]
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+processed 10/60
+processed 20/60
+processed 30/60
+processed 40/60
+processed 50/60
+processed 60/60
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([720, 1280]) to torch.Size([1, 720, 1280])
+  warnings.warn('The shape of value will convert from '
+{
+  "config": "../../experiments/configs/detseg-s_road_anomaly.py",
+  "checkpoint": "ckpts/detseg_swin-b_coco_20260623-207453f5.pth",
+  "cfg_options": null,
+  "ie_nms_bars": [
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "images": 60,
+  "images_with_ood": 60,
+  "iou_mean_per_image": 77.55,
+  "f1_mean_per_image": 84.37,
+  "iou_mean_ood_images_only": 77.55,
+  "iou_global": 80.1,
+  "iou_percentiles": {
+    "10": 48.76,
+    "25": 71.77,
+    "50": 86.85,
+    "75": 93.78,
+    "90": 96.48
+  },
+  "images_iou_zero": 0,
+  "images_no_pred_box": 0,
+  "boxes_per_image_mean": 7.98,
+  "gt_components": 298,
+  "box_recall": 43.29,
+  "box_recall_iou_thr": 0.5,
+  "box_recall_by_area": {
+    "[0,1024)": {
+      "n": 177,
+      "recall": 19.77
+    },
+    "[1024,9216)": {
+      "n": 50,
+      "recall": 80.0
+    },
+    "[9216,inf)": {
+      "n": 71,
+      "recall": 76.06
+    }
+  }
+}

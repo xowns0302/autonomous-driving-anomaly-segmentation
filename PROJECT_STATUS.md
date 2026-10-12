@@ -596,3 +596,36 @@ Role: main DetSeg execution environment for CUDA-based inference/evaluation
 - 8GB VRAM should be enough for batch-1 inference of Grounding DINO Swin-B at 800x1333 and SAM ViT-B. Training (COCO fine-tuning) is out of scope; use the released checkpoint.
 - Mac <-> Windows sync: push this repo to GitHub and `git pull` on the Windows/WSL2 side. `external/`, `data/`, and checkpoints are git-ignored, so clone DetSeg, download datasets, and pull the LFS checkpoint directly inside WSL2.
 - Keep datasets and checkpoints on the WSL2 Linux filesystem (e.g. `~/`), not under `/mnt/c/`, for I/O speed.
+
+
+---
+
+## 12. Status Update (2026-10-13): DetSeg-S 재현·진단·개선 1차 완료
+
+상세: `notes/09_experiment_record.md` (보고서용 전체 기록), `experiments/result_log.md` (R0~R5, E1~E3)
+
+### 결정 사항
+
+- 단일 이미지 heatmap은 실험 근거에서 제외 (배포 checkpoint에 seg branch 가중치 없음)
+- DetSeg-R internal 제외, DetSeg-R external 후순위, VPHM 범위 제외
+- **DetSeg-S를 재현·개선 대상으로 확정**
+- 비교 기준은 논문 수치가 아니라 공개본 원본 실행 결과
+
+### 핵심 결과
+
+| | 논문 | 공개본 원본 | 제안 (탐색값) |
+|---|---|---|---|
+| FS L&F IoU | 32.36 | 14.26 | 26.60 |
+| FS L&F mean F1 (물체 단위) | – | 17.81 | 31.74 |
+| FS L&F 작은 물체(<32²) box recall | – | 32.8% | 54.3% |
+| Road Anomaly IoU | 68.35 | 76.46 | 77.08 |
+
+- 재현 실패 원인: 공개본은 논문 9개월 뒤 재작성·재학습되었고, IE-NMS 기준값(0.5)이 재학습 가중치의 ID 점수(중앙 0.26)와 맞지 않아 IE-NMS가 작동하지 않음 → 차량 오탐 90.5%
+- 작은 장애물 손실 원인: 낮은 objectness 점수 + 16px 미만 해상도 부족 (IE-NMS는 주원인 아님)
+- 제안: ① IE-NMS 기준값 재설정 ② 크기 적응 threshold ③ detector 자체 road 예측 기반 재점수화 (모두 재학습 없음)
+
+### 다음 작업
+
+1. 설정 고정 후 SMIYC Obstacle/Anomaly val에서 held-out 검증
+2. 보정 데이터로 class별 기준값 산출 (논문 방식)
+3. 고해상도 추론, before/after 정성 그림
