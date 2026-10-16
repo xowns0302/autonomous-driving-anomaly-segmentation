@@ -1,0 +1,5102 @@
+[
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.6524382829666138,
+  "gt_iou": 0.02406953275203705,
+  "best_id_iou": 0.9993324875831604,
+  "best_id_class": "car",
+  "best_id_score": 0.41355037689208984,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.6461668014526367,
+  "gt_iou": 0.008736805990338326,
+  "best_id_iou": 0.9972856044769287,
+  "best_id_class": "car",
+  "best_id_score": 0.3696235418319702,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.6293572187423706,
+  "gt_iou": 0.9870203137397766,
+  "best_id_iou": 0.9983697533607483,
+  "best_id_class": "person",
+  "best_id_score": 0.11498630791902542,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.5973502993583679,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.992026686668396,
+  "best_id_class": "car",
+  "best_id_score": 0.45797523856163025,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.5853346586227417,
+  "gt_iou": 0.039549242705106735,
+  "best_id_iou": 0.9957782030105591,
+  "best_id_class": "car",
+  "best_id_score": 0.4447166919708252,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.5178682804107666,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9894505143165588,
+  "best_id_class": "car",
+  "best_id_score": 0.3527655303478241,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.4703722894191742,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9957428574562073,
+  "best_id_class": "truck",
+  "best_id_score": 0.15792852640151978,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.4435586631298065,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9975938200950623,
+  "best_id_class": "car",
+  "best_id_score": 0.3936846852302551,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.43154844641685486,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9937424659729004,
+  "best_id_class": "car",
+  "best_id_score": 0.4134148061275482,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.3715433180332184,
+  "gt_iou": 0.048348963260650635,
+  "best_id_iou": 0.9916326403617859,
+  "best_id_class": "car",
+  "best_id_score": 0.3108871281147003,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.3219251334667206,
+  "gt_iou": 0.0050170025788247585,
+  "best_id_iou": 0.9658480286598206,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.21829016506671906,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.28452280163764954,
+  "gt_iou": 0.01901145651936531,
+  "best_id_iou": 0.9708943367004395,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.21216823160648346,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.28152650594711304,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9922283291816711,
+  "best_id_class": "car",
+  "best_id_score": 0.24196189641952515,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.2589266896247864,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.985202968120575,
+  "best_id_class": "car",
+  "best_id_score": 0.23025870323181152,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.24936924874782562,
+  "gt_iou": 0.0032432670705020428,
+  "best_id_iou": 0.8362451791763306,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.18274535238742828,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.2314939647912979,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9887450933456421,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.1158759817481041,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.22322019934654236,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.986646294593811,
+  "best_id_class": "person",
+  "best_id_score": 0.1770978718996048,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.6347129940986633,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9886865019798279,
+  "best_id_class": "bus",
+  "best_id_score": 0.23551370203495026,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.5110296607017517,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9742609262466431,
+  "best_id_class": "car",
+  "best_id_score": 0.36940693855285645,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.4772549867630005,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9029714465141296,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.3354209363460541,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.39946725964546204,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9748082756996155,
+  "best_id_class": "person",
+  "best_id_score": 0.20965926349163055,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.33970099687576294,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9689962863922119,
+  "best_id_class": "person",
+  "best_id_score": 0.22142083942890167,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.32599765062332153,
+  "gt_iou": 0.9153457283973694,
+  "best_id_iou": 0.9944365620613098,
+  "best_id_class": "pole",
+  "best_id_score": 0.12095529586076736,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.23385436832904816,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9571740627288818,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.18806935846805573,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "ID-objects",
+  "score": 0.23195181787014008,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.15662690997123718,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.7819693088531494,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9929373264312744,
+  "best_id_class": "car",
+  "best_id_score": 0.4776484966278076,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.7569171786308289,
+  "gt_iou": 0.981499433517456,
+  "best_id_iou": 0.20461168885231018,
+  "best_id_class": "sidewalk",
+  "best_id_score": 0.1253737360239029,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.5709658265113831,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9819071292877197,
+  "best_id_class": "bus",
+  "best_id_score": 0.3334156572818756,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.41663965582847595,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9903047680854797,
+  "best_id_class": "car",
+  "best_id_score": 0.2460423707962036,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.3692927658557892,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9593630433082581,
+  "best_id_class": "car",
+  "best_id_score": 0.22297702729701996,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.35894304513931274,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9614299535751343,
+  "best_id_class": "car",
+  "best_id_score": 0.2386012226343155,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.2703583538532257,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9767130613327026,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.1785779744386673,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.2301512509584427,
+  "gt_iou": 0.9144573211669922,
+  "best_id_iou": 0.0073907324112951756,
+  "best_id_class": "road",
+  "best_id_score": 0.2307077795267105,
+  "best_id_boosted": true
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.21846990287303925,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9385919570922852,
+  "best_id_class": "person",
+  "best_id_score": 0.2028127759695053,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.6527612805366516,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9777631163597107,
+  "best_id_class": "car",
+  "best_id_score": 0.4070717692375183,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.6489018797874451,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.97765052318573,
+  "best_id_class": "car",
+  "best_id_score": 0.4321569800376892,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.6014357805252075,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.996951162815094,
+  "best_id_class": "car",
+  "best_id_score": 0.4155066907405853,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.5212761759757996,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.992405116558075,
+  "best_id_class": "bus",
+  "best_id_score": 0.4705597162246704,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.5115337371826172,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9721153974533081,
+  "best_id_class": "car",
+  "best_id_score": 0.4205974042415619,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.49533891677856445,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9970430135726929,
+  "best_id_class": "bus",
+  "best_id_score": 0.313496470451355,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.4742744565010071,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9803470969200134,
+  "best_id_class": "car",
+  "best_id_score": 0.40773484110832214,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.4714534878730774,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9580994844436646,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.33533406257629395,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.456478476524353,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9760428071022034,
+  "best_id_class": "car",
+  "best_id_score": 0.3445875644683838,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.3934776484966278,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9802418351173401,
+  "best_id_class": "person",
+  "best_id_score": 0.23592914640903473,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.31870022416114807,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.5389615297317505,
+  "best_id_class": "fence",
+  "best_id_score": 0.11045918613672256,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.3093324601650238,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9408785700798035,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.21505391597747803,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.3012939989566803,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9488601684570312,
+  "best_id_class": "car",
+  "best_id_score": 0.2025568038225174,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.290065199136734,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9773666262626648,
+  "best_id_class": "person",
+  "best_id_score": 0.2204161435365677,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.2881492078304291,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9704750776290894,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.26517894864082336,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.23875048756599426,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9346141219139099,
+  "best_id_class": "person",
+  "best_id_score": 0.19044002890586853,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.22330079972743988,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8946666121482849,
+  "best_id_class": "car",
+  "best_id_score": 0.18876782059669495,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.20326782763004303,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.005907539743930101,
+  "best_id_class": "road",
+  "best_id_score": 0.6642183065414429,
+  "best_id_boosted": true
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.8191328644752502,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9385135769844055,
+  "best_id_class": "person",
+  "best_id_score": 0.1291341781616211,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.7130592465400696,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9826764464378357,
+  "best_id_class": "person",
+  "best_id_score": 0.45433229207992554,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.45001649856567383,
+  "gt_iou": 0.8880465030670166,
+  "best_id_iou": 0.9927880764007568,
+  "best_id_class": "car",
+  "best_id_score": 0.22815148532390594,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.3915104568004608,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.988095760345459,
+  "best_id_class": "person",
+  "best_id_score": 0.29337412118911743,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.3660708963871002,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9567543268203735,
+  "best_id_class": "traffic light",
+  "best_id_score": 0.31661176681518555,
+  "best_id_boosted": true
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.3552800118923187,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9776588678359985,
+  "best_id_class": "person",
+  "best_id_score": 0.34318676590919495,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.33695530891418457,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9815207719802856,
+  "best_id_class": "person",
+  "best_id_score": 0.26653966307640076,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.32153457403182983,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.959173321723938,
+  "best_id_class": "person",
+  "best_id_score": 0.23803989589214325,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.3178669810295105,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.988028883934021,
+  "best_id_class": "person",
+  "best_id_score": 0.31322628259658813,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.2632029056549072,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.4313444197177887,
+  "best_id_class": "pole",
+  "best_id_score": 0.10955047607421875,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.24943402409553528,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9772495031356812,
+  "best_id_class": "car",
+  "best_id_score": 0.1425238847732544,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "ID-objects",
+  "score": 0.24371398985385895,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "wall",
+  "best_id_score": 0.12321556359529495,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.21500656008720398,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9723422527313232,
+  "best_id_class": "fence",
+  "best_id_score": 0.1408543735742569,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.20871050655841827,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9808968305587769,
+  "best_id_class": "person",
+  "best_id_score": 0.15525317192077637,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.20221655070781708,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.012393523007631302,
+  "best_id_class": "car",
+  "best_id_score": 0.7432776689529419,
+  "best_id_boosted": true
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.7381712794303894,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9925711750984192,
+  "best_id_class": "person",
+  "best_id_score": 0.44464752078056335,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.6621415615081787,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9594011306762695,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.43569493293762207,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.6491483449935913,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9379368424415588,
+  "best_id_class": "rider",
+  "best_id_score": 0.24346734583377838,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.640608012676239,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9976209998130798,
+  "best_id_class": "person",
+  "best_id_score": 0.35701924562454224,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.6381891965866089,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9905470013618469,
+  "best_id_class": "person",
+  "best_id_score": 0.34986454248428345,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.6133555173873901,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.989215075969696,
+  "best_id_class": "person",
+  "best_id_score": 0.21727021038532257,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.6122285723686218,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9953680038452148,
+  "best_id_class": "person",
+  "best_id_score": 0.4222058951854706,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.59549480676651,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9952873587608337,
+  "best_id_class": "person",
+  "best_id_score": 0.28780514001846313,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5904285311698914,
+  "gt_iou": 0.9821441173553467,
+  "best_id_iou": 0.9973040223121643,
+  "best_id_class": "person",
+  "best_id_score": 0.1315111219882965,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5759502053260803,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.982765257358551,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.479339063167572,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5625055432319641,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9898883104324341,
+  "best_id_class": "person",
+  "best_id_score": 0.27683696150779724,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5599747896194458,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9865627288818359,
+  "best_id_class": "person",
+  "best_id_score": 0.20251087844371796,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5371026396751404,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9975051879882812,
+  "best_id_class": "person",
+  "best_id_score": 0.2617519795894623,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.534929633140564,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9882776737213135,
+  "best_id_class": "person",
+  "best_id_score": 0.21675339341163635,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5140411257743835,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9938288331031799,
+  "best_id_class": "person",
+  "best_id_score": 0.31357336044311523,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5000258088111877,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9905749559402466,
+  "best_id_class": "person",
+  "best_id_score": 0.172213613986969,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.4922325909137726,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.18103130161762238,
+  "best_id_class": "person",
+  "best_id_score": 0.21675339341163635,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.48512640595436096,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9928894639015198,
+  "best_id_class": "person",
+  "best_id_score": 0.25791481137275696,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.4801030457019806,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9807040095329285,
+  "best_id_class": "person",
+  "best_id_score": 0.3965613543987274,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.47711795568466187,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.981464147567749,
+  "best_id_class": "person",
+  "best_id_score": 0.17879237234592438,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.4689832627773285,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9942905306816101,
+  "best_id_class": "person",
+  "best_id_score": 0.16779473423957825,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.44986414909362793,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.4342699348926544,
+  "best_id_class": "person",
+  "best_id_score": 0.20251087844371796,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.44301244616508484,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9884206652641296,
+  "best_id_class": "person",
+  "best_id_score": 0.22584116458892822,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.408312052488327,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.21354228258132935,
+  "best_id_class": "person",
+  "best_id_score": 0.21675339341163635,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.3480575382709503,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.06982062757015228,
+  "best_id_class": "person",
+  "best_id_score": 0.5373383164405823,
+  "best_id_boosted": true
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.3469269573688507,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9611770510673523,
+  "best_id_class": "person",
+  "best_id_score": 0.20320747792720795,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.34081658720970154,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.521521270275116,
+  "best_id_class": "person",
+  "best_id_score": 0.1538861244916916,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.33107709884643555,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.06231463700532913,
+  "best_id_class": "wall",
+  "best_id_score": 0.18780972063541412,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.2925819754600525,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.871967613697052,
+  "best_id_class": "person",
+  "best_id_score": 0.10791131854057312,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.2909984290599823,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8953239917755127,
+  "best_id_class": "person",
+  "best_id_score": 0.15104983747005463,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.2792191803455353,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.5049794316291809,
+  "best_id_class": "person",
+  "best_id_score": 0.12946775555610657,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.2593262493610382,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.4272271394729614,
+  "best_id_class": "person",
+  "best_id_score": 0.14209383726119995,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.2513105869293213,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9804182052612305,
+  "best_id_class": "person",
+  "best_id_score": 0.10647682845592499,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.23978550732135773,
+  "gt_iou": 0.022656826302409172,
+  "best_id_iou": 0.979705810546875,
+  "best_id_class": "person",
+  "best_id_score": 0.21250028908252716,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.2369944453239441,
+  "gt_iou": 0.011866508983075619,
+  "best_id_iou": 0.9612281322479248,
+  "best_id_class": "person",
+  "best_id_score": 0.2311718761920929,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.22224344313144684,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.06032874062657356,
+  "best_id_class": "person",
+  "best_id_score": 0.35701924562454224,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.22085754573345184,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.20256975293159485,
+  "best_id_class": "person",
+  "best_id_score": 0.35701924562454224,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.21896368265151978,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.04014619439840317,
+  "best_id_class": "wall",
+  "best_id_score": 0.10515160113573074,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.21834474802017212,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.998059868812561,
+  "best_id_class": "person",
+  "best_id_score": 0.13811632990837097,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.626274049282074,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9728789329528809,
+  "best_id_class": "car",
+  "best_id_score": 0.42210888862609863,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.6203774809837341,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9879005551338196,
+  "best_id_class": "car",
+  "best_id_score": 0.4788755774497986,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.6002644300460815,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9963220953941345,
+  "best_id_class": "car",
+  "best_id_score": 0.4464396834373474,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.5724812746047974,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9896659851074219,
+  "best_id_class": "car",
+  "best_id_score": 0.45963746309280396,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.5712432861328125,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9839704036712646,
+  "best_id_class": "car",
+  "best_id_score": 0.4039325714111328,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.5633023381233215,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.99590665102005,
+  "best_id_class": "car",
+  "best_id_score": 0.4683769643306732,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.5562396049499512,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9344059228897095,
+  "best_id_class": "car",
+  "best_id_score": 0.36494848132133484,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.5263895988464355,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9775090217590332,
+  "best_id_class": "car",
+  "best_id_score": 0.40145692229270935,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.45034196972846985,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8837680220603943,
+  "best_id_class": "car",
+  "best_id_score": 0.15527741611003876,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.44360509514808655,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9949846267700195,
+  "best_id_class": "car",
+  "best_id_score": 0.4288923740386963,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.43867772817611694,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9963266253471375,
+  "best_id_class": "car",
+  "best_id_score": 0.34469133615493774,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.4348856210708618,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9934508204460144,
+  "best_id_class": "car",
+  "best_id_score": 0.4186248481273651,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.36667266488075256,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9770073890686035,
+  "best_id_class": "car",
+  "best_id_score": 0.3063822090625763,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.32823657989501953,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9737908840179443,
+  "best_id_class": "car",
+  "best_id_score": 0.23119552433490753,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.2926795780658722,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9830180406570435,
+  "best_id_class": "truck",
+  "best_id_score": 0.18543116748332977,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.2914760410785675,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9590317010879517,
+  "best_id_class": "car",
+  "best_id_score": 0.27663442492485046,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.7609078884124756,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.996493399143219,
+  "best_id_class": "car",
+  "best_id_score": 0.48841649293899536,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.7428781986236572,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9945099949836731,
+  "best_id_class": "rider",
+  "best_id_score": 0.454037606716156,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.6426488161087036,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9790511727333069,
+  "best_id_class": "car",
+  "best_id_score": 0.3643943667411804,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "ID-objects",
+  "score": 0.543929398059845,
+  "gt_iou": 0.9830006957054138,
+  "best_id_iou": 0.06249609589576721,
+  "best_id_class": "road",
+  "best_id_score": 0.18107031285762787,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.5258221626281738,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9716010093688965,
+  "best_id_class": "person",
+  "best_id_score": 0.35698094964027405,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.5127316117286682,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9739431738853455,
+  "best_id_class": "person",
+  "best_id_score": 0.22935640811920166,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.47457846999168396,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9867144823074341,
+  "best_id_class": "car",
+  "best_id_score": 0.44508981704711914,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.4288778007030487,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9717146158218384,
+  "best_id_class": "car",
+  "best_id_score": 0.27244335412979126,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.42286252975463867,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9322041273117065,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.24748186767101288,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.42061635851860046,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9306588768959045,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.2507234513759613,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.41973891854286194,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9600467681884766,
+  "best_id_class": "person",
+  "best_id_score": 0.38481405377388,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.39178282022476196,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9882777333259583,
+  "best_id_class": "car",
+  "best_id_score": 0.16609904170036316,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.33143967390060425,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9233523607254028,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.25118327140808105,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.3087157905101776,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9861257672309875,
+  "best_id_class": "truck",
+  "best_id_score": 0.29992493987083435,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.28695955872535706,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9735071063041687,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.23960424959659576,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.2779120206832886,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8272886872291565,
+  "best_id_class": "person",
+  "best_id_score": 0.21107329428195953,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.2303803712129593,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8655225038528442,
+  "best_id_class": "car",
+  "best_id_score": 0.12728549540042877,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.22921913862228394,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.992958664894104,
+  "best_id_class": "truck",
+  "best_id_score": 0.17883989214897156,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.22763162851333618,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.018008222803473473,
+  "best_id_class": "building",
+  "best_id_score": 0.15105558931827545,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.22634918987751007,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9640697836875916,
+  "best_id_class": "person",
+  "best_id_score": 0.2020082175731659,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.6645516753196716,
+  "gt_iou": 0.9582017660140991,
+  "best_id_iou": 0.9773653149604797,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.0872509777545929,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.6216781735420227,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9881091713905334,
+  "best_id_class": "bus",
+  "best_id_score": 0.23442384600639343,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.4505094289779663,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9715127348899841,
+  "best_id_class": "car",
+  "best_id_score": 0.3691820204257965,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.41963115334510803,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9677706360816956,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.3492315709590912,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.3471980690956116,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9826149344444275,
+  "best_id_class": "person",
+  "best_id_score": 0.20468881726264954,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.31560784578323364,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9633983969688416,
+  "best_id_class": "person",
+  "best_id_score": 0.22308385372161865,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2896582782268524,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9588096141815186,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.33788806200027466,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.21369974315166473,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.945164144039154,
+  "best_id_class": "car",
+  "best_id_score": 0.18644140660762787,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.7144321203231812,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.99640953540802,
+  "best_id_class": "car",
+  "best_id_score": 0.49559104442596436,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.6148945689201355,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.28363746404647827,
+  "best_id_class": "truck",
+  "best_id_score": 0.11470337212085724,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.6088593006134033,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9911035299301147,
+  "best_id_class": "person",
+  "best_id_score": 0.4445323944091797,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.605546772480011,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9908433556556702,
+  "best_id_class": "person",
+  "best_id_score": 0.4252273440361023,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.6010066270828247,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.97730952501297,
+  "best_id_class": "person",
+  "best_id_score": 0.38971957564353943,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.49530017375946045,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.15906567871570587,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.13303536176681519,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.48684170842170715,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9805257320404053,
+  "best_id_class": "person",
+  "best_id_score": 0.46363258361816406,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.48655787110328674,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.958249032497406,
+  "best_id_class": "car",
+  "best_id_score": 0.2901932895183563,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.4663652181625366,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9948039650917053,
+  "best_id_class": "person",
+  "best_id_score": 0.2829865515232086,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.46311062574386597,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9912797212600708,
+  "best_id_class": "person",
+  "best_id_score": 0.35129615664482117,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.3852550983428955,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9236264824867249,
+  "best_id_class": "person",
+  "best_id_score": 0.22633874416351318,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.38258060812950134,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.36739519238471985,
+  "best_id_class": "pole",
+  "best_id_score": 0.23195166885852814,
+  "best_id_boosted": true
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.37921619415283203,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9839733242988586,
+  "best_id_class": "person",
+  "best_id_score": 0.36252787709236145,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.3540569245815277,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.10577450692653656,
+  "best_id_class": "person",
+  "best_id_score": 0.29089751839637756,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.3520287275314331,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9720351696014404,
+  "best_id_class": "car",
+  "best_id_score": 0.2784860134124756,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.3415050804615021,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9718177318572998,
+  "best_id_class": "person",
+  "best_id_score": 0.13064393401145935,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.31665509939193726,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9819675087928772,
+  "best_id_class": "person",
+  "best_id_score": 0.28099748492240906,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.31497812271118164,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.06475933641195297,
+  "best_id_class": "person",
+  "best_id_score": 0.4252273440361023,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.31035080552101135,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.03969345614314079,
+  "best_id_class": "truck",
+  "best_id_score": 0.11470337212085724,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.30794215202331543,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.2997893989086151,
+  "best_id_class": "person",
+  "best_id_score": 0.16162614524364471,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.3046984076499939,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.912807285785675,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.12453995645046234,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.3026258647441864,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9950530529022217,
+  "best_id_class": "person",
+  "best_id_score": 0.23103021085262299,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.29589444398880005,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9758950471878052,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.14165331423282623,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.2935947775840759,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9732021689414978,
+  "best_id_class": "person",
+  "best_id_score": 0.21189691126346588,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.2788082957267761,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9702942967414856,
+  "best_id_class": "person",
+  "best_id_score": 0.22373712062835693,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "ID-objects",
+  "score": 0.24701321125030518,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.499307781457901,
+  "best_id_class": "person",
+  "best_id_score": 0.29089751839637756,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.2439655214548111,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.340091735124588,
+  "best_id_class": "person",
+  "best_id_score": 0.16162614524364471,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.24350616335868835,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9824368953704834,
+  "best_id_class": "car",
+  "best_id_score": 0.21379005908966064,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.2105361819267273,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.05487971007823944,
+  "best_id_class": "sidewalk",
+  "best_id_score": 0.17427045106887817,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.20931269228458405,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9975986480712891,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.15493907034397125,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.6579603552818298,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9898360371589661,
+  "best_id_class": "car",
+  "best_id_score": 0.34860488772392273,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.584276020526886,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9963429570198059,
+  "best_id_class": "car",
+  "best_id_score": 0.4485580027103424,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.5506142973899841,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9980078339576721,
+  "best_id_class": "person",
+  "best_id_score": 0.3544544279575348,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.472949355840683,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9897764325141907,
+  "best_id_class": "person",
+  "best_id_score": 0.32936275005340576,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.456293523311615,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9225080013275146,
+  "best_id_class": "car",
+  "best_id_score": 0.34063559770584106,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.3774670958518982,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9780882000923157,
+  "best_id_class": "person",
+  "best_id_score": 0.28762829303741455,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.32805296778678894,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9643980860710144,
+  "best_id_class": "car",
+  "best_id_score": 0.20320314168930054,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "ID-objects",
+  "score": 0.28628218173980713,
+  "gt_iou": 0.9910513758659363,
+  "best_id_iou": 1.0,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.14685022830963135,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.28221023082733154,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9210532903671265,
+  "best_id_class": "person",
+  "best_id_score": 0.19620861113071442,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.26455190777778625,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.962178647518158,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.17485985159873962,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.2511824071407318,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9443919062614441,
+  "best_id_class": "car",
+  "best_id_score": 0.19609329104423523,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.24036213755607605,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9196521639823914,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.16495148837566376,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.23516356945037842,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.15980219841003418,
+  "best_id_class": "person",
+  "best_id_score": 0.16188104450702667,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.23356181383132935,
+  "gt_iou": 0.014784307219088078,
+  "best_id_iou": 0.9564937353134155,
+  "best_id_class": "car",
+  "best_id_score": 0.1563955545425415,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.7232035994529724,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.993810772895813,
+  "best_id_class": "car",
+  "best_id_score": 0.44375669956207275,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.5579079389572144,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9989714026451111,
+  "best_id_class": "car",
+  "best_id_score": 0.49044594168663025,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.44271615147590637,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.955461859703064,
+  "best_id_class": "person",
+  "best_id_score": 0.28657349944114685,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.3215266466140747,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9664610624313354,
+  "best_id_class": "person",
+  "best_id_score": 0.27950528264045715,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.3150021433830261,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9742153882980347,
+  "best_id_class": "truck",
+  "best_id_score": 0.2951124608516693,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.28406018018722534,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.15136663615703583,
+  "best_id_class": "pole",
+  "best_id_score": 0.10083892941474915,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.27209994196891785,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9924564957618713,
+  "best_id_class": "car",
+  "best_id_score": 0.22203446924686432,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.2627987265586853,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9704470038414001,
+  "best_id_class": "person",
+  "best_id_score": 0.2279866635799408,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.2552904188632965,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9807248711585999,
+  "best_id_class": "person",
+  "best_id_score": 0.14925996959209442,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.24992415308952332,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.995636522769928,
+  "best_id_class": "bus",
+  "best_id_score": 0.24531932175159454,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.2314378172159195,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9927944540977478,
+  "best_id_class": "pole",
+  "best_id_score": 0.12957607209682465,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.2136850357055664,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.7441633939743042,
+  "best_id_class": "person",
+  "best_id_score": 0.17489857971668243,
+  "best_id_boosted": false
+ },
+ {
+  "img": 12,
+  "source": "UN",
+  "score": 0.667811393737793,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9893988966941833,
+  "best_id_class": "car",
+  "best_id_score": 0.21731577813625336,
+  "best_id_boosted": false
+ },
+ {
+  "img": 12,
+  "source": "UN",
+  "score": 0.5380333662033081,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9862858057022095,
+  "best_id_class": "car",
+  "best_id_score": 0.3198951482772827,
+  "best_id_boosted": false
+ },
+ {
+  "img": 12,
+  "source": "UN",
+  "score": 0.47731995582580566,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.976570725440979,
+  "best_id_class": "car",
+  "best_id_score": 0.40029194951057434,
+  "best_id_boosted": false
+ },
+ {
+  "img": 12,
+  "source": "UN",
+  "score": 0.2797476649284363,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9906438589096069,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.20150062441825867,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.5095740556716919,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9626480340957642,
+  "best_id_class": "car",
+  "best_id_score": 0.19476255774497986,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.49738365411758423,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9881623387336731,
+  "best_id_class": "bus",
+  "best_id_score": 0.12774191796779633,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.4849795699119568,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.995549201965332,
+  "best_id_class": "car",
+  "best_id_score": 0.3406326174736023,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.4491947591304779,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9813646674156189,
+  "best_id_class": "car",
+  "best_id_score": 0.2920105755329132,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.376727432012558,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9743995070457458,
+  "best_id_class": "car",
+  "best_id_score": 0.21286867558956146,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.360456645488739,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9862170219421387,
+  "best_id_class": "car",
+  "best_id_score": 0.29632067680358887,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.31187593936920166,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9771454334259033,
+  "best_id_class": "person",
+  "best_id_score": 0.10740241408348083,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.2779065668582916,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9764776229858398,
+  "best_id_class": "car",
+  "best_id_score": 0.19910740852355957,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.2737600803375244,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9856860041618347,
+  "best_id_class": "car",
+  "best_id_score": 0.1778617650270462,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.22395190596580505,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9543969631195068,
+  "best_id_class": "car",
+  "best_id_score": 0.12889352440834045,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.21009783446788788,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9944052696228027,
+  "best_id_class": "car",
+  "best_id_score": 0.17443782091140747,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.7624343037605286,
+  "gt_iou": 0.05570994317531586,
+  "best_id_iou": 0.9973456859588623,
+  "best_id_class": "car",
+  "best_id_score": 0.4336582124233246,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.6949596405029297,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9947378635406494,
+  "best_id_class": "car",
+  "best_id_score": 0.38526883721351624,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.5451992750167847,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9832948446273804,
+  "best_id_class": "car",
+  "best_id_score": 0.3648173213005066,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.5234633684158325,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9915066957473755,
+  "best_id_class": "car",
+  "best_id_score": 0.39595741033554077,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.42025241255760193,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9854617714881897,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.10298991203308105,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.40941551327705383,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9619718790054321,
+  "best_id_class": "person",
+  "best_id_score": 0.34590944647789,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.3937512934207916,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9877533912658691,
+  "best_id_class": "car",
+  "best_id_score": 0.29391178488731384,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.29993873834609985,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9854103326797485,
+  "best_id_class": "car",
+  "best_id_score": 0.27879568934440613,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.2885196805000305,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9946765303611755,
+  "best_id_class": "person",
+  "best_id_score": 0.2176748514175415,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.28510233759880066,
+  "gt_iou": 0.8034167289733887,
+  "best_id_iou": 0.9878951907157898,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.14577139914035797,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.25847163796424866,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9910354614257812,
+  "best_id_class": "person",
+  "best_id_score": 0.12886236608028412,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.23405306041240692,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.1825305074453354,
+  "best_id_class": "person",
+  "best_id_score": 0.08351211249828339,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.23196208477020264,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9906374216079712,
+  "best_id_class": "car",
+  "best_id_score": 0.22677180171012878,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.23086018860340118,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9974249601364136,
+  "best_id_class": "person",
+  "best_id_score": 0.08331293612718582,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.20019131898880005,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.042872410267591476,
+  "best_id_class": "sidewalk",
+  "best_id_score": 0.1074884757399559,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.8267728090286255,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.990943968296051,
+  "best_id_class": "car",
+  "best_id_score": 0.4400201737880707,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.715538740158081,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9923706650733948,
+  "best_id_class": "car",
+  "best_id_score": 0.37261131405830383,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.6814985871315002,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9852849841117859,
+  "best_id_class": "car",
+  "best_id_score": 0.459771990776062,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.6271054744720459,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9907437562942505,
+  "best_id_class": "car",
+  "best_id_score": 0.44473516941070557,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "ID-objects",
+  "score": 0.5421413779258728,
+  "gt_iou": 0.9848923087120056,
+  "best_id_iou": 1.0,
+  "best_id_class": "person",
+  "best_id_score": 0.10612665116786957,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.4252215325832367,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.97517991065979,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.3048200309276581,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.4196048676967621,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9825114607810974,
+  "best_id_class": "bus",
+  "best_id_score": 0.36490339040756226,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.4013131260871887,
+  "gt_iou": 0.010429915972054005,
+  "best_id_iou": 0.9977806806564331,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.38924098014831543,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.392414391040802,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9669787883758545,
+  "best_id_class": "car",
+  "best_id_score": 0.24948838353157043,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.37740248441696167,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9729798436164856,
+  "best_id_class": "car",
+  "best_id_score": 0.225434347987175,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.28999072313308716,
+  "gt_iou": 0.006661286111921072,
+  "best_id_iou": 0.9572893977165222,
+  "best_id_class": "person",
+  "best_id_score": 0.14569894969463348,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.202583447098732,
+  "gt_iou": 0.011501643806695938,
+  "best_id_iou": 0.42223337292671204,
+  "best_id_class": "pole",
+  "best_id_score": 0.1761777400970459,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.20183873176574707,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9765255451202393,
+  "best_id_class": "person",
+  "best_id_score": 0.11259786784648895,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.8262162804603577,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9342689514160156,
+  "best_id_class": "person",
+  "best_id_score": 0.1276865303516388,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.6964820027351379,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.983234703540802,
+  "best_id_class": "person",
+  "best_id_score": 0.4454486072063446,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.4440280497074127,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9819350838661194,
+  "best_id_class": "person",
+  "best_id_score": 0.28886276483535767,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.3598625957965851,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9727620482444763,
+  "best_id_class": "person",
+  "best_id_score": 0.3496614694595337,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.33771684765815735,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9667068123817444,
+  "best_id_class": "person",
+  "best_id_score": 0.23949463665485382,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.3320397138595581,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9886406660079956,
+  "best_id_class": "person",
+  "best_id_score": 0.26951518654823303,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.3192541301250458,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9852500557899475,
+  "best_id_class": "person",
+  "best_id_score": 0.31036999821662903,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.2825736403465271,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9661386609077454,
+  "best_id_class": "traffic light",
+  "best_id_score": 0.1982022374868393,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.26288729906082153,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.4449906349182129,
+  "best_id_class": "pole",
+  "best_id_score": 0.1092480942606926,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.2543257176876068,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9771420359611511,
+  "best_id_class": "car",
+  "best_id_score": 0.1465495526790619,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "ID-objects",
+  "score": 0.2476576715707779,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "wall",
+  "best_id_score": 0.12536340951919556,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.23826350271701813,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9751340746879578,
+  "best_id_class": "fence",
+  "best_id_score": 0.1423543244600296,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.21350495517253876,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9344713687896729,
+  "best_id_class": "person",
+  "best_id_score": 0.15351100265979767,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.20417578518390656,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9254456162452698,
+  "best_id_class": "person",
+  "best_id_score": 0.1127903014421463,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.201398104429245,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.01209944300353527,
+  "best_id_class": "car",
+  "best_id_score": 0.7505539655685425,
+  "best_id_boosted": true
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.6798173785209656,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9977193474769592,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.1223771795630455,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.6121312379837036,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9688847064971924,
+  "best_id_class": "car",
+  "best_id_score": 0.3517592251300812,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.6048712730407715,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9919582605361938,
+  "best_id_class": "car",
+  "best_id_score": 0.3707628846168518,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.591299295425415,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9887219667434692,
+  "best_id_class": "car",
+  "best_id_score": 0.36162251234054565,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.5831167697906494,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9826617240905762,
+  "best_id_class": "car",
+  "best_id_score": 0.37914982438087463,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.5575315356254578,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9788764119148254,
+  "best_id_class": "car",
+  "best_id_score": 0.3538382053375244,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.5527893900871277,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9940547347068787,
+  "best_id_class": "car",
+  "best_id_score": 0.4062719941139221,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.5354466438293457,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9964924454689026,
+  "best_id_class": "car",
+  "best_id_score": 0.3907334804534912,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.5255733728408813,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.983681857585907,
+  "best_id_class": "car",
+  "best_id_score": 0.2901494801044464,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.5212541222572327,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9849147796630859,
+  "best_id_class": "car",
+  "best_id_score": 0.3212932050228119,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.45062190294265747,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9782707095146179,
+  "best_id_class": "car",
+  "best_id_score": 0.37247341871261597,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.403645783662796,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.998300313949585,
+  "best_id_class": "car",
+  "best_id_score": 0.3990979492664337,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.31791120767593384,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.965486466884613,
+  "best_id_class": "car",
+  "best_id_score": 0.23866891860961914,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.25095510482788086,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9731405377388,
+  "best_id_class": "car",
+  "best_id_score": 0.2127283662557602,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.2246609479188919,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8953851461410522,
+  "best_id_class": "car",
+  "best_id_score": 0.21318675577640533,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.21538127958774567,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9794752597808838,
+  "best_id_class": "person",
+  "best_id_score": 0.16728456318378448,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.7295116782188416,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9890762567520142,
+  "best_id_class": "bus",
+  "best_id_score": 0.28268638253211975,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.6954036355018616,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9899110794067383,
+  "best_id_class": "car",
+  "best_id_score": 0.3229251801967621,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.5932486057281494,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9848882555961609,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.355973482131958,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.5868220329284668,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9550184011459351,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.4427342414855957,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.5735069513320923,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9896596670150757,
+  "best_id_class": "car",
+  "best_id_score": 0.31796708703041077,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.530220091342926,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9860426783561707,
+  "best_id_class": "car",
+  "best_id_score": 0.28652384877204895,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "ID-objects",
+  "score": 0.4827193021774292,
+  "gt_iou": 0.990509569644928,
+  "best_id_iou": 0.20943336188793182,
+  "best_id_class": "road",
+  "best_id_score": 0.12711209058761597,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.4309157133102417,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9734715819358826,
+  "best_id_class": "car",
+  "best_id_score": 0.277587890625,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.4296365976333618,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9878746867179871,
+  "best_id_class": "person",
+  "best_id_score": 0.31989893317222595,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.407833069562912,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9716809988021851,
+  "best_id_class": "car",
+  "best_id_score": 0.320374995470047,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.37843477725982666,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.965100884437561,
+  "best_id_class": "car",
+  "best_id_score": 0.21501092612743378,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.3356778919696808,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9654804468154907,
+  "best_id_class": "car",
+  "best_id_score": 0.28689318895339966,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.298780620098114,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9344601631164551,
+  "best_id_class": "person",
+  "best_id_score": 0.18329042196273804,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.2706405222415924,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9711805582046509,
+  "best_id_class": "person",
+  "best_id_score": 0.1316230595111847,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.24940192699432373,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9802395105361938,
+  "best_id_class": "car",
+  "best_id_score": 0.2434449940919876,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.2330838143825531,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9840555191040039,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.1938467174768448,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.2231597751379013,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9872357845306396,
+  "best_id_class": "car",
+  "best_id_score": 0.16528639197349548,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.2195688635110855,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9462543725967407,
+  "best_id_class": "person",
+  "best_id_score": 0.1599031537771225,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.21870379149913788,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.971876859664917,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.13191035389900208,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.7258370518684387,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9825330972671509,
+  "best_id_class": "car",
+  "best_id_score": 0.3551885187625885,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.6744871735572815,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9963127970695496,
+  "best_id_class": "car",
+  "best_id_score": 0.4451656937599182,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.6041794419288635,
+  "gt_iou": 0.9074794054031372,
+  "best_id_iou": 0.14393238723278046,
+  "best_id_class": "road",
+  "best_id_score": 0.12752336263656616,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.558864176273346,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9783322811126709,
+  "best_id_class": "car",
+  "best_id_score": 0.24561157822608948,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.5488292574882507,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9748270511627197,
+  "best_id_class": "car",
+  "best_id_score": 0.3259509801864624,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.47323137521743774,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9859509468078613,
+  "best_id_class": "bus",
+  "best_id_score": 0.4359779357910156,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.4124455451965332,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9596742987632751,
+  "best_id_class": "car",
+  "best_id_score": 0.33642855286598206,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.32901397347450256,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.93887859582901,
+  "best_id_class": "bus",
+  "best_id_score": 0.3010755479335785,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.28618964552879333,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.5879740715026855,
+  "best_id_class": "pole",
+  "best_id_score": 0.10795298218727112,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.2764705419540405,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9697096347808838,
+  "best_id_class": "bus",
+  "best_id_score": 0.21862740814685822,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.27342766523361206,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.18393844366073608,
+  "best_id_class": "pole",
+  "best_id_score": 0.18190331757068634,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.27194783091545105,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.31625837087631226,
+  "best_id_class": "pole",
+  "best_id_score": 0.10979877412319183,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.2646103799343109,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.18841876089572906,
+  "best_id_class": "pole",
+  "best_id_score": 0.12133153527975082,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.6224300265312195,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9893300533294678,
+  "best_id_class": "car",
+  "best_id_score": 0.4130214750766754,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.6198064684867859,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9891934394836426,
+  "best_id_class": "person",
+  "best_id_score": 0.3985408544540405,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.5830807089805603,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9980875253677368,
+  "best_id_class": "bus",
+  "best_id_score": 0.2937851846218109,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.5581055879592896,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9982496500015259,
+  "best_id_class": "person",
+  "best_id_score": 0.43926456570625305,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.5221240520477295,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9742180705070496,
+  "best_id_class": "person",
+  "best_id_score": 0.3903771936893463,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.5143964886665344,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9810916185379028,
+  "best_id_class": "car",
+  "best_id_score": 0.38973137736320496,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.5003963708877563,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9929635524749756,
+  "best_id_class": "car",
+  "best_id_score": 0.4555439054965973,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.491325706243515,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9972471594810486,
+  "best_id_class": "car",
+  "best_id_score": 0.44925034046173096,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.4875514805316925,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9907503128051758,
+  "best_id_class": "person",
+  "best_id_score": 0.3198131024837494,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.4805152118206024,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9820311069488525,
+  "best_id_class": "person",
+  "best_id_score": 0.28875836730003357,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.46814218163490295,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9858506917953491,
+  "best_id_class": "person",
+  "best_id_score": 0.2826254367828369,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.43229982256889343,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.990181565284729,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.2805543839931488,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.3471943140029907,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9848051071166992,
+  "best_id_class": "person",
+  "best_id_score": 0.2581671476364136,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.3373315930366516,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9873046278953552,
+  "best_id_class": "person",
+  "best_id_score": 0.27311182022094727,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.32311853766441345,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9740570187568665,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.21999596059322357,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.319109171628952,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9765632748603821,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.2109399139881134,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.3058288097381592,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9584376811981201,
+  "best_id_class": "car",
+  "best_id_score": 0.11119326204061508,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.29050037264823914,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9844359755516052,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.2537353038787842,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.284070760011673,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.901517391204834,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.2726420760154724,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.26799044013023376,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9187397360801697,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.13787627220153809,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.26748034358024597,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9663808941841125,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.16527006030082703,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.2654064893722534,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9731945395469666,
+  "best_id_class": "truck",
+  "best_id_score": 0.203778937458992,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.24292419850826263,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.08249124884605408,
+  "best_id_class": "wall",
+  "best_id_score": 0.12240153551101685,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.22832046449184418,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9727491140365601,
+  "best_id_class": "car",
+  "best_id_score": 0.18683098256587982,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.22088295221328735,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9932037591934204,
+  "best_id_class": "car",
+  "best_id_score": 0.20043061673641205,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.21643704175949097,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9854418635368347,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.20026738941669464,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.21269632875919342,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.6022458076477051,
+  "best_id_class": "bus",
+  "best_id_score": 0.12385204434394836,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.7519569396972656,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9820168614387512,
+  "best_id_class": "car",
+  "best_id_score": 0.17332659661769867,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.6704756617546082,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9939206838607788,
+  "best_id_class": "car",
+  "best_id_score": 0.48182544112205505,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.5923948884010315,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9958056807518005,
+  "best_id_class": "car",
+  "best_id_score": 0.4875735938549042,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.5733188986778259,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.978033721446991,
+  "best_id_class": "car",
+  "best_id_score": 0.35966047644615173,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.5425358414649963,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9657527208328247,
+  "best_id_class": "truck",
+  "best_id_score": 0.16539089381694794,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.5409798622131348,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9908421039581299,
+  "best_id_class": "car",
+  "best_id_score": 0.43105456233024597,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.5366446375846863,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9940032958984375,
+  "best_id_class": "bus",
+  "best_id_score": 0.33992934226989746,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.5262263417243958,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9839324951171875,
+  "best_id_class": "car",
+  "best_id_score": 0.3220970630645752,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.5096831321716309,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9581973552703857,
+  "best_id_class": "car",
+  "best_id_score": 0.3795565664768219,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.48492488265037537,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9759186506271362,
+  "best_id_class": "car",
+  "best_id_score": 0.3164593279361725,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "ID-objects",
+  "score": 0.45620617270469666,
+  "gt_iou": 0.9818166494369507,
+  "best_id_iou": 1.0,
+  "best_id_class": "person",
+  "best_id_score": 0.09991929680109024,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.451183557510376,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9858371019363403,
+  "best_id_class": "car",
+  "best_id_score": 0.36864838004112244,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.4435247480869293,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9600129723548889,
+  "best_id_class": "car",
+  "best_id_score": 0.27398955821990967,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.388615220785141,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9830217361450195,
+  "best_id_class": "car",
+  "best_id_score": 0.3498212695121765,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.385194331407547,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9649060368537903,
+  "best_id_class": "car",
+  "best_id_score": 0.36654287576675415,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.34479665756225586,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9811116456985474,
+  "best_id_class": "car",
+  "best_id_score": 0.26249071955680847,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.29626432061195374,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9445903301239014,
+  "best_id_class": "car",
+  "best_id_score": 0.2512225806713104,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.2832590639591217,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9741976857185364,
+  "best_id_class": "car",
+  "best_id_score": 0.24602647125720978,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.282774955034256,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9168926477432251,
+  "best_id_class": "car",
+  "best_id_score": 0.2255580574274063,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.22224783897399902,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9681285619735718,
+  "best_id_class": "bus",
+  "best_id_score": 0.20109201967716217,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.720097541809082,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9957689642906189,
+  "best_id_class": "person",
+  "best_id_score": 0.4127558767795563,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.5663464665412903,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9918484687805176,
+  "best_id_class": "person",
+  "best_id_score": 0.37688857316970825,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.5624281764030457,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9891209006309509,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.43988117575645447,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.5595443248748779,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9938428997993469,
+  "best_id_class": "bus",
+  "best_id_score": 0.48078444600105286,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.529259204864502,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9936050772666931,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.48605841398239136,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.4907977283000946,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.997462809085846,
+  "best_id_class": "bus",
+  "best_id_score": 0.18261192739009857,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.2920912504196167,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9693607091903687,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.13240472972393036,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.25677821040153503,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9993258714675903,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.1998310089111328,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.2084747701883316,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9837409853935242,
+  "best_id_class": "car",
+  "best_id_score": 0.1646258383989334,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.20313069224357605,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9751534461975098,
+  "best_id_class": "road",
+  "best_id_score": 0.14879865944385529,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.5200775861740112,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9882235527038574,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.33646079897880554,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.4919452965259552,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.06898701190948486,
+  "best_id_class": "person",
+  "best_id_score": 0.7810894846916199,
+  "best_id_boosted": true
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.46215781569480896,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.1329224854707718,
+  "best_id_class": "person",
+  "best_id_score": 0.13776561617851257,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.43780946731567383,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9925981760025024,
+  "best_id_class": "person",
+  "best_id_score": 0.29181718826293945,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.4181678593158722,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.11511368304491043,
+  "best_id_class": "person",
+  "best_id_score": 0.6770670413970947,
+  "best_id_boosted": true
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.4173465967178345,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9964268803596497,
+  "best_id_class": "person",
+  "best_id_score": 0.2995332181453705,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.4127212166786194,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.12351271510124207,
+  "best_id_class": "person",
+  "best_id_score": 0.6374334692955017,
+  "best_id_boosted": true
+ },
+ {
+  "img": 23,
+  "source": "ID-objects",
+  "score": 0.3401136100292206,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.1450044810771942,
+  "best_id_class": "person",
+  "best_id_score": 0.7810894846916199,
+  "best_id_boosted": true
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.33833110332489014,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.09929533302783966,
+  "best_id_class": "person",
+  "best_id_score": 0.6334274411201477,
+  "best_id_boosted": true
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.33493009209632874,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9567597508430481,
+  "best_id_class": "person",
+  "best_id_score": 0.3301016688346863,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.3106114864349365,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.984841525554657,
+  "best_id_class": "person",
+  "best_id_score": 0.25139549374580383,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.3025249242782593,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8632599711418152,
+  "best_id_class": "person",
+  "best_id_score": 0.18395322561264038,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.27367454767227173,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9371730089187622,
+  "best_id_class": "person",
+  "best_id_score": 0.24031378328800201,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.27244266867637634,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.05469689890742302,
+  "best_id_class": "person",
+  "best_id_score": 0.7809156179428101,
+  "best_id_boosted": true
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.26705098152160645,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9564370512962341,
+  "best_id_class": "car",
+  "best_id_score": 0.2231328934431076,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.24275396764278412,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9675070643424988,
+  "best_id_class": "person",
+  "best_id_score": 0.18390429019927979,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.22581146657466888,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9817059636116028,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.18688884377479553,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.22290538251399994,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9339982867240906,
+  "best_id_class": "person",
+  "best_id_score": 0.20174455642700195,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.21532835066318512,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9459831714630127,
+  "best_id_class": "person",
+  "best_id_score": 0.12912632524967194,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.20737557113170624,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9632548689842224,
+  "best_id_class": "person",
+  "best_id_score": 0.152822345495224,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.734767735004425,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9938746094703674,
+  "best_id_class": "car",
+  "best_id_score": 0.4759584665298462,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.6801762580871582,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.12011037766933441,
+  "best_id_class": "sidewalk",
+  "best_id_score": 0.13241717219352722,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.6623386740684509,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.16118121147155762,
+  "best_id_class": "person",
+  "best_id_score": 0.5669491291046143,
+  "best_id_boosted": true
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.6364621520042419,
+  "gt_iou": 0.10690262168645859,
+  "best_id_iou": 0.29232317209243774,
+  "best_id_class": "person",
+  "best_id_score": 0.7532002329826355,
+  "best_id_boosted": true
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.5932008624076843,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.989679217338562,
+  "best_id_class": "person",
+  "best_id_score": 0.36893364787101746,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.5851491093635559,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.0865117534995079,
+  "best_id_class": "road",
+  "best_id_score": 0.140833780169487,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.5815325379371643,
+  "gt_iou": 0.9810606837272644,
+  "best_id_iou": 0.9963129758834839,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.1843826323747635,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.5624771118164062,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.37570345401763916,
+  "best_id_class": "person",
+  "best_id_score": 0.27646344900131226,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.5338322520256042,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9904698133468628,
+  "best_id_class": "person",
+  "best_id_score": 0.431681752204895,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.4553588628768921,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.17925499379634857,
+  "best_id_class": "person",
+  "best_id_score": 0.1745460480451584,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.44269776344299316,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9765516519546509,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.33741164207458496,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.39429035782814026,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9869652390480042,
+  "best_id_class": "person",
+  "best_id_score": 0.3578770160675049,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.3621619939804077,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9824314713478088,
+  "best_id_class": "person",
+  "best_id_score": 0.33117517828941345,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.3564113676548004,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9821475744247437,
+  "best_id_class": "person",
+  "best_id_score": 0.3400985896587372,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.31636109948158264,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.974307119846344,
+  "best_id_class": "car",
+  "best_id_score": 0.20728936791419983,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.294699102640152,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9488334655761719,
+  "best_id_class": "person",
+  "best_id_score": 0.21506035327911377,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.2909209430217743,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9574992060661316,
+  "best_id_class": "car",
+  "best_id_score": 0.20563825964927673,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.2674497961997986,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.049136508256196976,
+  "best_id_class": "person",
+  "best_id_score": 0.7589920163154602,
+  "best_id_boosted": true
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.2614521384239197,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.705691397190094,
+  "best_id_class": "person",
+  "best_id_score": 0.1121767982840538,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.24515323340892792,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9932683110237122,
+  "best_id_class": "car",
+  "best_id_score": 0.2088247686624527,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.21535319089889526,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.05484933778643608,
+  "best_id_class": "person",
+  "best_id_score": 0.24518051743507385,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.20316220819950104,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.7353582978248596,
+  "best_id_class": "traffic light",
+  "best_id_score": 0.18814869225025177,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.6475425362586975,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9911419153213501,
+  "best_id_class": "car",
+  "best_id_score": 0.3745918273925781,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.5714746713638306,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9874686598777771,
+  "best_id_class": "person",
+  "best_id_score": 0.3539012670516968,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.564950704574585,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9978702068328857,
+  "best_id_class": "car",
+  "best_id_score": 0.4550935924053192,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.5351390242576599,
+  "gt_iou": 0.8702927827835083,
+  "best_id_iou": 0.049304354935884476,
+  "best_id_class": "road",
+  "best_id_score": 0.1004578024148941,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.47708362340927124,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9264564514160156,
+  "best_id_class": "car",
+  "best_id_score": 0.3402708172798157,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.4764045774936676,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9910169839859009,
+  "best_id_class": "person",
+  "best_id_score": 0.3273583650588989,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.45590612292289734,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9362940788269043,
+  "best_id_class": "person",
+  "best_id_score": 0.2878456115722656,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.33270952105522156,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9690088629722595,
+  "best_id_class": "car",
+  "best_id_score": 0.19395937025547028,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.2865618169307709,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9477837681770325,
+  "best_id_class": "person",
+  "best_id_score": 0.20354188978672028,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.26614630222320557,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9720455408096313,
+  "best_id_class": "car",
+  "best_id_score": 0.2116464376449585,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.2599346935749054,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.27827802300453186,
+  "best_id_class": "person",
+  "best_id_score": 0.09784182161092758,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.23666036128997803,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9610894918441772,
+  "best_id_class": "car",
+  "best_id_score": 0.18721215426921844,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.23105548322200775,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9450054168701172,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.17180271446704865,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.6690034866333008,
+  "gt_iou": 6.872352969367057e-06,
+  "best_id_iou": 0.9871970415115356,
+  "best_id_class": "person",
+  "best_id_score": 0.4177517890930176,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.657345712184906,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9894808530807495,
+  "best_id_class": "person",
+  "best_id_score": 0.47636210918426514,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.6525455117225647,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9822859168052673,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.47788679599761963,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.5756670236587524,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9825257658958435,
+  "best_id_class": "car",
+  "best_id_score": 0.33249157667160034,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.5002507567405701,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9870845079421997,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.4691934287548065,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.45514142513275146,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9941989183425903,
+  "best_id_class": "person",
+  "best_id_score": 0.35083138942718506,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.4487994909286499,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9735056161880493,
+  "best_id_class": "rider",
+  "best_id_score": 0.14680708944797516,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.390328586101532,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9224988222122192,
+  "best_id_class": "person",
+  "best_id_score": 0.21403542160987854,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.38970640301704407,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9965909123420715,
+  "best_id_class": "person",
+  "best_id_score": 0.26770344376564026,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.38751018047332764,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9691607356071472,
+  "best_id_class": "person",
+  "best_id_score": 0.24969062209129333,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.3701574504375458,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.953031599521637,
+  "best_id_class": "car",
+  "best_id_score": 0.12530763447284698,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.3556576073169708,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8829571604728699,
+  "best_id_class": "truck",
+  "best_id_score": 0.25586998462677,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.3456125855445862,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9793156385421753,
+  "best_id_class": "person",
+  "best_id_score": 0.2336246520280838,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.33994847536087036,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9621881246566772,
+  "best_id_class": "person",
+  "best_id_score": 0.1968482881784439,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.32786476612091064,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9512306451797485,
+  "best_id_class": "person",
+  "best_id_score": 0.15338382124900818,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.3145521283149719,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.93940669298172,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.16325189173221588,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.306427925825119,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9709300994873047,
+  "best_id_class": "person",
+  "best_id_score": 0.1491604596376419,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.30224373936653137,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9722500443458557,
+  "best_id_class": "person",
+  "best_id_score": 0.19186411798000336,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2950216829776764,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9422475099563599,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.1664975881576538,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2942158579826355,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9657946228981018,
+  "best_id_class": "person",
+  "best_id_score": 0.2161378264427185,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.27270710468292236,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9705758094787598,
+  "best_id_class": "person",
+  "best_id_score": 0.1539495885372162,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.27168354392051697,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9905562400817871,
+  "best_id_class": "bus",
+  "best_id_score": 0.21569553017616272,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2674340605735779,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9833580255508423,
+  "best_id_class": "person",
+  "best_id_score": 0.23778036236763,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.26324835419654846,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9595715999603271,
+  "best_id_class": "person",
+  "best_id_score": 0.19099347293376923,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2592267692089081,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9613071084022522,
+  "best_id_class": "person",
+  "best_id_score": 0.16224421560764313,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.25221192836761475,
+  "gt_iou": 0.9355274438858032,
+  "best_id_iou": 0.1385117918252945,
+  "best_id_class": "sidewalk",
+  "best_id_score": 0.20012792944908142,
+  "best_id_boosted": true
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.25003811717033386,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9703307747840881,
+  "best_id_class": "car",
+  "best_id_score": 0.18288789689540863,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.24736855924129486,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9682437777519226,
+  "best_id_class": "person",
+  "best_id_score": 0.15833419561386108,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2400779277086258,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9454725384712219,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.11487055569887161,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2396584302186966,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9612508416175842,
+  "best_id_class": "car",
+  "best_id_score": 0.1917668879032135,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.23725926876068115,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9848276376724243,
+  "best_id_class": "person",
+  "best_id_score": 0.22552895545959473,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.23435544967651367,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9554466605186462,
+  "best_id_class": "person",
+  "best_id_score": 0.14845415949821472,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2313058227300644,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.4325985312461853,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.1295301765203476,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2305610030889511,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9507059454917908,
+  "best_id_class": "person",
+  "best_id_score": 0.13328221440315247,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.21910929679870605,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.03273080661892891,
+  "best_id_class": "person",
+  "best_id_score": 0.2080231010913849,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2120688259601593,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.36089470982551575,
+  "best_id_class": "person",
+  "best_id_score": 0.47636210918426514,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.21114680171012878,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.1273721307516098,
+  "best_id_class": "person",
+  "best_id_score": 0.13328221440315247,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2095196694135666,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9881022572517395,
+  "best_id_class": "car",
+  "best_id_score": 0.1520996242761612,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.2076060026884079,
+  "gt_iou": 0.9460420608520508,
+  "best_id_iou": 0.004320018459111452,
+  "best_id_class": "road",
+  "best_id_score": 0.16885323822498322,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.20403891801834106,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.330599844455719,
+  "best_id_class": "car",
+  "best_id_score": 0.12683379650115967,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.20287902653217316,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8868008255958557,
+  "best_id_class": "person",
+  "best_id_score": 0.15694968402385712,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.20120245218276978,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9831095933914185,
+  "best_id_class": "person",
+  "best_id_score": 0.12277355045080185,
+  "best_id_boosted": false
+ },
+ {
+  "img": 27,
+  "source": "UN",
+  "score": 0.6883227825164795,
+  "gt_iou": 0.752871572971344,
+  "best_id_iou": 0.9757367372512817,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.0954347625374794,
+  "best_id_boosted": false
+ },
+ {
+  "img": 27,
+  "source": "UN",
+  "score": 0.6425855159759521,
+  "gt_iou": 0.6884806752204895,
+  "best_id_iou": 0.9981674551963806,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.09342368692159653,
+  "best_id_boosted": false
+ },
+ {
+  "img": 27,
+  "source": "UN",
+  "score": 0.618385374546051,
+  "gt_iou": 0.012517048977315426,
+  "best_id_iou": 0.9805245995521545,
+  "best_id_class": "car",
+  "best_id_score": 0.32162731885910034,
+  "best_id_boosted": false
+ },
+ {
+  "img": 27,
+  "source": "UN",
+  "score": 0.4037550091743469,
+  "gt_iou": 0.006250536069273949,
+  "best_id_iou": 0.9759567975997925,
+  "best_id_class": "car",
+  "best_id_score": 0.24194425344467163,
+  "best_id_boosted": false
+ },
+ {
+  "img": 27,
+  "source": "UN",
+  "score": 0.2562282681465149,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9777769446372986,
+  "best_id_class": "car",
+  "best_id_score": 0.15442954003810883,
+  "best_id_boosted": false
+ },
+ {
+  "img": 27,
+  "source": "UN",
+  "score": 0.22476641833782196,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9812483787536621,
+  "best_id_class": "car",
+  "best_id_score": 0.16203370690345764,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.7570375204086304,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.983178973197937,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.4626659154891968,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.7553436756134033,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9757973551750183,
+  "best_id_class": "person",
+  "best_id_score": 0.4641706049442291,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.4882420599460602,
+  "gt_iou": 0.3442177474498749,
+  "best_id_iou": 0.951248824596405,
+  "best_id_class": "rider",
+  "best_id_score": 0.20220115780830383,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.44660434126853943,
+  "gt_iou": 0.6048771142959595,
+  "best_id_iou": 0.5947574973106384,
+  "best_id_class": "person",
+  "best_id_score": 0.14099131524562836,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.4199100136756897,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9799824953079224,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.32814356684684753,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.38472533226013184,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9806594252586365,
+  "best_id_class": "person",
+  "best_id_score": 0.3028217554092407,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.3837151527404785,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9706978797912598,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.25336113572120667,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.3613985776901245,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9842802286148071,
+  "best_id_class": "car",
+  "best_id_score": 0.2988435924053192,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.3538582921028137,
+  "gt_iou": 0.022953258827328682,
+  "best_id_iou": 0.6463945508003235,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.18773530423641205,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.3308728039264679,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9369661211967468,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.22911880910396576,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.31312909722328186,
+  "gt_iou": 0.011883193626999855,
+  "best_id_iou": 0.9692339897155762,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.26170775294303894,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.295594185590744,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.7675364017486572,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.16741245985031128,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.2824622392654419,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9946987628936768,
+  "best_id_class": "pole",
+  "best_id_score": 0.11477980762720108,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.27328816056251526,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.45974963903427124,
+  "best_id_class": "traffic light",
+  "best_id_score": 0.41309359669685364,
+  "best_id_boosted": true
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.267965167760849,
+  "gt_iou": 0.002488813828676939,
+  "best_id_iou": 0.9747403860092163,
+  "best_id_class": "person",
+  "best_id_score": 0.2013329416513443,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.26724517345428467,
+  "gt_iou": 0.0036045515444129705,
+  "best_id_iou": 0.9411719441413879,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.2268592268228531,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.26025742292404175,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9935334324836731,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.16354773938655853,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.2577173709869385,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9908949732780457,
+  "best_id_class": "pole",
+  "best_id_score": 0.11276043951511383,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "ID-objects",
+  "score": 0.25331568717956543,
+  "gt_iou": 0.004049316979944706,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.1386307179927826,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "ID-objects",
+  "score": 0.25269609689712524,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.1360752433538437,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.2494433969259262,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9928160309791565,
+  "best_id_class": "pole",
+  "best_id_score": 0.14276240766048431,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.24832187592983246,
+  "gt_iou": 0.06969724595546722,
+  "best_id_iou": 0.9879152178764343,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.2380620539188385,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "ID-objects",
+  "score": 0.24132198095321655,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.11826400458812714,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "ID-objects",
+  "score": 0.23716221749782562,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.13523459434509277,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.23662804067134857,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.98824143409729,
+  "best_id_class": "person",
+  "best_id_score": 0.17527759075164795,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "ID-objects",
+  "score": 0.2316281497478485,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.13970644772052765,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.22801628708839417,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9484667778015137,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.16333605349063873,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.2274029403924942,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9209302067756653,
+  "best_id_class": "person",
+  "best_id_score": 0.19119180738925934,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.224930539727211,
+  "gt_iou": 0.005108196754008532,
+  "best_id_iou": 0.9863201379776001,
+  "best_id_class": "person",
+  "best_id_score": 0.21677717566490173,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "ID-objects",
+  "score": 0.21551010012626648,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.11078640073537827,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "ID-objects",
+  "score": 0.21404647827148438,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.16483458876609802,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "ID-objects",
+  "score": 0.20999814569950104,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.047520168125629425,
+  "best_id_class": "sidewalk",
+  "best_id_score": 0.1214720606803894,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.6122779846191406,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9885337352752686,
+  "best_id_class": "person",
+  "best_id_score": 0.37284332513809204,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.576111376285553,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8911349177360535,
+  "best_id_class": "car",
+  "best_id_score": 0.4058149755001068,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.569446325302124,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.990668535232544,
+  "best_id_class": "person",
+  "best_id_score": 0.480746865272522,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.511718213558197,
+  "gt_iou": 0.9888854622840881,
+  "best_id_iou": 0.9931949377059937,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.10791000723838806,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.25555741786956787,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9720225930213928,
+  "best_id_class": "car",
+  "best_id_score": 0.1929517239332199,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.23288114368915558,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9862093329429626,
+  "best_id_class": "person",
+  "best_id_score": 0.21872790157794952,
+  "best_id_boosted": false
+ }
+]

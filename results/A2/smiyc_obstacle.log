@@ -1,0 +1,29 @@
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+processed 20/30
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+
+== ALL final OoD boxes: 80 boxes
+  source: {'UN': 67, 'ID-objects': 13}
+  overlapping an ID-class box (IoU>=0.5): 74 (92.5%)
+    that ID box class: {'person': 31, 'vegetation': 24, 'wall': 6, 'car': 4, 'bicycle': 2, 'pole': 2, 'road': 1, 'traffic sign': 1}
+    that ID box passed bar (boosted): {False: 74}
+    that ID box score pct[10,50,90]: [0.068 0.114 0.193]
+
+== FP-like (GT IoU < 0.1): 42 boxes
+  source: {'UN': 41, 'ID-objects': 1}
+  overlapping an ID-class box (IoU>=0.5): 41 (97.6%)
+    that ID box class: {'vegetation': 23, 'wall': 6, 'person': 4, 'car': 4, 'pole': 2, 'sidewalk': 1, 'bicycle': 1}
+    that ID box passed bar (boosted): {False: 41}
+    that ID box score pct[10,50,90]: [0.072 0.158 0.194]
+
+== TP-like (GT IoU >= 0.1): 38 boxes
+  source: {'UN': 26, 'ID-objects': 12}
+  overlapping an ID-class box (IoU>=0.5): 33 (86.8%)
+    that ID box class: {'person': 27, 'road': 1, 'traffic sign': 1, 'vegetation': 1, 'bicycle': 1, 'motorcycle': 1, 'terrain': 1}
+    that ID box passed bar (boosted): {False: 33}
+    that ID box score pct[10,50,90]: [0.067 0.086 0.179]

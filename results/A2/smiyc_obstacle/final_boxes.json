@@ -1,0 +1,802 @@
+[
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.29521873593330383,
+  "gt_iou": 0.8881303668022156,
+  "best_id_iou": 0.9673378467559814,
+  "best_id_class": "road",
+  "best_id_score": 0.09007452428340912,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.2529573440551758,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.966910183429718,
+  "best_id_class": "wall",
+  "best_id_score": 0.10539942979812622,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.2258472442626953,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9898664355278015,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.0782516747713089,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.2117455154657364,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9805354475975037,
+  "best_id_class": "wall",
+  "best_id_score": 0.10525884479284286,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.20242486894130707,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9851367473602295,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.16930322349071503,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.20194172859191895,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8310404419898987,
+  "best_id_class": "wall",
+  "best_id_score": 0.11369039118289948,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.20120999217033386,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9880393743515015,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.18016356229782104,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.20093555748462677,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9843279719352722,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.10753396153450012,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.6759334802627563,
+  "gt_iou": 0.9574518799781799,
+  "best_id_iou": 0.9770781993865967,
+  "best_id_class": "person",
+  "best_id_score": 0.0629650205373764,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.27835869789123535,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9948413968086243,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.1937037855386734,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.2587936818599701,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9984077215194702,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.19556111097335815,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.6876736879348755,
+  "gt_iou": 0.957393229007721,
+  "best_id_iou": 0.06004101783037186,
+  "best_id_class": "road",
+  "best_id_score": 0.06927471607923508,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "ID-objects",
+  "score": 0.49985039234161377,
+  "gt_iou": 0.9587395787239075,
+  "best_id_iou": 0.9799489378929138,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.07621154189109802,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.4189035892486572,
+  "gt_iou": 0.8948508501052856,
+  "best_id_iou": 0.053325701504945755,
+  "best_id_class": "sidewalk",
+  "best_id_score": 0.08449289947748184,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.401486873626709,
+  "gt_iou": 0.772601842880249,
+  "best_id_iou": 0.9790490865707397,
+  "best_id_class": "person",
+  "best_id_score": 0.1294877827167511,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.3796404302120209,
+  "gt_iou": 0.6083243489265442,
+  "best_id_iou": 0.9851213097572327,
+  "best_id_class": "person",
+  "best_id_score": 0.08648712188005447,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.32922813296318054,
+  "gt_iou": 0.662348210811615,
+  "best_id_iou": 0.979128897190094,
+  "best_id_class": "person",
+  "best_id_score": 0.07100620120763779,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "ID-objects",
+  "score": 0.24458494782447815,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "person",
+  "best_id_score": 0.06682579219341278,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.44018688797950745,
+  "gt_iou": 0.7665150165557861,
+  "best_id_iou": 0.98637455701828,
+  "best_id_class": "person",
+  "best_id_score": 0.0947096049785614,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.41577044129371643,
+  "gt_iou": 0.702226996421814,
+  "best_id_iou": 0.9670889377593994,
+  "best_id_class": "person",
+  "best_id_score": 0.07107016444206238,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.3851250112056732,
+  "gt_iou": 0.8026316165924072,
+  "best_id_iou": 0.98755943775177,
+  "best_id_class": "person",
+  "best_id_score": 0.1142382025718689,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.274855375289917,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9881106615066528,
+  "best_id_class": "car",
+  "best_id_score": 0.16885243356227875,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "ID-objects",
+  "score": 0.6484742760658264,
+  "gt_iou": 0.9505509734153748,
+  "best_id_iou": 0.019172338768839836,
+  "best_id_class": "road",
+  "best_id_score": 0.08632874488830566,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "ID-objects",
+  "score": 0.6242678165435791,
+  "gt_iou": 0.9006919860839844,
+  "best_id_iou": 0.9682087898254395,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.06748043745756149,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "ID-objects",
+  "score": 0.5499117374420166,
+  "gt_iou": 0.9407225251197815,
+  "best_id_iou": 0.9576429724693298,
+  "best_id_class": "person",
+  "best_id_score": 0.07006281614303589,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.24411338567733765,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9494981169700623,
+  "best_id_class": "sidewalk",
+  "best_id_score": 0.09707008302211761,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.39105793833732605,
+  "gt_iou": 0.8837491273880005,
+  "best_id_iou": 0.9244555234909058,
+  "best_id_class": "person",
+  "best_id_score": 0.06225324794650078,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "ID-objects",
+  "score": 0.39287614822387695,
+  "gt_iou": 0.8471975922584534,
+  "best_id_iou": 1.0,
+  "best_id_class": "person",
+  "best_id_score": 0.07554541528224945,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "ID-objects",
+  "score": 0.41315120458602905,
+  "gt_iou": 0.8949402570724487,
+  "best_id_iou": 1.0,
+  "best_id_class": "person",
+  "best_id_score": 0.09478430449962616,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.20401500165462494,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8536772131919861,
+  "best_id_class": "car",
+  "best_id_score": 0.15210291743278503,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "ID-objects",
+  "score": 0.5658677220344543,
+  "gt_iou": 0.9237388968467712,
+  "best_id_iou": 0.9892452359199524,
+  "best_id_class": "person",
+  "best_id_score": 0.06711958348751068,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.2044084072113037,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.99605792760849,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.1632840633392334,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "ID-objects",
+  "score": 0.2283969223499298,
+  "gt_iou": 0.7879665493965149,
+  "best_id_iou": 1.0,
+  "best_id_class": "person",
+  "best_id_score": 0.10413224250078201,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.2145516723394394,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9615678191184998,
+  "best_id_class": "person",
+  "best_id_score": 0.19245490431785583,
+  "best_id_boosted": false
+ },
+ {
+  "img": 10,
+  "source": "UN",
+  "score": 0.2007092535495758,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9925607442855835,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.12091519683599472,
+  "best_id_boosted": false
+ },
+ {
+  "img": 11,
+  "source": "UN",
+  "score": 0.7519527077674866,
+  "gt_iou": 0.9292807579040527,
+  "best_id_iou": 0.013584908097982407,
+  "best_id_class": "road",
+  "best_id_score": 0.08074129372835159,
+  "best_id_boosted": false
+ },
+ {
+  "img": 12,
+  "source": "UN",
+  "score": 0.6941242218017578,
+  "gt_iou": 0.9614866971969604,
+  "best_id_iou": 0.9798563718795776,
+  "best_id_class": "person",
+  "best_id_score": 0.08392005413770676,
+  "best_id_boosted": false
+ },
+ {
+  "img": 13,
+  "source": "UN",
+  "score": 0.5634992122650146,
+  "gt_iou": 0.9788724780082703,
+  "best_id_iou": 0.9970194697380066,
+  "best_id_class": "person",
+  "best_id_score": 0.2723901569843292,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "ID-objects",
+  "score": 0.5352125763893127,
+  "gt_iou": 0.9640326499938965,
+  "best_id_iou": 0.9817628860473633,
+  "best_id_class": "person",
+  "best_id_score": 0.22728289663791656,
+  "best_id_boosted": false
+ },
+ {
+  "img": 14,
+  "source": "UN",
+  "score": 0.2163015902042389,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9743458032608032,
+  "best_id_class": "pole",
+  "best_id_score": 0.1333586573600769,
+  "best_id_boosted": false
+ },
+ {
+  "img": 15,
+  "source": "UN",
+  "score": 0.8178414702415466,
+  "gt_iou": 0.9791011810302734,
+  "best_id_iou": 0.986111044883728,
+  "best_id_class": "person",
+  "best_id_score": 0.15968091785907745,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "UN",
+  "score": 0.6861714720726013,
+  "gt_iou": 0.9866370558738708,
+  "best_id_iou": 0.9908748269081116,
+  "best_id_class": "person",
+  "best_id_score": 0.1323479562997818,
+  "best_id_boosted": false
+ },
+ {
+  "img": 16,
+  "source": "ID-objects",
+  "score": 0.20272628962993622,
+  "gt_iou": 0.2755591869354248,
+  "best_id_iou": 0.27369043231010437,
+  "best_id_class": "person",
+  "best_id_score": 0.1323479562997818,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "ID-objects",
+  "score": 0.545590877532959,
+  "gt_iou": 0.9781404733657837,
+  "best_id_iou": 0.9871578216552734,
+  "best_id_class": "person",
+  "best_id_score": 0.20884919166564941,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.27930158376693726,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9962829947471619,
+  "best_id_class": "wall",
+  "best_id_score": 0.17111140489578247,
+  "best_id_boosted": false
+ },
+ {
+  "img": 17,
+  "source": "UN",
+  "score": 0.21804100275039673,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.019797133281826973,
+  "best_id_class": "fence",
+  "best_id_score": 0.07832486182451248,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.2215888798236847,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9971656203269958,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.18364043533802032,
+  "best_id_boosted": false
+ },
+ {
+  "img": 18,
+  "source": "UN",
+  "score": 0.20382562279701233,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9800593256950378,
+  "best_id_class": "car",
+  "best_id_score": 0.15909253060817719,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.8028882145881653,
+  "gt_iou": 0.9745451807975769,
+  "best_id_iou": 0.9819363355636597,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.18406708538532257,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.5565605759620667,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9984915256500244,
+  "best_id_class": "person",
+  "best_id_score": 0.07935141026973724,
+  "best_id_boosted": false
+ },
+ {
+  "img": 19,
+  "source": "UN",
+  "score": 0.21280227601528168,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9955647587776184,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.19569212198257446,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.7706066370010376,
+  "gt_iou": 0.966927170753479,
+  "best_id_iou": 0.9840941429138184,
+  "best_id_class": "person",
+  "best_id_score": 0.09112827479839325,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.5121591687202454,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9988857507705688,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.07201133668422699,
+  "best_id_boosted": false
+ },
+ {
+  "img": 20,
+  "source": "UN",
+  "score": 0.25562235713005066,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9964796900749207,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.1900366097688675,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.631907045841217,
+  "gt_iou": 0.968458354473114,
+  "best_id_iou": 0.9962106943130493,
+  "best_id_class": "person",
+  "best_id_score": 0.06232023611664772,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.6189965009689331,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.997177243232727,
+  "best_id_class": "pole",
+  "best_id_score": 0.06513965129852295,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.23338353633880615,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9863321781158447,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.16914524137973785,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.2252589464187622,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9963733553886414,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.06820842623710632,
+  "best_id_boosted": false
+ },
+ {
+  "img": 21,
+  "source": "UN",
+  "score": 0.20588305592536926,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9934508800506592,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.0678168311715126,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.6827404499053955,
+  "gt_iou": 0.973633885383606,
+  "best_id_iou": 0.9959471225738525,
+  "best_id_class": "person",
+  "best_id_score": 0.08057155460119247,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.639417290687561,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9828030467033386,
+  "best_id_class": "person",
+  "best_id_score": 0.11402244865894318,
+  "best_id_boosted": false
+ },
+ {
+  "img": 22,
+  "source": "UN",
+  "score": 0.2738601267337799,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9778172373771667,
+  "best_id_class": "car",
+  "best_id_score": 0.24003176391124725,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.41560882329940796,
+  "gt_iou": 0.5462725758552551,
+  "best_id_iou": 0.9593663811683655,
+  "best_id_class": "person",
+  "best_id_score": 0.08090317994356155,
+  "best_id_boosted": false
+ },
+ {
+  "img": 23,
+  "source": "UN",
+  "score": 0.40786224603652954,
+  "gt_iou": 0.47086435556411743,
+  "best_id_iou": 0.9838155508041382,
+  "best_id_class": "person",
+  "best_id_score": 0.0683717280626297,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.7803638577461243,
+  "gt_iou": 0.9170160293579102,
+  "best_id_iou": 0.9787226915359497,
+  "best_id_class": "person",
+  "best_id_score": 0.10328669100999832,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.27439725399017334,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9891951084136963,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.15755362808704376,
+  "best_id_boosted": false
+ },
+ {
+  "img": 24,
+  "source": "UN",
+  "score": 0.2620716094970703,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9891306161880493,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.18410316109657288,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.24895434081554413,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9669145345687866,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.07611389458179474,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.22733360528945923,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9952788949012756,
+  "best_id_class": "wall",
+  "best_id_score": 0.10840144008398056,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.22365032136440277,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9918292164802551,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.16885192692279816,
+  "best_id_boosted": false
+ },
+ {
+  "img": 25,
+  "source": "UN",
+  "score": 0.22140851616859436,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9879058003425598,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.1709715574979782,
+  "best_id_boosted": false
+ },
+ {
+  "img": 26,
+  "source": "UN",
+  "score": 0.5557794570922852,
+  "gt_iou": 0.9155654311180115,
+  "best_id_iou": 0.9554510712623596,
+  "best_id_class": "person",
+  "best_id_score": 0.12551981210708618,
+  "best_id_boosted": false
+ },
+ {
+  "img": 27,
+  "source": "ID-objects",
+  "score": 0.4683808982372284,
+  "gt_iou": 0.9438434839248657,
+  "best_id_iou": 1.0,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.13891872763633728,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.4304245710372925,
+  "gt_iou": 0.8972311019897461,
+  "best_id_iou": 0.9767489433288574,
+  "best_id_class": "terrain",
+  "best_id_score": 0.0711136981844902,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.23820613324642181,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.991801917552948,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.13789129257202148,
+  "best_id_boosted": false
+ },
+ {
+  "img": 28,
+  "source": "UN",
+  "score": 0.20315496623516083,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.992324709892273,
+  "best_id_class": "wall",
+  "best_id_score": 0.13583509624004364,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.6366688013076782,
+  "gt_iou": 0.9208522439002991,
+  "best_id_iou": 0.9938328266143799,
+  "best_id_class": "person",
+  "best_id_score": 0.07754115760326385,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.32774046063423157,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9910358786582947,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.19639387726783752,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.27383700013160706,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9937677383422852,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.17914190888404846,
+  "best_id_boosted": false
+ },
+ {
+  "img": 29,
+  "source": "UN",
+  "score": 0.23985359072685242,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9970399737358093,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.19109715521335602,
+  "best_id_boosted": false
+ }
+]

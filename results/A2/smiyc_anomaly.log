@@ -1,0 +1,28 @@
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+
+== ALL final OoD boxes: 128 boxes
+  source: {'UN': 125, 'ID-objects': 3}
+  overlapping an ID-class box (IoU>=0.5): 95 (74.2%)
+    that ID box class: {'person': 58, 'car': 11, 'vegetation': 8, 'traffic sign': 5, 'pole': 5, 'fence': 2, 'truck': 2, 'sky': 1}
+    that ID box passed bar (boosted): {False: 95}
+    that ID box score pct[10,50,90]: [0.072 0.102 0.346]
+
+== FP-like (GT IoU < 0.1): 111 boxes
+  source: {'UN': 109, 'ID-objects': 2}
+  overlapping an ID-class box (IoU>=0.5): 81 (73.0%)
+    that ID box class: {'person': 53, 'car': 11, 'vegetation': 8, 'pole': 3, 'fence': 2, 'traffic sign': 1, 'sky': 1, 'rider': 1}
+    that ID box passed bar (boosted): {False: 81}
+    that ID box score pct[10,50,90]: [0.076 0.104 0.317]
+
+== TP-like (GT IoU >= 0.1): 17 boxes
+  source: {'UN': 16, 'ID-objects': 1}
+  overlapping an ID-class box (IoU>=0.5): 14 (82.4%)
+    that ID box class: {'person': 5, 'traffic sign': 4, 'pole': 2, 'truck': 2, 'motorcycle': 1}
+    that ID box passed bar (boosted): {False: 14}
+    that ID box score pct[10,50,90]: [0.04  0.049 0.349]
