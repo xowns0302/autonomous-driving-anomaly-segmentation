@@ -1,0 +1,9 @@
+{
+  "config": "../../configs/detseg-s_road_anomaly.py",
+  "checkpoint": "ckpts/grounding_dino_swin-b_pretrain_all-f9818a7c.pth",
+  "tau": 0.2,
+  "images": 60,
+  "iou_mean_per_image": 53.82,
+  "f1_mean_per_image": 60.78,
+  "boxes_per_image_mean": 2.82
+}

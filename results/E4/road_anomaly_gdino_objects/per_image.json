@@ -1,0 +1,362 @@
+[
+ {
+  "img_path": "data/RoadAnomaly/frames/animals01_Guiguinto_railway_station_Calves.webp",
+  "n_boxes": 4,
+  "iou": 0.43476427717115396,
+  "f1": 0.6060427961425898
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals02_Zagori_On_the_road_to_Papigko.webp",
+  "n_boxes": 1,
+  "iou": 0.9662560257096947,
+  "f1": 0.9828384636338873
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals03_Zebras_in_the_road.webp",
+  "n_boxes": 2,
+  "iou": 0.8815547984152448,
+  "f1": 0.9370492947191776
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals04_17_animal_casualties_so_far_in_2006.webp",
+  "n_boxes": 2,
+  "iou": 0.5395990304579019,
+  "f1": 0.7009604705939785
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals05_cows_near_Phonsavan_Laos.webp",
+  "n_boxes": 5,
+  "iou": 0.8775018067580124,
+  "f1": 0.9347546868924126
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals06_sheep_roads_lambs.webp",
+  "n_boxes": 6,
+  "iou": 0.4121112784619474,
+  "f1": 0.583681023935753
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals07_Aihole_Pattadakal.webp",
+  "n_boxes": 4,
+  "iou": 0.6998710343048749,
+  "f1": 0.8234401553775188
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals08_on_the_main_street_of_village_Lin_Albania.webp",
+  "n_boxes": 4,
+  "iou": 0.7645684990031331,
+  "f1": 0.8665784291571166
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals09_working_together.webp",
+  "n_boxes": 2,
+  "iou": 0.4980986257901067,
+  "f1": 0.6649744111839183
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals10_bovine_cattle_beside_road.webp",
+  "n_boxes": 1,
+  "iou": 0.9644345008486345,
+  "f1": 0.9818952990613832
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals11_Cock_Pheasant_on_Romford_Road.webp",
+  "n_boxes": 2,
+  "iou": 0.022004742942454563,
+  "f1": 0.043061919417517955
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals12_Collared_Peccary_crossing_the_road.webp",
+  "n_boxes": 2,
+  "iou": 0.22890386913217944,
+  "f1": 0.372533401321009
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals13_jeune_bovin_sur_la_route.webp",
+  "n_boxes": 3,
+  "iou": 0.6715712809408986,
+  "f1": 0.8035209609043806
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals14_Dekemhare_Road.webp",
+  "n_boxes": 4,
+  "iou": 0.27541153615821684,
+  "f1": 0.4318786969542537
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals15_Doebeln_Pferdebahn.webp",
+  "n_boxes": 3,
+  "iou": 0.27273342314729293,
+  "f1": 0.4285790224206748
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals16_Donkeys_of_Morocco.webp",
+  "n_boxes": 2,
+  "iou": 0.9421659382635328,
+  "f1": 0.9702218741472853
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals17_E6_near_Kvaenangen.webp",
+  "n_boxes": 2,
+  "iou": 0.43520811576905866,
+  "f1": 0.6064738778819567
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals18_Goose_on_the_road_Memphis.webp",
+  "n_boxes": 1,
+  "iou": 0.9471785828791279,
+  "f1": 0.9728728440291442
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals19_Porte_de_Roubaix.webp",
+  "n_boxes": 6,
+  "iou": 0.4521569085283988,
+  "f1": 0.6227383637028729
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals20_Marcassin_Conchiglio.webp",
+  "n_boxes": 1,
+  "iou": 0.9401843884449907,
+  "f1": 0.9691701407808203
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals21_On_The_Road_to_Gondar_Ethiopia.webp",
+  "n_boxes": 4,
+  "iou": 0.35089455209713816,
+  "f1": 0.5194995442870163
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals22_red_fox_on_road.webp",
+  "n_boxes": 2,
+  "iou": 0.19735803513911512,
+  "f1": 0.3296558411890309
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals23_rhino_crossing_road.webp",
+  "n_boxes": 4,
+  "iou": 0.9485359426811938,
+  "f1": 0.9735883459003628
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals24_Sheep_Herders_Block_the_Road_Kaleybar_to_Eskanlu.webp",
+  "n_boxes": 2,
+  "iou": 0.06656330574217945,
+  "f1": 0.12481829326738493
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals25_jablonna_dziki.webp",
+  "n_boxes": 2,
+  "iou": 0.35144738775564727,
+  "f1": 0.5201051715957615
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals26_Unnamed_Road_Kazakhstan.webp",
+  "n_boxes": 3,
+  "iou": 0.5574898836461735,
+  "f1": 0.7158825100565758
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals27_wildlife_bear.webp",
+  "n_boxes": 1,
+  "iou": 0.9775384304807595,
+  "f1": 0.9886416520796616
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals28.webp",
+  "n_boxes": 1,
+  "iou": 0.9741921723365682,
+  "f1": 0.9869273984442524
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals29_Zebra_Crossing_Abbey_Road_Style.webp",
+  "n_boxes": 4,
+  "iou": 0.940922901917349,
+  "f1": 0.9695623674571043
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals30.webp",
+  "n_boxes": 3,
+  "iou": 0.9141355947826888,
+  "f1": 0.955141942163685
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/animals31_deer.webp",
+  "n_boxes": 2,
+  "iou": 0.07347143187502748,
+  "f1": 0.1368856770537345
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/cones01_Beeston_MMB_A6_Middle_Street.webp",
+  "n_boxes": 5,
+  "iou": 0.01848656711433676,
+  "f1": 0.036302034236375805
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/cones02_Broadmoor_Manhole_Cones.webp",
+  "n_boxes": 3,
+  "iou": 0.36151196126141316,
+  "f1": 0.5310448553481376
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/cones03_Bang_Na_Trat_Highway.webp",
+  "n_boxes": 3,
+  "iou": 0.0024131856463717755,
+  "f1": 0.00481475240135776
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/cones04_Federation.webp",
+  "n_boxes": 3,
+  "iou": 0.07184160981931098,
+  "f1": 0.13405266069381633
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/cones05_Corner_of_Kingsley_Park.webp",
+  "n_boxes": 6,
+  "iou": 0.02536544859755792,
+  "f1": 0.04947591833185226
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/cones06_VnA_traffic_cones.webp",
+  "n_boxes": 7,
+  "iou": 0.10099930939634157,
+  "f1": 0.18346843369360097
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/cones07.webp",
+  "n_boxes": 3,
+  "iou": 0.0908323292505906,
+  "f1": 0.1665376553571584
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/cones08_can.webp",
+  "n_boxes": 2,
+  "iou": 0.8740606374708474,
+  "f1": 0.9327986725663717
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/lost_tires03.webp",
+  "n_boxes": 1,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/lost_tires08.webp",
+  "n_boxes": 3,
+  "iou": 0.01097172113837652,
+  "f1": 0.021705297802043604
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/lost_tires09.webp",
+  "n_boxes": 5,
+  "iou": 0.02785804089375124,
+  "f1": 0.054206008583690984
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles01_boulder.webp",
+  "n_boxes": 3,
+  "iou": 0.9571171793543269,
+  "f1": 0.978088782267079
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles02_rock.webp",
+  "n_boxes": 1,
+  "iou": 0.9748532999274742,
+  "f1": 0.9872665478122099
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles03_cardboard_czech_hedgehog.webp",
+  "n_boxes": 1,
+  "iou": 0.9817498032127343,
+  "f1": 0.9907908673649524
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles04_cardboard_czech_hedgehog.webp",
+  "n_boxes": 1,
+  "iou": 0.7536136959074894,
+  "f1": 0.859497958605412
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles05_cardboard_czech_hedgehog.webp",
+  "n_boxes": 3,
+  "iou": 0.9759020450696887,
+  "f1": 0.9878040740984904
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles06_cardboard_czech_hedgehog.webp",
+  "n_boxes": 3,
+  "iou": 0.966434946199555,
+  "f1": 0.9829310123554736
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles07_czech_hedgehog.webp",
+  "n_boxes": 1,
+  "iou": 0.9679787192358429,
+  "f1": 0.9837288480555365
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles08_boulder2.webp",
+  "n_boxes": 4,
+  "iou": 0.03502120715910101,
+  "f1": 0.06767244365016693
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles09_boulder3.webp",
+  "n_boxes": 1,
+  "iou": 0.9821868604602598,
+  "f1": 0.9910133903644159
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles10_boulder4.webp",
+  "n_boxes": 1,
+  "iou": 0.8974819326394254,
+  "f1": 0.9459715185704191
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles11_boulder5.webp",
+  "n_boxes": 2,
+  "iou": 0.8144883079932427,
+  "f1": 0.8977608777143753
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles12_rocks2.webp",
+  "n_boxes": 1,
+  "iou": 0.010352873658694979,
+  "f1": 0.020493579874138627
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles12_rocks4.webp",
+  "n_boxes": 5,
+  "iou": 0.16649151486844155,
+  "f1": 0.2854568811625152
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles12_rocks5.webp",
+  "n_boxes": 3,
+  "iou": 0.0005976742675241993,
+  "f1": 0.0011946345327290906
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/obstacles12_rocks6.webp",
+  "n_boxes": 3,
+  "iou": 0.032413712870181806,
+  "f1": 0.06279210062034034
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/vehicle01_man_carrying_dry_grass_on_bicycle.webp",
+  "n_boxes": 1,
+  "iou": 0.9438720259897443,
+  "f1": 0.9711256845822052
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/vehicle02_Broadmoor_Cones_Skidloader.webp",
+  "n_boxes": 1,
+  "iou": 0.8706672397120447,
+  "f1": 0.9308627651447706
+ },
+ {
+  "img_path": "data/RoadAnomaly/frames/vehicle03_Fuhrwerke_in_China.webp",
+  "n_boxes": 8,
+  "iou": 0.7959850670750885,
+  "f1": 0.8864049948604713
+ }
+]

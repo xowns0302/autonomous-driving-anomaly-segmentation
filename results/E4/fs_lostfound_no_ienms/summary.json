@@ -1,0 +1,71 @@
+{
+  "config": "../../configs/detseg-s_fs_lostfound.py",
+  "checkpoint": "ckpts/detseg_swin-b_coco_20260623-207453f5.pth",
+  "cfg_options": null,
+  "ie_nms_bars": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "small_area": 0,
+  "small_thr": 0.2,
+  "road_aware": "none",
+  "road_alpha": 0.5,
+  "images": 100,
+  "images_with_ood": 99,
+  "iou_mean_per_image": 4.99,
+  "f1_mean_per_image": 7.46,
+  "iou_mean_ood_images_only": 5.04,
+  "iou_global": 2.09,
+  "iou_percentiles": {
+    "10": 0.0,
+    "25": 0.0,
+    "50": 0.18,
+    "75": 1.89,
+    "90": 12.18
+  },
+  "images_iou_zero": 42,
+  "images_no_pred_box": 0,
+  "boxes_per_image_mean": 15.8,
+  "gt_components": 188,
+  "box_recall": 51.6,
+  "box_recall_iou_thr": 0.5,
+  "box_recall_by_area": {
+    "[0,1024)": {
+      "n": 116,
+      "recall": 33.62
+    },
+    "[1024,9216)": {
+      "n": 56,
+      "recall": 82.14
+    },
+    "[9216,inf)": {
+      "n": 16,
+      "recall": 75.0
+    }
+  },
+  "component": {
+    "sIoU_gt": 44.66,
+    "PPV": 8.93,
+    "mean_F1": 15.89,
+    "n_gt_components": 188,
+    "n_pred_components": 1015,
+    "F1_at_0_5": 16.14
+  }
+}

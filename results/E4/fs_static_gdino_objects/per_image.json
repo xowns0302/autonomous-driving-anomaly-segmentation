@@ -1,0 +1,182 @@
+[
+ {
+  "img_path": "data/FS_Static/images/0.jpg",
+  "n_boxes": 1,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/1.jpg",
+  "n_boxes": 4,
+  "iou": 0.028131536574198424,
+  "f1": 0.05472361380516455
+ },
+ {
+  "img_path": "data/FS_Static/images/10.jpg",
+  "n_boxes": 1,
+  "iou": 0.9210352858461133,
+  "f1": 0.9588947091520461
+ },
+ {
+  "img_path": "data/FS_Static/images/11.jpg",
+  "n_boxes": 3,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/12.jpg",
+  "n_boxes": 2,
+  "iou": 4.7113697129598e-05,
+  "f1": 9.422295506742831e-05
+ },
+ {
+  "img_path": "data/FS_Static/images/13.jpg",
+  "n_boxes": 4,
+  "iou": 0.22237280675082025,
+  "f1": 0.3638379478383648
+ },
+ {
+  "img_path": "data/FS_Static/images/14.jpg",
+  "n_boxes": 3,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/15.jpg",
+  "n_boxes": 5,
+  "iou": 0.33442797435165234,
+  "f1": 0.5012304609608295
+ },
+ {
+  "img_path": "data/FS_Static/images/16.jpg",
+  "n_boxes": 4,
+  "iou": 0.04271095042588394,
+  "f1": 0.08192289609779031
+ },
+ {
+  "img_path": "data/FS_Static/images/17.jpg",
+  "n_boxes": 3,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/18.jpg",
+  "n_boxes": 5,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/19.jpg",
+  "n_boxes": 4,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/2.jpg",
+  "n_boxes": 4,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/20.jpg",
+  "n_boxes": 2,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/21.jpg",
+  "n_boxes": 2,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/22.jpg",
+  "n_boxes": 2,
+  "iou": 0.34597263365777964,
+  "f1": 0.5140856879349376
+ },
+ {
+  "img_path": "data/FS_Static/images/23.jpg",
+  "n_boxes": 2,
+  "iou": 4.197377478551401e-06,
+  "f1": 8.394719721295305e-06
+ },
+ {
+  "img_path": "data/FS_Static/images/24.jpg",
+  "n_boxes": 2,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/25.jpg",
+  "n_boxes": 3,
+  "iou": 0.9311179577464789,
+  "f1": 0.9643304843304843
+ },
+ {
+  "img_path": "data/FS_Static/images/26.jpg",
+  "n_boxes": 2,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/27.jpg",
+  "n_boxes": 5,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/28.jpg",
+  "n_boxes": 2,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/29.jpg",
+  "n_boxes": 3,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/3.jpg",
+  "n_boxes": 1,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/4.jpg",
+  "n_boxes": 6,
+  "iou": 0.00018248355182039672,
+  "f1": 0.00036490051529870066
+ },
+ {
+  "img_path": "data/FS_Static/images/5.jpg",
+  "n_boxes": 5,
+  "iou": 6.779150346489907e-05,
+  "f1": 0.00013557381617696902
+ },
+ {
+  "img_path": "data/FS_Static/images/6.jpg",
+  "n_boxes": 4,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/FS_Static/images/7.jpg",
+  "n_boxes": 4,
+  "iou": 0.040034429740988475,
+  "f1": 0.07698673927738854
+ },
+ {
+  "img_path": "data/FS_Static/images/8.jpg",
+  "n_boxes": 1,
+  "iou": 0.9494932179055864,
+  "f1": 0.9740923530122998
+ },
+ {
+  "img_path": "data/FS_Static/images/9.jpg",
+  "n_boxes": 3,
+  "iou": 0.5155459097588854,
+  "f1": 0.6803435071668739
+ }
+]

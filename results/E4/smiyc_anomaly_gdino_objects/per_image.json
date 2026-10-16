@@ -1,0 +1,62 @@
+[
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/0.png",
+  "n_boxes": 5,
+  "iou": 0.018045385504749382,
+  "f1": 0.03545104326719665
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/1.png",
+  "n_boxes": 1,
+  "iou": 0.959937904404091,
+  "f1": 0.9795595077242564
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/2.png",
+  "n_boxes": 1,
+  "iou": 0.9344706657069787,
+  "f1": 0.9661254443116237
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/3.png",
+  "n_boxes": 1,
+  "iou": 0.9213941472405615,
+  "f1": 0.9590891578012093
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/4.png",
+  "n_boxes": 1,
+  "iou": 0.9295984348371775,
+  "f1": 0.9635149138329587
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/5.png",
+  "n_boxes": 1,
+  "iou": 0.9734882353294168,
+  "f1": 0.9865660386538064
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/6.png",
+  "n_boxes": 1,
+  "iou": 0.9705616892657739,
+  "f1": 0.985060954501153
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/7.png",
+  "n_boxes": 1,
+  "iou": 0.9691198748148024,
+  "f1": 0.9843178033089013
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/8.png",
+  "n_boxes": 1,
+  "iou": 0.956524611491122,
+  "f1": 0.9777792784953805
+ },
+ {
+  "img_path": "data/SMIYC_Anomaly_val/images/9.png",
+  "n_boxes": 2,
+  "iou": 0.9292947877316944,
+  "f1": 0.9633517839171509
+ }
+]

@@ -13,7 +13,6 @@
 
 | ID | 실험 | 상태 |
 |---|---|---|
-| E1 | DetSeg-S 재현 (Table 2) | 대기 |
-| E2 | 기존 방법 단독 (Table 1·2) | 대기 |
-| E3 | 기존 방법 + DetSeg-R (Table 1·2) | 대기 |
-| E4 | DetSeg-S ablation (Table 6 부분) | 대기 |
+| E1 | [DetSeg-S 재현 (Table 2)](E1_detseg_s_reproduction.md) | 완료: RA·SMIYC 부분 재현, FS L&F·FS Static 불일치 |
+| E2·E3 | [M2A 단독 vs + DetSeg-R (Table 1·2)](E2_E3_m2a_and_detseg_r.md) | 완료: M2A 단독은 논문과 거의 동일, DetSeg-R은 RA·Obstacle 개선 재현 / FS L&F·SMIYC Anomaly 실패 |
+| E4 | [DetSeg-S ablation (Table 6 부분)](E4_detseg_s_ablation.md) | 완료: 논문과 같은 경향, IE-NMS 효과 큼. SMIYC Anomaly는 반대 |

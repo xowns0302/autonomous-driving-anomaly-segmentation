@@ -31,3 +31,6 @@ third_party/
 .vscode/
 .idea/
 external/
+
+# Large generated data (regenerate with src/m2a_save_scores.py)
+results/score_maps/

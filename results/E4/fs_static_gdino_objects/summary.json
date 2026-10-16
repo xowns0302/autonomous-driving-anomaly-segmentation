@@ -1,0 +1,9 @@
+{
+  "config": "../../configs/detseg-s_fs_static.py",
+  "checkpoint": "ckpts/grounding_dino_swin-b_pretrain_all-f9818a7c.pth",
+  "tau": 0.2,
+  "images": 30,
+  "iou_mean_per_image": 14.44,
+  "f1_mean_per_image": 17.24,
+  "boxes_per_image_mean": 3.07
+}
