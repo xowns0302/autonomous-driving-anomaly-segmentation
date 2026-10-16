@@ -16,3 +16,5 @@
 | E1 | [DetSeg-S 재현 (Table 2)](E1_detseg_s_reproduction.md) | 완료: RA·SMIYC 부분 재현, FS L&F·FS Static 불일치 |
 | E2·E3 | [M2A 단독 vs + DetSeg-R (Table 1·2)](E2_E3_m2a_and_detseg_r.md) | 완료: M2A 단독은 논문과 거의 동일, DetSeg-R은 RA·Obstacle 개선 재현 / FS L&F·SMIYC Anomaly 실패 |
 | E4 | [DetSeg-S ablation (Table 6 부분)](E4_detseg_s_ablation.md) | 완료: 논문과 같은 경향, IE-NMS 효과 큼. SMIYC Anomaly는 반대 |
+| A2 | [실패 진단 (IE-NMS가 지우는 것·남기는 것)](A2_failure_diagnosis.md) | 완료: 과소 억제(차량 오탐) + 과잉 억제(SMIYC Anomaly 이상 물체 삭제) |
+| A3 | [IE-NMS bar 논문 방식 보정 (Cityscapes)](A3_ie_nms_bar_calibration.md) | 완료: bar ≈ 0.1 (공개 0.5). FS L&F 14.26 → 24.26, SMIYC Anomaly 69.12 → 54.57 |
