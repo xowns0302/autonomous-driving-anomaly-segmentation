@@ -9,7 +9,8 @@
 |---|---|
 | [docs/01_paper_summary.md](docs/01_paper_summary.md) | 논문 핵심 정리 |
 | [docs/02_scope_and_plan.md](docs/02_scope_and_plan.md) | 실험 범위, 단계, 평가 프로토콜 |
-| docs/03_environment_and_data.md | 환경·데이터 (Phase 0에서 작성) |
+| [docs/03_environment_and_data.md](docs/03_environment_and_data.md) | 환경·데이터 |
+| [docs/04_code_walkthrough.md](docs/04_code_walkthrough.md) | 코드 흐름 설명 (이미지 한 장의 처리 과정, 스크립트 역할) |
 | [docs/experiments/](docs/experiments/) | 실험별 기록 (실행할 때마다 추가) |
 
 ## 구조
