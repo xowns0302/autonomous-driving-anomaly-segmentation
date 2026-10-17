@@ -72,13 +72,16 @@ BACKGROUND = ('road', 'sidewalk', 'building', 'wall', 'vegetation', 'terrain', '
 
 
 def ie_nms_rules(B, S, L, bar_list, iou_thr=0.5, boost=2.0,
-                 background_exempt=False, protect_gamma=None):
+                 background_exempt=False, protect_gamma=None,
+                 verify_scores=None, verify_t=None):
     """IE-NMS with Phase 3 suppression rules; returns kept indices.
 
     Same as ie_nms (boost ID boxes above their bar, then class-agnostic greedy
     NMS), except that an OoD box (label 0) is NOT suppressed by an ID box when
       C1 background_exempt: the ID box is a BACKGROUND class, or
-      C2 protect_gamma:     the OoD box score >= protect_gamma.
+      C2 protect_gamma:     the OoD box score >= protect_gamma, or
+      C5 verify_t:          verify_scores[OoD box] >= verify_t (e.g. the mean
+                            Mask2Anomaly score inside the box).
     OoD-vs-OoD and ID-vs-ID suppression are unchanged. With both rules off the
     result equals ie_nms.
     """
@@ -111,6 +114,8 @@ def ie_nms_rules(B, S, L, bar_list, iou_thr=0.5, boost=2.0,
                 rule |= True
             if protect_gamma is not None:
                 rule |= S[cand] >= protect_gamma
+            if verify_t is not None:
+                rule |= np.asarray(verify_scores)[cand] >= verify_t
             sup &= ~(prot & rule)
         alive[cand[sup]] = False
     return np.array(keep, dtype=np.int64)
