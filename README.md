@@ -14,6 +14,7 @@
 | [docs/05_improvement_plan.md](docs/05_improvement_plan.md) | 개선 계획 (Phase 3, 실행 전 확정) |
 | [docs/06_decision_logic.md](docs/06_decision_logic.md) | 판단 기준 설명 (이미지 한 장의 숫자로) |
 | [docs/07_full_pipeline_explained.md](docs/07_full_pipeline_explained.md) | 사진 한 장이 점수가 되기까지: 등장인물(모델)과 흐름 |
+| [docs/08_prowl_analysis.md](docs/08_prowl_analysis.md) | 관련 논문 분석: Finding Dino (PROWL)과 DetSeg 결합 가능성 |
 | [docs/experiments/](docs/experiments/) | 실험별 기록 (실행할 때마다 추가) |
 
 ## 구조
