@@ -1,0 +1,1945 @@
+{
+ "per_class": 20,
+ "min_area": 4000,
+ "seed": 0,
+ "objects": {
+  "road": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "hanover_000000_025335",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "cologne_000133_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "weimar_000018_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "aachen_000072_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "erfurt_000075_000019",
+    "kind": "semantic",
+    "value": 7
+   },
+   {
+    "image": "aachen_000134_000019",
+    "kind": "semantic",
+    "value": 7
+   }
+  ],
+  "sidewalk": [
+   {
+    "image": "hanover_000000_025335",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "cologne_000133_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "weimar_000018_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "aachen_000072_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "erfurt_000075_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "semantic",
+    "value": 8
+   },
+   {
+    "image": "stuttgart_000193_000019",
+    "kind": "semantic",
+    "value": 8
+   }
+  ],
+  "building": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "hanover_000000_025335",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "cologne_000133_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "weimar_000018_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "aachen_000072_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "erfurt_000075_000019",
+    "kind": "semantic",
+    "value": 11
+   },
+   {
+    "image": "aachen_000134_000019",
+    "kind": "semantic",
+    "value": 11
+   }
+  ],
+  "wall": [
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "darmstadt_000052_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "dusseldorf_000199_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "strasbourg_000000_013223",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "jena_000020_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "weimar_000137_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "bochum_000000_006026",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "erfurt_000024_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "weimar_000055_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "bremen_000236_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "weimar_000133_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "hamburg_000000_030953",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "zurich_000054_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "krefeld_000000_017489",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "tubingen_000042_000019",
+    "kind": "semantic",
+    "value": 12
+   },
+   {
+    "image": "monchengladbach_000000_035718",
+    "kind": "semantic",
+    "value": 12
+   }
+  ],
+  "fence": [
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "stuttgart_000193_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "jena_000110_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "dusseldorf_000047_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "strasbourg_000000_035713",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "bremen_000070_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "jena_000020_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "strasbourg_000001_047702",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "dusseldorf_000105_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "weimar_000040_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "jena_000010_000019",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "hamburg_000000_079376",
+    "kind": "semantic",
+    "value": 13
+   },
+   {
+    "image": "weimar_000137_000019",
+    "kind": "semantic",
+    "value": 13
+   }
+  ],
+  "pole": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "hanover_000000_025335",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "cologne_000133_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "aachen_000072_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "erfurt_000075_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "semantic",
+    "value": 17
+   },
+   {
+    "image": "stuttgart_000193_000019",
+    "kind": "semantic",
+    "value": 17
+   }
+  ],
+  "traffic light": [
+   {
+    "image": "cologne_000133_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "dusseldorf_000047_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "dusseldorf_000091_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "bochum_000000_014332",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "monchengladbach_000000_029240",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "dusseldorf_000199_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "tubingen_000120_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "hamburg_000000_091900",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "bochum_000000_006026",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "hamburg_000000_062371",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "darmstadt_000027_000019",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "hamburg_000000_030953",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "hamburg_000000_053563",
+    "kind": "semantic",
+    "value": 19
+   },
+   {
+    "image": "hamburg_000000_100300",
+    "kind": "semantic",
+    "value": 19
+   }
+  ],
+  "traffic sign": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "hanover_000000_025335",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "weimar_000018_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "aachen_000072_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "erfurt_000075_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "stuttgart_000193_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "dusseldorf_000091_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "darmstadt_000048_000019",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "bochum_000000_014332",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "monchengladbach_000000_029240",
+    "kind": "semantic",
+    "value": 20
+   },
+   {
+    "image": "dusseldorf_000199_000019",
+    "kind": "semantic",
+    "value": 20
+   }
+  ],
+  "vegetation": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "hanover_000000_025335",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "cologne_000133_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "weimar_000018_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "aachen_000072_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "erfurt_000075_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "aachen_000134_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "stuttgart_000114_000019",
+    "kind": "semantic",
+    "value": 21
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "semantic",
+    "value": 21
+   }
+  ],
+  "terrain": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "weimar_000018_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "stuttgart_000114_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "stuttgart_000193_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "dusseldorf_000047_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "darmstadt_000052_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "bochum_000000_014332",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "monchengladbach_000000_029240",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "tubingen_000120_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "bremen_000070_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "tubingen_000066_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "strasbourg_000001_047702",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "dusseldorf_000105_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "weimar_000040_000019",
+    "kind": "semantic",
+    "value": 22
+   },
+   {
+    "image": "jena_000010_000019",
+    "kind": "semantic",
+    "value": 22
+   }
+  ],
+  "sky": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "hanover_000000_025335",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "cologne_000133_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "aachen_000072_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "aachen_000134_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "stuttgart_000114_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "semantic",
+    "value": 23
+   },
+   {
+    "image": "stuttgart_000193_000019",
+    "kind": "semantic",
+    "value": 23
+   }
+  ],
+  "person": [
+   {
+    "image": "hanover_000000_025335",
+    "kind": "instance",
+    "value": 24007
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "instance",
+    "value": 24000
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "instance",
+    "value": 24001
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "instance",
+    "value": 24011
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "instance",
+    "value": 24000
+   },
+   {
+    "image": "weimar_000018_000019",
+    "kind": "instance",
+    "value": 24006
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "instance",
+    "value": 24004
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "instance",
+    "value": 24006
+   },
+   {
+    "image": "erfurt_000075_000019",
+    "kind": "instance",
+    "value": 24000
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "instance",
+    "value": 24023
+   },
+   {
+    "image": "stuttgart_000193_000019",
+    "kind": "instance",
+    "value": 24001
+   },
+   {
+    "image": "strasbourg_000000_035713",
+    "kind": "instance",
+    "value": 24003
+   },
+   {
+    "image": "hamburg_000000_033506",
+    "kind": "instance",
+    "value": 24010
+   },
+   {
+    "image": "strasbourg_000000_013223",
+    "kind": "instance",
+    "value": 24008
+   },
+   {
+    "image": "bremen_000070_000019",
+    "kind": "instance",
+    "value": 24006
+   },
+   {
+    "image": "strasbourg_000001_047702",
+    "kind": "instance",
+    "value": 24001
+   },
+   {
+    "image": "weimar_000040_000019",
+    "kind": "instance",
+    "value": 24006
+   },
+   {
+    "image": "jena_000010_000019",
+    "kind": "instance",
+    "value": 24000
+   },
+   {
+    "image": "aachen_000020_000019",
+    "kind": "instance",
+    "value": 24007
+   },
+   {
+    "image": "hanover_000000_040051",
+    "kind": "instance",
+    "value": 24015
+   }
+  ],
+  "rider": [
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "jena_000110_000019",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "hamburg_000000_033506",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "bremen_000090_000019",
+    "kind": "instance",
+    "value": 25001
+   },
+   {
+    "image": "tubingen_000066_000019",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "jena_000088_000019",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "hamburg_000000_091900",
+    "kind": "instance",
+    "value": 25002
+   },
+   {
+    "image": "weimar_000133_000019",
+    "kind": "instance",
+    "value": 25001
+   },
+   {
+    "image": "strasbourg_000001_049977",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "erfurt_000067_000019",
+    "kind": "instance",
+    "value": 25003
+   },
+   {
+    "image": "erfurt_000025_000019",
+    "kind": "instance",
+    "value": 25002
+   },
+   {
+    "image": "hanover_000000_055592",
+    "kind": "instance",
+    "value": 25002
+   },
+   {
+    "image": "weimar_000042_000019",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "strasbourg_000000_004951",
+    "kind": "instance",
+    "value": 25002
+   },
+   {
+    "image": "hamburg_000000_089491",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "hanover_000000_036562",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "hanover_000000_046398",
+    "kind": "instance",
+    "value": 25000
+   },
+   {
+    "image": "aachen_000138_000019",
+    "kind": "instance",
+    "value": 25001
+   },
+   {
+    "image": "ulm_000082_000019",
+    "kind": "instance",
+    "value": 25000
+   }
+  ],
+  "car": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "instance",
+    "value": 26003
+   },
+   {
+    "image": "hanover_000000_025335",
+    "kind": "instance",
+    "value": 26000
+   },
+   {
+    "image": "cologne_000133_000019",
+    "kind": "instance",
+    "value": 26003
+   },
+   {
+    "image": "krefeld_000000_003707",
+    "kind": "instance",
+    "value": 26016
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "instance",
+    "value": 26001
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "instance",
+    "value": 26000
+   },
+   {
+    "image": "bochum_000000_037829",
+    "kind": "instance",
+    "value": 26005
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "instance",
+    "value": 26003
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "instance",
+    "value": 26008
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "instance",
+    "value": 26003
+   },
+   {
+    "image": "monchengladbach_000000_000076",
+    "kind": "instance",
+    "value": 26006
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "instance",
+    "value": 26009
+   },
+   {
+    "image": "ulm_000001_000019",
+    "kind": "instance",
+    "value": 26012
+   },
+   {
+    "image": "strasbourg_000000_015764",
+    "kind": "instance",
+    "value": 26002
+   },
+   {
+    "image": "hamburg_000000_050160",
+    "kind": "instance",
+    "value": 26006
+   },
+   {
+    "image": "aachen_000072_000019",
+    "kind": "instance",
+    "value": 26005
+   },
+   {
+    "image": "erfurt_000075_000019",
+    "kind": "instance",
+    "value": 26000
+   },
+   {
+    "image": "aachen_000134_000019",
+    "kind": "instance",
+    "value": 26015
+   },
+   {
+    "image": "stuttgart_000114_000019",
+    "kind": "instance",
+    "value": 26007
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "instance",
+    "value": 26004
+   }
+  ],
+  "truck": [
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "instance",
+    "value": 27003
+   },
+   {
+    "image": "dusseldorf_000173_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "hamburg_000000_033506",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "bremen_000070_000019",
+    "kind": "instance",
+    "value": 27001
+   },
+   {
+    "image": "cologne_000080_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "darmstadt_000027_000019",
+    "kind": "instance",
+    "value": 27002
+   },
+   {
+    "image": "hamburg_000000_099109",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "darmstadt_000066_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "stuttgart_000132_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "hanover_000000_036562",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "hamburg_000000_102379",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "darmstadt_000012_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "darmstadt_000009_000019",
+    "kind": "instance",
+    "value": 27001
+   },
+   {
+    "image": "hamburg_000000_094717",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "hanover_000000_012675",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "stuttgart_000043_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "darmstadt_000007_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "stuttgart_000068_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "ulm_000060_000019",
+    "kind": "instance",
+    "value": 27000
+   },
+   {
+    "image": "stuttgart_000049_000019",
+    "kind": "instance",
+    "value": 27000
+   }
+  ],
+  "bus": [
+   {
+    "image": "cologne_000133_000019",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "darmstadt_000026_000019",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "hamburg_000000_062371",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "hamburg_000000_036003",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "strasbourg_000000_004112",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "hamburg_000000_100300",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "hamburg_000000_053086",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "jena_000022_000019",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "weimar_000007_000019",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "cologne_000064_000019",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "weimar_000127_000019",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "jena_000007_000019",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "strasbourg_000001_057517",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "hamburg_000000_037161",
+    "kind": "instance",
+    "value": 28001
+   },
+   {
+    "image": "bremen_000232_000019",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "hamburg_000000_099902",
+    "kind": "instance",
+    "value": 28001
+   },
+   {
+    "image": "bremen_000287_000019",
+    "kind": "instance",
+    "value": 28001
+   },
+   {
+    "image": "krefeld_000000_032390",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "strasbourg_000001_047336",
+    "kind": "instance",
+    "value": 28000
+   },
+   {
+    "image": "tubingen_000091_000019",
+    "kind": "instance",
+    "value": 28000
+   }
+  ],
+  "train": [
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "dusseldorf_000090_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "hamburg_000000_062371",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "zurich_000080_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "dusseldorf_000089_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "zurich_000092_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "zurich_000003_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "cologne_000064_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "darmstadt_000007_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "bremen_000168_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "stuttgart_000069_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "zurich_000040_000019",
+    "kind": "instance",
+    "value": 31001
+   },
+   {
+    "image": "zurich_000082_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "erfurt_000102_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "bremen_000003_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "strasbourg_000001_026856",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "hamburg_000000_008494",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "zurich_000009_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "bremen_000132_000019",
+    "kind": "instance",
+    "value": 31000
+   },
+   {
+    "image": "bremen_000035_000019",
+    "kind": "instance",
+    "value": 31000
+   }
+  ],
+  "motorcycle": [
+   {
+    "image": "bremen_000203_000019",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "strasbourg_000000_013223",
+    "kind": "instance",
+    "value": 32001
+   },
+   {
+    "image": "cologne_000030_000019",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "dusseldorf_000105_000019",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "hanover_000000_040051",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "hamburg_000000_091900",
+    "kind": "instance",
+    "value": 32002
+   },
+   {
+    "image": "strasbourg_000001_049977",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "hamburg_000000_071675",
+    "kind": "instance",
+    "value": 32001
+   },
+   {
+    "image": "bochum_000000_014803",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "stuttgart_000027_000019",
+    "kind": "instance",
+    "value": 32003
+   },
+   {
+    "image": "strasbourg_000001_042869",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "zurich_000092_000019",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "dusseldorf_000006_000019",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "dusseldorf_000005_000019",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "strasbourg_000001_057517",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "jena_000008_000019",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "aachen_000038_000019",
+    "kind": "instance",
+    "value": 32002
+   },
+   {
+    "image": "hamburg_000000_099902",
+    "kind": "instance",
+    "value": 32000
+   },
+   {
+    "image": "cologne_000071_000019",
+    "kind": "instance",
+    "value": 32000
+   }
+  ],
+  "bicycle": [
+   {
+    "image": "erfurt_000051_000019",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "krefeld_000000_007325",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "tubingen_000056_000019",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "strasbourg_000000_010816",
+    "kind": "instance",
+    "value": 33004
+   },
+   {
+    "image": "cologne_000047_000019",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "aachen_000016_000019",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "jena_000110_000019",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "strasbourg_000001_006916",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "hamburg_000000_033506",
+    "kind": "instance",
+    "value": 33001
+   },
+   {
+    "image": "strasbourg_000000_013223",
+    "kind": "instance",
+    "value": 33012
+   },
+   {
+    "image": "bremen_000090_000019",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "cologne_000030_000019",
+    "kind": "instance",
+    "value": 33001
+   },
+   {
+    "image": "tubingen_000066_000019",
+    "kind": "instance",
+    "value": 33001
+   },
+   {
+    "image": "strasbourg_000001_047702",
+    "kind": "instance",
+    "value": 33007
+   },
+   {
+    "image": "weimar_000133_000019",
+    "kind": "instance",
+    "value": 33002
+   },
+   {
+    "image": "dusseldorf_000197_000019",
+    "kind": "instance",
+    "value": 33001
+   },
+   {
+    "image": "tubingen_000042_000019",
+    "kind": "instance",
+    "value": 33001
+   },
+   {
+    "image": "strasbourg_000000_004112",
+    "kind": "instance",
+    "value": 33003
+   },
+   {
+    "image": "bremen_000275_000019",
+    "kind": "instance",
+    "value": 33000
+   },
+   {
+    "image": "hamburg_000000_099109",
+    "kind": "instance",
+    "value": 33001
+   }
+  ]
+ }
+}

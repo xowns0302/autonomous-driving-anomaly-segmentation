@@ -24,3 +24,4 @@
 | I4 | [M2A로 확인하는 IE-NMS C5](I4_m2a_verified_ie_nms.md) | **성공**: 검증 SMIYC Obstacle 77.93 → 80.93, Anomaly 54.57 → 78.06 (DetSeg-S). FS L&F 32.67로 논문 수치 도달 |
 | T1 | [처리 시간 분석](T1_latency_profile.md) | DetSeg-S 808 ms 중 SAM 54% (대부분 CPU 전·후처리), 검출 23%. DetSeg-R 227 ms (논문 225 ms) |
 | T2 | [처리 시간 baseline](T2_latency_baseline.md) | 고정 측정 규칙. DetSeg-S 603~808 ms, DetSeg-S + C5 약 1.1~1.2 s, M2A + DetSeg-R + C5 667~857 ms |
+| P1 | [PROWL prototype 신호 사전 분석](P1_prowl_presignal.md) | 지운 후보 구분 AUC FS 0.985 / RA 0.81 (M2A 0.945 / 0.715), 남은 후보 FS 0.941 (M2A 0.681), RA 0.48. M2A보다 5~9배 빠름 |

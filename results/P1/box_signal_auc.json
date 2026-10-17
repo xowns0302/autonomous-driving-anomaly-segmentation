@@ -1,0 +1,24 @@
+{
+  "fs_lostfound": {
+    "suppressed/proto_box": 0.9847301200064578,
+    "suppressed/proto_patch": 0.9819541858754732,
+    "suppressed/m2a": 0.9447772974330457,
+    "kept/proto_box": 0.9407951598962835,
+    "kept/proto_patch": 0.9264381062133871,
+    "kept/m2a": 0.6807356189378662,
+    "all/proto_box": 0.9807716011339824,
+    "all/proto_patch": 0.9751589160254266,
+    "all/m2a": 0.9208897536581501
+  },
+  "road_anomaly": {
+    "suppressed/proto_box": 0.7935175011772092,
+    "suppressed/proto_patch": 0.8107675404175169,
+    "suppressed/m2a": 0.7146130905666301,
+    "kept/proto_box": 0.48077938071780435,
+    "kept/proto_patch": 0.47323627726952844,
+    "kept/m2a": 0.4319581280788177,
+    "all/proto_box": 0.6971323708576997,
+    "all/proto_patch": 0.7010005482456141,
+    "all/m2a": 0.6303956505847953
+  }
+}
