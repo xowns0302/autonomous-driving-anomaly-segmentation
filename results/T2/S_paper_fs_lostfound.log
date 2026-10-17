@@ -1,0 +1,27 @@
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([1024, 2048]) to torch.Size([1, 1024, 2048])
+  warnings.warn('The shape of value will convert from '
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-s_fs_lostfound.py | 3 runs x 30 images (after 5 warm-up) | peak GPU memory 3.60 GiB
+  data                  112.9 ms   18.7%
+  preprocess              2.1 ms    0.3%
+  backbone               63.7 ms   10.6%
+  neck                    1.1 ms    0.2%
+  text                   27.7 ms    4.6%
+  encoder                56.5 ms    9.4%
+  query_sel               7.0 ms    1.2%
+  decoder                23.4 ms    3.9%
+  head_excl_ie_nms        9.0 ms    1.5%
+  ie_nms                  1.1 ms    0.2%
+  sam_prep               96.0 ms   15.9%
+  sam_image_encoder      88.2 ms   14.6%
+  sam_mask_decoder        7.0 ms    1.2%
+  sam_post               67.1 ms   11.1%
+  other_in_model         40.5 ms    6.7%
+  model_total           490.2 ms  (std over runs 5.4, runs [497.1, 483.9, 489.7])
+  total                 603.1 ms  (std over runs 5.6, runs [609.9, 596.2, 603.3])

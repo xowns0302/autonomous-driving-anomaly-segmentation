@@ -23,3 +23,4 @@
 | I3 | [고해상도 추론 C4](I3_high_resolution.md) | **기각**: 1.25배 FS 24.26 → 10.72, 1.5배 → 0.32 (학습 해상도 밖에서 box 예측 붕괴) |
 | I4 | [M2A로 확인하는 IE-NMS C5](I4_m2a_verified_ie_nms.md) | **성공**: 검증 SMIYC Obstacle 77.93 → 80.93, Anomaly 54.57 → 78.06 (DetSeg-S). FS L&F 32.67로 논문 수치 도달 |
 | T1 | [처리 시간 분석](T1_latency_profile.md) | DetSeg-S 808 ms 중 SAM 54% (대부분 CPU 전·후처리), 검출 23%. DetSeg-R 227 ms (논문 225 ms) |
+| T2 | [처리 시간 baseline](T2_latency_baseline.md) | 고정 측정 규칙. DetSeg-S 603~808 ms, DetSeg-S + C5 약 1.1~1.2 s, M2A + DetSeg-R + C5 667~857 ms |

@@ -29,6 +29,7 @@ def main():
     p.add_argument('--n', type=int, default=30)
     p.add_argument('--warmup', type=int, default=5)
     p.add_argument('--out', required=True)
+    p.add_argument('--repeats', type=int, default=3)
     args = p.parse_args()
 
     repo = os.path.abspath(args.m2a_repo)
@@ -50,30 +51,35 @@ def main():
     def sync():
         torch.cuda.synchronize()
 
-    paths = sorted(glob.glob(os.path.expanduser(args.images)))[:args.n + args.warmup]
-    rows = []
-    for i, path in enumerate(paths):
-        t = {}
-        s = time.perf_counter(); img = read_image(path, format='BGR'); t['read'] = time.perf_counter() - s
-        sync(); s = time.perf_counter()
-        pa = demo.predictor(img); pb = demo.predictor(np.fliplr(img).copy())
-        sync(); t['model_2x'] = time.perf_counter() - s
-        s = time.perf_counter()
-        score = (official_score(pa) + np.flip(official_score(pb).squeeze(), 1)) / 2.0
-        t['score'] = time.perf_counter() - s
-        # what the official demo additionally does per call (visualisation), x2
-        s = time.perf_counter(); demo.run_on_image(img); demo.run_on_image(np.fliplr(img).copy()); sync()
-        t['official_run_on_image_2x'] = time.perf_counter() - s
-        if i >= args.warmup:
-            rows.append({k: v * 1000 for k, v in t.items()})
+    allp = sorted(glob.glob(os.path.expanduser(args.images)))
+    paths = [allp[i % len(allp)] for i in range(args.n + args.warmup)]   # small datasets are cycled
+    rows, run_needed = [], []
+    for rep in range(args.repeats):
+      run_rows = []
+      for i, path in enumerate(paths):
+          t = {}
+          s = time.perf_counter(); img = read_image(path, format='BGR'); t['read'] = time.perf_counter() - s
+          sync(); s = time.perf_counter()
+          pa = demo.predictor(img); pb = demo.predictor(np.fliplr(img).copy())
+          sync(); t['model_2x'] = time.perf_counter() - s
+          s = time.perf_counter()
+          score = (official_score(pa) + np.flip(official_score(pb).squeeze(), 1)) / 2.0
+          t['score'] = time.perf_counter() - s
+          # what the official demo additionally does per call (visualisation), x2
+          s = time.perf_counter(); demo.run_on_image(img); demo.run_on_image(np.fliplr(img).copy()); sync()
+          t['official_run_on_image_2x'] = time.perf_counter() - s
+          if i >= args.warmup:
+              run_rows.append({k: v * 1000 for k, v in t.items()})
+      rows += run_rows
+      run_needed.append(float(np.mean([r['read'] + r['model_2x'] + r['score'] for r in run_rows])))
     mean = {k: float(np.mean([r[k] for r in rows])) for k in rows[0]}
     mean['visualisation_overhead_2x'] = mean['official_run_on_image_2x'] - mean['model_2x']
     mean['needed_total'] = mean['read'] + mean['model_2x'] + mean['score']
-    print(f'Mask2Anomaly | {len(rows)} images | peak GPU {torch.cuda.max_memory_allocated() / 2**30:.2f} GiB')
+    print(f'Mask2Anomaly | {args.repeats} runs x {args.n} images | needed_total per run {[round(x, 1) for x in run_needed]} | peak GPU {torch.cuda.max_memory_allocated() / 2**30:.2f} GiB')
     for k, v in mean.items():
         print(f'  {k:28s} {v:8.1f} ms')
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
-    json.dump(dict(images=len(rows), mean_ms=mean, peak_gpu_gib=torch.cuda.max_memory_allocated() / 2**30,
+    json.dump(dict(images=args.n, repeats=args.repeats, run_needed_total=run_needed, mean_ms=mean, peak_gpu_gib=torch.cuda.max_memory_allocated() / 2**30,
                    gpu=torch.cuda.get_device_name(0)), open(args.out, 'w'), indent=2)
 
 

@@ -1,0 +1,27 @@
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([720, 1280]) to torch.Size([1, 720, 1280])
+  warnings.warn('The shape of value will convert from '
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-s_road_anomaly.py | 3 runs x 30 images (after 5 warm-up) | peak GPU memory 3.60 GiB
+  data                   48.2 ms    7.8%
+  preprocess              1.8 ms    0.3%
+  backbone               69.2 ms   11.3%
+  neck                    1.1 ms    0.2%
+  text                   28.0 ms    4.6%
+  encoder                64.2 ms   10.4%
+  query_sel               7.2 ms    1.2%
+  decoder                23.5 ms    3.8%
+  head_excl_ie_nms        9.1 ms    1.5%
+  ie_nms                  1.0 ms    0.2%
+  sam_prep               80.0 ms   13.0%
+  sam_image_encoder     119.5 ms   19.4%
+  sam_mask_decoder       14.6 ms    2.4%
+  sam_post              108.8 ms   17.7%
+  other_in_model         39.1 ms    6.4%
+  model_total           567.1 ms  (std over runs 2.9, runs [564.7, 571.2, 565.5])
+  total                 615.3 ms  (std over runs 3.1, runs [612.5, 619.6, 613.9])

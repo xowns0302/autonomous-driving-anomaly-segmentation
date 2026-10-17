@@ -1,0 +1,4 @@
+NVIDIA GeForce RTX 4070 Ti, 616.92, 12282 MiB
+Model name:                              AMD Ryzen 5 3600 6-Core Processor
+Sat Oct 17 23:24:34 KST 2026
+6c10670
