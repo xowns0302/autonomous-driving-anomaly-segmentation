@@ -1,0 +1,13 @@
+{
+  "images": 30,
+  "mean_ms": {
+    "read": 68.64345239882823,
+    "model_2x": 417.64641703193774,
+    "score": 7.280009900083921,
+    "official_run_on_image_2x": 1857.988704267579,
+    "visualisation_overhead_2x": 1440.3422872356412,
+    "needed_total": 493.5698793308499
+  },
+  "peak_gpu_gib": 3.7316794395446777,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti"
+}

@@ -71,7 +71,7 @@ def main():
     def wrap(obj, attr, name):
         setattr(obj, attr, timed(name, getattr(obj, attr)))
 
-    wrap(model, 'data_preprocessor', 'preprocess')
+    wrap(model.data_preprocessor, 'forward', 'preprocess')
     wrap(model.backbone, 'forward', 'backbone')
     wrap(model.neck, 'forward', 'neck')
     wrap(model.language_model, 'forward', 'text')

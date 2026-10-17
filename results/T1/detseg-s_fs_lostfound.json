@@ -1,0 +1,27 @@
+{
+  "config": "../../configs/detseg-s_fs_lostfound.py",
+  "images": 30,
+  "warmup": 5,
+  "peak_gpu_gib": 3.601715087890625,
+  "mean_ms": {
+    "data": 117.90701590070967,
+    "preprocess": 1.9482955680966068,
+    "backbone": 63.640474734226395,
+    "neck": 1.0471607335299875,
+    "text": 27.224235200264957,
+    "encoder": 56.104686166509055,
+    "query_sel": 6.959997799519139,
+    "decoder": 23.850108333863318,
+    "head": 10.548871900634063,
+    "ie_nms": 1.7847245990803156,
+    "sam_prep": 128.69789336885637,
+    "sam_image_encoder": 119.01111473222652,
+    "sam_mask_decoder": 12.552664767523916,
+    "sam_post": 174.76298899903972,
+    "model_total": 689.9900337351331,
+    "total": 807.8970496358428,
+    "other_in_model": 63.64154143084306,
+    "head_excl_ie_nms": 8.764147301553749
+  },
+  "gpu": "NVIDIA GeForce RTX 4070 Ti"
+}

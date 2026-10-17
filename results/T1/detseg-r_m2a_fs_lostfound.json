@@ -1,0 +1,24 @@
+{
+  "config": "../../configs/detseg-r_m2a_fs_lostfound.py",
+  "images": 30,
+  "warmup": 5,
+  "peak_gpu_gib": 1.4439191818237305,
+  "mean_ms": {
+    "data": 87.29579066518151,
+    "preprocess": 3.774493066885043,
+    "backbone": 63.852328734841045,
+    "neck": 1.07041413236099,
+    "text": 27.228089631535113,
+    "encoder": 56.19254663470201,
+    "query_sel": 6.968262302204191,
+    "decoder": 23.498541000299156,
+    "head": 10.548199265516208,
+    "ie_nms": 1.827484000144371,
+    "boost": 1.0759439998461555,
+    "model_total": 226.97960483492352,
+    "total": 314.27539550010505,
+    "other_in_model": 32.77078606673362,
+    "head_excl_ie_nms": 8.720715265371837
+  },
+  "gpu": "NVIDIA GeForce RTX 4070 Ti"
+}
