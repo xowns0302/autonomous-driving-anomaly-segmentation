@@ -51,13 +51,49 @@ def main():
                    help='C5: folder with Mask2Anomaly score maps ({image name}.npy)')
     p.add_argument('--verify-t', type=float, default=None,
                    help='C5: OoD boxes whose mean M2A score >= t cannot be suppressed by ID boxes')
+    p.add_argument('--prowl-bank', default=None,
+                   help='C6/C7: prototype bank npz (src/prowl_bank.py)')
+    p.add_argument('--protect-t6', type=float, default=None,
+                   help='C6: OoD boxes with proto_box >= t6 cannot be suppressed by ID boxes')
+    p.add_argument('--reject-t7', type=float, default=None,
+                   help='C7: kept OoD boxes with proto_box < t7 are dropped')
     args = p.parse_args(sys.argv[1:i])
     bar_list = load_bars(args.bars, args.stat)
     print('IE-NMS bars:', {c: round(b, 4) for c, b in zip(CLASSES[1:], bar_list)}, flush=True)
     print('rules: background_exempt =', args.background_exempt, '| protect_gamma =', args.protect_gamma,
           '| road_alpha =', args.road_alpha, '| verify_t =', args.verify_t, args.m2a_dir, flush=True)
-    use_rules = args.background_exempt or args.protect_gamma is not None or args.verify_t is not None
+    print('PROWL: bank =', args.prowl_bank, '| t6 =', args.protect_t6, '| t7 =', args.reject_t7, flush=True)
+    use_rules = (args.background_exempt or args.protect_gamma is not None or args.verify_t is not None
+                 or args.protect_t6 is not None)
     current = {}
+    prowl = {}
+    if args.prowl_bank:
+        import numpy as np
+        from prowl_bank import load_model, patch_features
+        prowl['model'] = load_model()
+        prowl['P'] = torch.from_numpy(np.load(args.prowl_bank)['prototypes']).cuda()
+
+    def proto_box(img_path, B):
+        """PROWL signal per box: 1 - max cosine(mean DINOv2 patch feature in box, prototypes)."""
+        import numpy as np
+        from PIL import Image
+        if prowl.get('img_path') != img_path:          # one DINOv2 pass per image
+            img = np.array(Image.open(img_path).convert('RGB'))
+            prowl['feat'], _ = patch_features(prowl['model'], img)
+            prowl['HW'], prowl['img_path'] = img.shape[:2], img_path
+        feat, (H, W) = prowl['feat'], prowl['HW']
+        h, w, D = feat.shape
+        out = np.zeros(len(B), np.float32)
+        P = prowl['P'].reshape(-1, D)
+        for j, (x1, y1, x2, y2) in enumerate(B):
+            x1, x2 = np.clip([x1, x2], 0, W); y1, y2 = np.clip([y1, y2], 0, H)
+            gx1, gx2 = int(x1 / W * w), int(np.ceil(x2 / W * w))
+            gy1, gy2 = int(y1 / H * h), int(np.ceil(y2 / H * h))
+            gx1, gy1 = min(gx1, w - 1), min(gy1, h - 1)
+            gx2, gy2 = max(gx2, gx1 + 1), max(gy2, gy1 + 1)
+            v = torch.nn.functional.normalize(feat[gy1:gy2, gx1:gx2].reshape(-1, D).mean(0), dim=0)
+            out[j] = 1 - float((P @ v).max())
+        return out
 
     import mmdet.detseg_utils  # noqa: F401
     from mmengine.structures import InstanceData
@@ -78,15 +114,28 @@ def main():
     def _ie_nms(self, bboxes, scores, labels):
         if use_rules:
             Bn = bboxes.cpu().numpy()
-            vs = box_means(current['img_path'], Bn) if args.verify_t is not None else None
+            if args.protect_t6 is not None:
+                vs, vt = proto_box(current['img_path'], Bn), args.protect_t6
+            elif args.verify_t is not None:
+                vs, vt = box_means(current['img_path'], Bn), args.verify_t
+            else:
+                vs, vt = None, None
             k = ie_nms_rules(Bn, scores.cpu().numpy(), labels.cpu().numpy(), bar_list,
                              background_exempt=args.background_exempt, protect_gamma=args.protect_gamma,
-                             verify_scores=vs, verify_t=args.verify_t)
+                             verify_scores=vs, verify_t=vt)
         else:
             k = ie_nms(bboxes.cpu(), scores.cpu(), labels.cpu(), bar_list)
         keep = torch.as_tensor(k, device=bboxes.device).long()
         r = InstanceData()
         r.bboxes, r.scores, r.labels = bboxes[keep], scores[keep], labels[keep]
+        if args.reject_t7 is not None:
+            # C7: drop kept OoD boxes that look like a known class (score 0 -> removed by tau)
+            ood = (r.labels == 0).cpu().numpy()
+            if ood.any():
+                pb = proto_box(current['img_path'], r.bboxes.cpu().numpy())
+                drop = torch.as_tensor(ood & (pb < args.reject_t7), device=r.scores.device)
+                r.scores = r.scores.clone()
+                r.scores[drop] = 0.0
         if args.road_alpha is not None:
             road = bboxes[(labels == CLASSES.index('road')) & (scores > args.road_score_thr)]
             if len(road):
