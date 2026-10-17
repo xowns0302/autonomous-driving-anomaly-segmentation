@@ -43,10 +43,15 @@ def main():
                    help='C1: background-class ID boxes cannot suppress OoD boxes')
     p.add_argument('--protect-gamma', type=float, default=None,
                    help='C2: OoD boxes with score >= gamma cannot be suppressed by ID boxes')
+    p.add_argument('--road-alpha', type=float, default=None,
+                   help='C3: OoD boxes whose bottom-center lies outside every predicted road box get score x alpha')
+    p.add_argument('--road-score-thr', type=float, default=0.2,
+                   help='C3: ID-branch road boxes with score above this define the road area')
     args = p.parse_args(sys.argv[1:i])
     bar_list = load_bars(args.bars, args.stat)
     print('IE-NMS bars:', {c: round(b, 4) for c, b in zip(CLASSES[1:], bar_list)}, flush=True)
-    print('rules: background_exempt =', args.background_exempt, '| protect_gamma =', args.protect_gamma, flush=True)
+    print('rules: background_exempt =', args.background_exempt, '| protect_gamma =', args.protect_gamma,
+          '| road_alpha =', args.road_alpha, flush=True)
     use_rules = args.background_exempt or args.protect_gamma is not None
 
     import mmdet.detseg_utils  # noqa: F401
@@ -62,6 +67,16 @@ def main():
         keep = torch.as_tensor(k, device=bboxes.device).long()
         r = InstanceData()
         r.bboxes, r.scores, r.labels = bboxes[keep], scores[keep], labels[keep]
+        if args.road_alpha is not None:
+            road = bboxes[(labels == CLASSES.index('road')) & (scores > args.road_score_thr)]
+            if len(road):
+                b = r.bboxes
+                fx, fy = (b[:, 0] + b[:, 2]) / 2, b[:, 3] - 1          # bottom-center point
+                on = ((road[None, :, 0] <= fx[:, None]) & (fx[:, None] <= road[None, :, 2]) &
+                      (road[None, :, 1] <= fy[:, None]) & (fy[:, None] <= road[None, :, 3])).any(1)
+                off = (r.labels == 0) & ~on
+                r.scores = r.scores.clone()
+                r.scores[off] *= args.road_alpha
         return r
     GroundingDINOHeadWithUniversalObjectness._ie_nms = _ie_nms
 

@@ -19,3 +19,4 @@
 | A2 | [실패 진단 (IE-NMS가 지우는 것·남기는 것)](A2_failure_diagnosis.md) | 완료: 과소 억제(차량 오탐) + 과잉 억제(SMIYC Anomaly 이상 물체 삭제) |
 | A3 | [IE-NMS bar 논문 방식 보정 (Cityscapes)](A3_ie_nms_bar_calibration.md) | 완료: bar ≈ 0.1 (공개 0.5). FS L&F 14.26 → 24.26, SMIYC Anomaly 69.12 → 54.57 |
 | I1 | [억제 규칙 C1·C2](I1_suppression_rules.md) | **기각**: 두 규칙 모두 튜닝셋에서 크게 악화 (배경 box는 거대 오탐을 지우는 역할, objectness는 아는 물체에 더 높음) |
+| I2 | [도로 문맥 재점수화 C3](I2_road_context.md) | **채택 안 함**: 튜닝 +0.54, 검증 개선 없음 (bar 보정이 도로 밖 오탐을 이미 제거) |
