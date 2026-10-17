@@ -26,3 +26,4 @@
 | T2 | [처리 시간 baseline](T2_latency_baseline.md) | 고정 측정 규칙. DetSeg-S 603~808 ms, DetSeg-S + C5 약 1.1~1.2 s, M2A + DetSeg-R + C5 667~857 ms |
 | P1 | [PROWL prototype 신호 사전 분석](P1_prowl_presignal.md) | 지운 후보 구분 AUC FS 0.985 / RA 0.81 (M2A 0.945 / 0.715), 남은 후보 FS 0.941 (M2A 0.681), RA 0.48. M2A보다 5~9배 빠름 |
 | I5 | [PROWL 신호로 보호(C6)·제거(C7)](I5_prowl_rules.md) | C6 **기각** (RA 하락). C7 선택: 튜닝 +2.35, 검증 +0.1 수준 (FS L&F 오탐 제거에만 효과) |
+| I6 | [C5 + C7 조합 (C8)](I6_c5_c7_combined.md) | 성공 기준 충족. FS L&F 38.44 (최고), SMIYC Obstacle 81.03, SMIYC Anomaly 69.58 (C5 78.06보다 낮음). 가장 느림 (DetSeg-S 1.15~1.37 s) |

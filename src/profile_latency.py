@@ -30,7 +30,7 @@ from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 from torch.utils.data import DataLoader, Subset
 
-STAGES = ['data', 'c5_box_means', 'preprocess', 'backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder',
+STAGES = ['data', 'c5_box_means', 'c7_prowl', 'preprocess', 'backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder',
           'head', 'ie_nms', 'sam_prep', 'sam_image_encoder', 'sam_mask_decoder', 'sam_post', 'boost']
 
 
@@ -45,6 +45,8 @@ def main():
     p.add_argument('--bars', default=None, help='calibrated bar json (A3); default: released bars')
     p.add_argument('--m2a-dir', default=None, help='C5: Mask2Anomaly score-map folder')
     p.add_argument('--verify-t', type=float, default=None, help='C5 threshold')
+    p.add_argument('--prowl-bank', default=None, help='C7: prototype bank npz')
+    p.add_argument('--reject-t7', type=float, default=None, help='C7 threshold')
     args = p.parse_args()
 
     import mmdet.detseg_utils  # noqa: F401
@@ -86,7 +88,7 @@ def main():
     wrap(model, 'forward_decoder', 'decoder')
     wrap(model.bbox_head, 'predict', 'head')
     wrap(model.bbox_head, '_ie_nms', 'ie_nms')
-    if args.bars or args.verify_t is not None:
+    if args.bars or args.verify_t is not None or args.reject_t7 is not None:
         # Same replacement as src/run_with_bars.py (bars and/or C5), with C5's box-mean cost timed.
         import os
         import sys
@@ -124,7 +126,38 @@ def main():
             keep = torch.as_tensor(k, device=bboxes.device).long()
             r = InstanceData()
             r.bboxes, r.scores, r.labels = bboxes[keep], scores[keep], labels[keep]
+            if args.reject_t7 is not None:
+                torch.cuda.synchronize(); t = time.perf_counter()
+                ood = (r.labels == 0).cpu().numpy()
+                if ood.any():
+                    pb = proto_box(state['img_path'], r.bboxes.cpu().numpy())
+                    drop = torch.as_tensor(ood & (pb < args.reject_t7), device=r.scores.device)
+                    r.scores = r.scores.clone()
+                    r.scores[drop] = 0.0
+                torch.cuda.synchronize(); cur['c7_prowl'] += (time.perf_counter() - t) * 1000
             return r
+
+        if args.reject_t7 is not None:
+            from PIL import Image
+            from prowl_bank import load_model, patch_features
+            dino = load_model()
+            P = torch.from_numpy(np.load(args.prowl_bank)['prototypes']).cuda()
+
+            def proto_box(img_path, B):
+                img = np.array(Image.open(img_path).convert('RGB'))
+                feat, _ = patch_features(dino, img)
+                H, W = img.shape[:2]
+                h, w, D = feat.shape
+                Pf = P.reshape(-1, D)
+                out = np.zeros(len(B), np.float32)
+                for j, (x1, y1, x2, y2) in enumerate(B):
+                    x1, x2 = np.clip([x1, x2], 0, W); y1, y2 = np.clip([y1, y2], 0, H)
+                    gx1, gx2 = min(int(x1 / W * w), w - 1), int(np.ceil(x2 / W * w))
+                    gy1, gy2 = min(int(y1 / H * h), h - 1), int(np.ceil(y2 / H * h))
+                    gx2, gy2 = max(gx2, gx1 + 1), max(gy2, gy1 + 1)
+                    v = torch.nn.functional.normalize(feat[gy1:gy2, gx1:gx2].reshape(-1, D).mean(0), dim=0)
+                    out[j] = 1 - float((Pf @ v).max())
+                return out
         model.bbox_head._ie_nms = _ie_nms.__get__(model.bbox_head)
 
     wrap(model.bbox_head, '_ie_nms', 'ie_nms')
@@ -188,14 +221,14 @@ def main():
     keys = [k for k in STAGES if any(k in r for r in rows)] + ['model_total', 'total']
     mean = {k: float(np.mean([r.get(k, 0.0) for r in rows])) for k in keys}
     nested = {'head': mean.get('head', 0) - mean.get('ie_nms', 0)}   # head time without IE-NMS
-    accounted = sum(mean.get(k, 0) for k in STAGES if k not in ('data', 'head', 'ie_nms', 'c5_box_means')) + \
+    accounted = sum(mean.get(k, 0) for k in STAGES if k not in ('data', 'head', 'ie_nms', 'c5_box_means', 'c7_prowl')) + \
         nested['head'] + mean.get('ie_nms', 0)
     mean['other_in_model'] = mean['model_total'] - accounted
     mean['head_excl_ie_nms'] = nested['head']
 
     print(f'{args.config} | {args.repeats} runs x {args.images} images (after {args.warmup} warm-up) | '
           f'peak GPU memory {torch.cuda.max_memory_allocated() / 2**30:.2f} GiB')
-    order = ['data', 'c5_box_means', 'preprocess', 'backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder',
+    order = ['data', 'c5_box_means', 'c7_prowl', 'preprocess', 'backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder',
              'head_excl_ie_nms', 'ie_nms', 'sam_prep', 'sam_image_encoder', 'sam_mask_decoder', 'sam_post',
              'boost', 'other_in_model']
     for k in order:
@@ -206,7 +239,7 @@ def main():
         print(f'  {k:18s} {np.mean(v):8.1f} ms  (std over runs {np.std(v):.1f}, runs {[round(x, 1) for x in v]})')
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     json.dump(dict(config=args.config, images=args.images, warmup=args.warmup, repeats=args.repeats,
-                   bars=args.bars, verify_t=args.verify_t, run_means=run_means,
+                   bars=args.bars, verify_t=args.verify_t, reject_t7=args.reject_t7, run_means=run_means,
                    peak_gpu_gib=torch.cuda.max_memory_allocated() / 2**30, mean_ms=mean,
                    gpu=torch.cuda.get_device_name(0)), open(args.out, 'w'), indent=2)
 

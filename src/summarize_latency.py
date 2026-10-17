@@ -13,8 +13,9 @@ import numpy as np
 
 DATASETS = ['fs_lostfound', 'road_anomaly', 'smiyc_obstacle', 'smiyc_anomaly']
 METHODS = [('S_released', 'DetSeg-S (공개본)', False), ('S_paper', 'DetSeg-S (논문 방식 bar)', False),
-           ('S_c5', 'DetSeg-S + C5', True), ('R_released', 'M2A + DetSeg-R (공개본)', True),
-           ('R_c5', 'M2A + DetSeg-R + C5', True)]
+           ('S_c5', 'DetSeg-S + C5', True), ('S_c7', 'DetSeg-S + C7', False), ('S_c8', 'DetSeg-S + C8 (C5+C7)', True),
+           ('R_released', 'M2A + DetSeg-R (공개본)', True), ('R_c5', 'M2A + DetSeg-R + C5', True),
+           ('R_c8', 'M2A + DetSeg-R + C8', True)]
 DET = ['backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder', 'head_excl_ie_nms', 'ie_nms']
 SAM = ['sam_prep', 'sam_image_encoder', 'sam_mask_decoder', 'sam_post']
 
@@ -35,12 +36,12 @@ def main():
     if os.path.exists(env):
         print('```\n' + open(env).read().strip() + '\n```\n')
     print('30 images after 5 warm-up, 3 repeats, batch 1. Values: mean ± std over repeats (ms/image).\n')
-    print('| Dataset | 방법 | DetSeg 모델 | 데이터 읽기 | M2A 점수 지도 | **이미지당 합계** | 검출 | SAM | C5 |')
-    print('|---|---|---|---|---|---|---|---|---|')
+    print('| Dataset | 방법 | DetSeg 모델 | 데이터 읽기 | M2A 점수 지도 | **이미지당 합계** | 검출 | SAM | C5 | C7 (DINOv2) |')
+    print('|---|---|---|---|---|---|---|---|---|---|')
     for ds in DATASETS:
         m2a = load(d, f'M2A_{ds}')
         m2a_runs = m2a['run_needed_total'] if m2a else [0.0]
-        print(f'| {ds} | M2A 단독 | – | – | {ms(m2a_runs)} | **{ms(m2a_runs)}** | – | – | – |')
+        print(f'| {ds} | M2A 단독 | – | – | {ms(m2a_runs)} | **{ms(m2a_runs)}** | – | – | – | – |')
         for key, label, needs_m2a in METHODS:
             r = load(d, f'{key}_{ds}')
             if r is None:
@@ -54,7 +55,10 @@ def main():
             m2a_s = f'{np.mean(m2a_runs):.0f}' if needs_m2a else '–'
             sam_s = f'{sam:.0f}' if sam else '–'
             c5_s = f'{c5:.1f}' if c5 else '–'
-            print(f'| {ds} | {label} | {ms(model)} | {ms(data)} | {m2a_s} | **{ms(tot)}** | {det:.0f} | {sam_s} | {c5_s} |')
+            c7 = mm.get('c7_prowl', 0)
+            c7_s = f'{c7:.1f}' if c7 else '–'
+            det -= c5 + c7      # ie_nms time includes the C5 / C7 work
+            print(f'| {ds} | {label} | {ms(model)} | {ms(data)} | {m2a_s} | **{ms(tot)}** | {det:.0f} | {sam_s} | {c5_s} | {c7_s} |')
     print('\n## 단계별 (DetSeg-S 공개본)\n')
     print('| 단계 | ' + ' | '.join(DATASETS) + ' |')
     print('|---|' + '---|' * len(DATASETS))
