@@ -28,3 +28,4 @@
 | I5 | [PROWL 신호로 보호(C6)·제거(C7)](I5_prowl_rules.md) | C6 **기각** (RA 하락). C7 선택: 튜닝 +2.35, 검증 +0.1 수준 (FS L&F 오탐 제거에만 효과) |
 | I6 | [C5 + C7 조합 (C8)](I6_c5_c7_combined.md) | 성공 기준 충족. FS L&F 38.44 (최고), SMIYC Obstacle 81.03, SMIYC Anomaly 69.58 (C5 78.06보다 낮음). 가장 느림 (DetSeg-S 1.15~1.37 s) |
 | T3 | [결과를 바꾸지 않는 속도 최적화](T3_speedups.md) | DetSeg-S 17~37% 단축 (FS L&F 808 → 532 ms), 12개 실행 모든 지표 동일 |
+| F1 | [정성 결과 그림과 이미지별 IoU](F1_qualitative.md) | 그림 4장 (규칙 기반 선택), 저장 mask로 다시 잰 평균이 공식 수치와 일치. RA에서 C5는 18장 하락·4장 상승, SMIYC A의 C8 손해는 거의 이미지 1장 |

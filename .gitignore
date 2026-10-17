@@ -34,3 +34,6 @@ external/
 
 # Large generated data (regenerate with src/m2a_save_scores.py)
 results/score_maps/
+
+# Per-image masks for figures (regenerate with scripts/save_masks_for_figures.sh)
+results/F1/masks/
