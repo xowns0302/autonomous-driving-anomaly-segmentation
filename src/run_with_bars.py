@@ -20,7 +20,7 @@ import sys
 import torch
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from sweep_ie_nms_bars import CLASSES, ie_nms  # noqa: E402
+from sweep_ie_nms_bars import CLASSES, ie_nms, ie_nms_rules  # noqa: E402
 
 
 def load_bars(path, stat):
@@ -39,17 +39,27 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--bars', required=True)
     p.add_argument('--stat', default='bar_min', help='bar_min (paper), p1, p5, p10, median')
+    p.add_argument('--background-exempt', action='store_true',
+                   help='C1: background-class ID boxes cannot suppress OoD boxes')
+    p.add_argument('--protect-gamma', type=float, default=None,
+                   help='C2: OoD boxes with score >= gamma cannot be suppressed by ID boxes')
     args = p.parse_args(sys.argv[1:i])
     bar_list = load_bars(args.bars, args.stat)
     print('IE-NMS bars:', {c: round(b, 4) for c, b in zip(CLASSES[1:], bar_list)}, flush=True)
+    print('rules: background_exempt =', args.background_exempt, '| protect_gamma =', args.protect_gamma, flush=True)
+    use_rules = args.background_exempt or args.protect_gamma is not None
 
     import mmdet.detseg_utils  # noqa: F401
     from mmengine.structures import InstanceData
     from mmdet.detseg_utils.models import GroundingDINOHeadWithUniversalObjectness
 
     def _ie_nms(self, bboxes, scores, labels):
-        keep = torch.as_tensor(ie_nms(bboxes.cpu(), scores.cpu(), labels.cpu(), bar_list),
-                               device=bboxes.device).long()
+        if use_rules:
+            k = ie_nms_rules(bboxes.cpu().numpy(), scores.cpu().numpy(), labels.cpu().numpy(), bar_list,
+                             background_exempt=args.background_exempt, protect_gamma=args.protect_gamma)
+        else:
+            k = ie_nms(bboxes.cpu(), scores.cpu(), labels.cpu(), bar_list)
+        keep = torch.as_tensor(k, device=bboxes.device).long()
         r = InstanceData()
         r.bboxes, r.scores, r.labels = bboxes[keep], scores[keep], labels[keep]
         return r
