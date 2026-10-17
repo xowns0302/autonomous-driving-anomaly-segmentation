@@ -1,0 +1,24 @@
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([720, 1280]) to torch.Size([1, 720, 1280])
+  warnings.warn('The shape of value will convert from '
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-s_smiyc_anomaly.py | 3 runs x 30 images (after 5 warm-up) | peak GPU memory 3.60 GiB
+  data                   34.4 ms    8.3%
+  preprocess              1.9 ms    0.5%
+  backbone               69.1 ms   16.7%
+  neck                    1.1 ms    0.3%
+  text                    0.3 ms    0.1%
+  encoder                65.9 ms   15.9%
+  query_sel               7.6 ms    1.8%
+  decoder                24.5 ms    5.9%
+  head_excl_ie_nms        7.4 ms    1.8%
+  ie_nms                  3.7 ms    0.9%
+  sam_total             175.2 ms   42.3%
+  other_in_model         23.1 ms    5.6%
+  model_total           379.7 ms  (std over runs 5.3, runs [376.8, 375.2, 387.1])
+  total                 414.1 ms  (std over runs 5.8, runs [411.0, 409.1, 422.3])

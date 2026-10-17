@@ -1,0 +1,24 @@
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([720, 1280]) to torch.Size([1, 720, 1280])
+  warnings.warn('The shape of value will convert from '
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-s_road_anomaly.py | 3 runs x 30 images (after 5 warm-up) | peak GPU memory 3.60 GiB
+  data                   46.6 ms   10.8%
+  preprocess              1.8 ms    0.4%
+  backbone               69.2 ms   16.0%
+  neck                    1.1 ms    0.2%
+  text                    0.3 ms    0.1%
+  encoder                64.1 ms   14.8%
+  query_sel               7.2 ms    1.7%
+  decoder                23.5 ms    5.4%
+  head_excl_ie_nms        7.0 ms    1.6%
+  ie_nms                  3.5 ms    0.8%
+  sam_total             186.2 ms   43.0%
+  other_in_model         22.6 ms    5.2%
+  model_total           386.5 ms  (std over runs 0.5, runs [387.2, 385.9, 386.4])
+  total                 433.0 ms  (std over runs 0.5, runs [433.7, 432.4, 433.0])

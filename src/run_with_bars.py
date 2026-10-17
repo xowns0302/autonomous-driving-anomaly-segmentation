@@ -57,6 +57,8 @@ def main():
                    help='C6: OoD boxes with proto_box >= t6 cannot be suppressed by ID boxes')
     p.add_argument('--reject-t7', type=float, default=None,
                    help='C7: kept OoD boxes with proto_box < t7 are dropped')
+    p.add_argument('--fast', action='store_true', help='T3 speed-ups (src/speedups.py), results must not change')
+    p.add_argument('--save-masks', default=None, help='DetSeg-S: save each predicted mask as <dir>/<image stem>.png')
     args = p.parse_args(sys.argv[1:i])
     bar_list = load_bars(args.bars, args.stat)
     print('IE-NMS bars:', {c: round(b, 4) for c, b in zip(CLASSES[1:], bar_list)}, flush=True)
@@ -78,10 +80,17 @@ def main():
         import numpy as np
         from PIL import Image
         if prowl.get('img_path') != img_path:          # one DINOv2 pass per image
-            img = np.array(Image.open(img_path).convert('RGB'))
+            if args.fast:
+                import speedups
+                img = np.array(speedups.load_rgb(img_path))
+            else:
+                img = np.array(Image.open(img_path).convert('RGB'))
             prowl['feat'], _ = patch_features(prowl['model'], img)
             prowl['HW'], prowl['img_path'] = img.shape[:2], img_path
         feat, (H, W) = prowl['feat'], prowl['HW']
+        if args.fast:
+            import speedups
+            return speedups.box_proto_signal(feat, B, H, W, prowl['P'])
         h, w, D = feat.shape
         out = np.zeros(len(B), np.float32)
         P = prowl['P'].reshape(-1, D)
@@ -97,6 +106,10 @@ def main():
 
     import mmdet.detseg_utils  # noqa: F401
     from mmengine.structures import InstanceData
+    if args.fast:
+        import speedups
+        speedups.apply_all()
+        print('speed-ups: on', flush=True)
     from mmdet.detseg_utils.models import GroundingDINOHeadWithUniversalObjectness
 
     def box_means(img_path, B):
@@ -157,6 +170,22 @@ def main():
         current['img_path'] = batch_data_samples[0].metainfo['img_path']
         return orig_predict(self, *a, batch_data_samples=batch_data_samples, **kw)
     GroundingDINOHeadWithUniversalObjectness.predict = predict
+
+    if args.save_masks:
+        import numpy as np
+        from PIL import Image
+        from mmdet.detseg_utils.models import DetSegS
+        os.makedirs(args.save_masks, exist_ok=True)
+        orig_s_predict = DetSegS.predict
+
+        def s_predict(self, *a, **k):
+            out = orig_s_predict(self, *a, **k)
+            for ds in out:
+                m = ds.pred_sem_seg.sem_seg.squeeze().cpu().numpy() > 0.5
+                stem = os.path.splitext(os.path.basename(ds.metainfo['img_path']))[0]
+                Image.fromarray((m * 255).astype(np.uint8)).save(os.path.join(args.save_masks, stem + '.png'))
+            return out
+        DetSegS.predict = s_predict
 
     sys.argv = ['tools/test.py'] + sys.argv[i + 1:]
     runpy.run_path('tools/test.py', run_name='__main__')

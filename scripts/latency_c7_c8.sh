@@ -4,7 +4,7 @@
 set -u
 OUT=${1:-results/T2}; ROOT=$(pwd)
 CK=ckpts/detseg_swin-b_coco_20260623-207453f5.pth; BARS=$ROOT/results/A3/bars_things.json
-BANK=$ROOT/results/P1/prototypes.npz; N="--images 30 --warmup 5 --repeats 3"
+BANK=$ROOT/results/P1/prototypes.npz; N="--images 30 --warmup 5 --repeats 3 ${EXTRA:-}"
 for spec in "fs_lostfound:FS_LostFound" "road_anomaly:RoadAnomaly" "smiyc_obstacle:SMIYC_Obstacle_val" "smiyc_anomaly:SMIYC_Anomaly_val"; do
   IFS=: read ds md <<< "$spec"; M2A=$ROOT/results/score_maps/m2a/$md
   (cd external/DetSeg-official && export PYTHONPATH=. && \

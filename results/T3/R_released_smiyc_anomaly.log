@@ -1,0 +1,24 @@
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([720, 1280]) to torch.Size([1, 720, 1280])
+  warnings.warn('The shape of value will convert from '
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-r_m2a_smiyc_anomaly.py | 3 runs x 30 images (after 5 warm-up) | peak GPU memory 1.52 GiB
+  data                   22.6 ms   10.0%
+  preprocess              2.3 ms    1.0%
+  backbone               68.4 ms   30.2%
+  neck                    1.1 ms    0.5%
+  text                    0.3 ms    0.1%
+  encoder                63.2 ms   27.9%
+  query_sel               7.2 ms    3.2%
+  decoder                23.5 ms   10.4%
+  head_excl_ie_nms        7.0 ms    3.1%
+  ie_nms                  3.6 ms    1.6%
+  boost                   0.9 ms    0.4%
+  other_in_model         26.7 ms   11.8%
+  model_total           204.2 ms  (std over runs 0.5, runs [204.0, 203.8, 205.0])
+  total                 226.9 ms  (std over runs 0.6, runs [226.5, 226.4, 227.7])

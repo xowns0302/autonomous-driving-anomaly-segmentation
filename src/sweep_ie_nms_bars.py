@@ -98,6 +98,13 @@ def ie_nms_rules(B, S, L, bar_list, iou_thr=0.5, boost=2.0,
     order = np.argsort(-nms_s, kind='stable')
     alive = np.ones(len(B), bool)
     keep = []
+    ious = iou_matrix(B, B)                    # O4: all pair IoUs once (same formula per pair)
+    is_ood = L == 0
+    protected = np.zeros(len(B), bool)         # protection that does not depend on the suppressor
+    if protect_gamma is not None:
+        protected |= S >= protect_gamma
+    if verify_t is not None:
+        protected |= np.asarray(verify_scores) >= verify_t
     for i in order:
         if not alive[i]:
             continue
@@ -106,17 +113,10 @@ def ie_nms_rules(B, S, L, bar_list, iou_thr=0.5, boost=2.0,
         cand = np.where(alive)[0]
         if not len(cand):
             break
-        sup = iou_matrix(B[i:i + 1], B[cand])[0] > iou_thr
+        sup = ious[i, cand] > iou_thr
         if L[i] != 0:   # suppressor is an ID box: apply the protection rules
-            prot = L[cand] == 0
-            rule = np.zeros(len(cand), bool)
-            if background_exempt and bg[i]:
-                rule |= True
-            if protect_gamma is not None:
-                rule |= S[cand] >= protect_gamma
-            if verify_t is not None:
-                rule |= np.asarray(verify_scores)[cand] >= verify_t
-            sup &= ~(prot & rule)
+            rule = protected[cand] | (background_exempt and bg[i])
+            sup &= ~(is_ood[cand] & rule)
         alive[cand[sup]] = False
     return np.array(keep, dtype=np.int64)
 

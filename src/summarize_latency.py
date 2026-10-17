@@ -17,7 +17,7 @@ METHODS = [('S_released', 'DetSeg-S (공개본)', False), ('S_paper', 'DetSeg-S 
            ('R_released', 'M2A + DetSeg-R (공개본)', True), ('R_c5', 'M2A + DetSeg-R + C5', True),
            ('R_c8', 'M2A + DetSeg-R + C8', True)]
 DET = ['backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder', 'head_excl_ie_nms', 'ie_nms']
-SAM = ['sam_prep', 'sam_image_encoder', 'sam_mask_decoder', 'sam_post']
+SAM = ['sam_total', 'sam_prep', 'sam_image_encoder', 'sam_mask_decoder', 'sam_post']
 
 
 def load(d, name):

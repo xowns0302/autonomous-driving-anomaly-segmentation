@@ -30,7 +30,7 @@ from mmengine.registry import init_default_scope
 from mmengine.runner import load_checkpoint
 from torch.utils.data import DataLoader, Subset
 
-STAGES = ['data', 'c5_box_means', 'c7_prowl', 'preprocess', 'backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder',
+STAGES = ['data', 'c5_box_means', 'c7_prowl', 'sam_total', 'preprocess', 'backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder',
           'head', 'ie_nms', 'sam_prep', 'sam_image_encoder', 'sam_mask_decoder', 'sam_post', 'boost']
 
 
@@ -47,10 +47,16 @@ def main():
     p.add_argument('--verify-t', type=float, default=None, help='C5 threshold')
     p.add_argument('--prowl-bank', default=None, help='C7: prototype bank npz')
     p.add_argument('--reject-t7', type=float, default=None, help='C7 threshold')
+    p.add_argument('--fast', action='store_true', help='T3 speed-ups (src/speedups.py)')
     args = p.parse_args()
 
     import mmdet.detseg_utils  # noqa: F401
     from mmdet.registry import DATASETS, MODELS
+    import os as _os, sys as _sys
+    _sys.path.insert(0, _os.path.dirname(_os.path.abspath(__file__)))
+    if args.fast:
+        import speedups
+        speedups.apply_all()
 
     cfg = Config.fromfile(args.config)
     init_default_scope('mmdet')
@@ -144,6 +150,10 @@ def main():
             P = torch.from_numpy(np.load(args.prowl_bank)['prototypes']).cuda()
 
             def proto_box(img_path, B):
+                if args.fast:
+                    img = np.array(speedups.load_rgb(img_path))
+                    feat, _ = patch_features(dino, img)
+                    return speedups.box_proto_signal(feat, B, img.shape[0], img.shape[1], P)
                 img = np.array(Image.open(img_path).convert('RGB'))
                 feat, _ = patch_features(dino, img)
                 H, W = img.shape[:2]
@@ -166,7 +176,10 @@ def main():
         wrap(model, '_boost_anomaly_score', 'boost')
 
     has_sam = hasattr(model, 'sam_predict_hf') and (not is_r or getattr(model, 'use_sam_refine', False))
-    if has_sam:
+    if has_sam and args.fast:
+        # fast path: time the whole SAM call as one stage
+        wrap(model, 'sam_masks_from_boxes', 'sam_total')
+    elif has_sam:
         # Re-implementation of SamPromptMixin.sam_predict_hf (models.py:299) with timers.
         def sam_predict_hf(self, raw_image, boxes):
             from PIL import Image
@@ -229,7 +242,7 @@ def main():
     print(f'{args.config} | {args.repeats} runs x {args.images} images (after {args.warmup} warm-up) | '
           f'peak GPU memory {torch.cuda.max_memory_allocated() / 2**30:.2f} GiB')
     order = ['data', 'c5_box_means', 'c7_prowl', 'preprocess', 'backbone', 'neck', 'text', 'encoder', 'query_sel', 'decoder',
-             'head_excl_ie_nms', 'ie_nms', 'sam_prep', 'sam_image_encoder', 'sam_mask_decoder', 'sam_post',
+             'head_excl_ie_nms', 'ie_nms', 'sam_total', 'sam_prep', 'sam_image_encoder', 'sam_mask_decoder', 'sam_post',
              'boost', 'other_in_model']
     for k in order:
         if k in mean and (k not in STAGES or k in keys or k in ('head_excl_ie_nms', 'other_in_model')):
@@ -239,7 +252,7 @@ def main():
         print(f'  {k:18s} {np.mean(v):8.1f} ms  (std over runs {np.std(v):.1f}, runs {[round(x, 1) for x in v]})')
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     json.dump(dict(config=args.config, images=args.images, warmup=args.warmup, repeats=args.repeats,
-                   bars=args.bars, verify_t=args.verify_t, reject_t7=args.reject_t7, run_means=run_means,
+                   bars=args.bars, verify_t=args.verify_t, reject_t7=args.reject_t7, fast=args.fast, run_means=run_means,
                    peak_gpu_gib=torch.cuda.max_memory_allocated() / 2**30, mean_ms=mean,
                    gpu=torch.cuda.get_device_name(0)), open(args.out, 'w'), indent=2)
 

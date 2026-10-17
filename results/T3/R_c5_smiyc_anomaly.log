@@ -1,0 +1,25 @@
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([720, 1280]) to torch.Size([1, 720, 1280])
+  warnings.warn('The shape of value will convert from '
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-r_m2a_smiyc_anomaly.py | 3 runs x 30 images (after 5 warm-up) | peak GPU memory 1.52 GiB
+  data                   22.8 ms    9.4%
+  c5_box_means            9.5 ms    3.9%
+  preprocess              2.6 ms    1.1%
+  backbone               68.5 ms   28.4%
+  neck                    1.1 ms    0.5%
+  text                    0.3 ms    0.1%
+  encoder                63.3 ms   26.2%
+  query_sel               7.2 ms    3.0%
+  decoder                23.9 ms    9.9%
+  head_excl_ie_nms        9.0 ms    3.7%
+  ie_nms                 14.7 ms    6.1%
+  boost                   0.8 ms    0.3%
+  other_in_model         27.4 ms   11.3%
+  model_total           218.8 ms  (std over runs 1.0, runs [218.6, 220.1, 217.7])
+  total                 241.6 ms  (std over runs 1.1, runs [241.5, 243.1, 240.3])
