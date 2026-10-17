@@ -20,3 +20,4 @@
 | A3 | [IE-NMS bar 논문 방식 보정 (Cityscapes)](A3_ie_nms_bar_calibration.md) | 완료: bar ≈ 0.1 (공개 0.5). FS L&F 14.26 → 24.26, SMIYC Anomaly 69.12 → 54.57 |
 | I1 | [억제 규칙 C1·C2](I1_suppression_rules.md) | **기각**: 두 규칙 모두 튜닝셋에서 크게 악화 (배경 box는 거대 오탐을 지우는 역할, objectness는 아는 물체에 더 높음) |
 | I2 | [도로 문맥 재점수화 C3](I2_road_context.md) | **채택 안 함**: 튜닝 +0.54, 검증 개선 없음 (bar 보정이 도로 밖 오탐을 이미 제거) |
+| I3 | [고해상도 추론 C4](I3_high_resolution.md) | **기각**: 1.25배 FS 24.26 → 10.72, 1.5배 → 0.32 (학습 해상도 밖에서 box 예측 붕괴) |
