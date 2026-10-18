@@ -1,0 +1,43 @@
+@startuml runtime_sequence
+' UML 시퀀스 다이어그램: DetSeg-S + C8 실행 시 모듈 호출 순서 (이미지 한 장)
+skinparam defaultFontName NanumGothic
+skinparam dpi 180
+skinparam shadowing false
+skinparam sequence {
+  ArrowColor #14213D
+  LifeLineBorderColor #14213D
+  ParticipantBorderColor #14213D
+  ParticipantBackgroundColor #FFFFFC
+}
+
+actor "평가 스크립트\n(tools/test.py)" as test
+participant "run_with_bars.py\n(우리 래퍼)" as wrap
+participant "DetSeg 모델" as model
+participant "BERT\n(캐시)" as bert
+participant "Grounding DINO\n+ query head" as gd
+participant "IE-NMS\n+ C5 · C7" as nms
+participant "M2A 점수 지도" as m2a
+participant "DINOv2\n+ prototype" as dino
+participant "SAM ViT-B" as sam
+
+test -> wrap : 실행 (bar, C5, C7 옵션)
+wrap -> model : 공식 코드에 규칙 교체 후 test 실행
+loop 이미지마다
+  test -> model : predict(이미지)
+  model -> bert : 텍스트 인코딩
+  bert --> model : 텍스트 특징 (첫 이미지 이후 재사용)
+  model -> gd : 이미지 + 텍스트 특징
+  gd --> model : ID box 900 / UN box 300 + 점수
+  model -> nms : 후보 box
+  nms -> m2a : box 안 이상 점수 평균 (C5)
+  m2a --> nms : 평균값
+  nms -> nms : bar 강화 → NMS (C5 보호) → ID box 버림 → objectness > 0.2
+  nms -> dino : 남은 box의 특징 (C7)
+  dino --> nms : prototype 거리
+  nms --> model : 최종 OoD box
+  model -> sam : 이미지 + OoD box
+  sam --> model : box별 mask
+  model --> test : 이상 mask
+end
+test -> test : IoU 계산
+@enduml

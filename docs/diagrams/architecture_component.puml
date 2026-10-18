@@ -1,0 +1,69 @@
+@startuml architecture_component
+' UML 컴포넌트 다이어그램: 시스템 구조 (DetSeg 공식 코드 + 우리가 추가한 부분)
+skinparam defaultFontName NanumGothic
+skinparam dpi 150
+skinparam componentStyle uml2
+skinparam shadowing false
+skinparam linetype ortho
+skinparam nodesep 40
+skinparam ranksep 50
+skinparam ArrowColor #14213D
+skinparam package {
+  BorderColor #14213D
+  FontStyle bold
+}
+skinparam component {
+  BackgroundColor #FFFFFC
+  BorderColor #14213D
+}
+
+interface "입력 이미지" as img
+
+package "DetSeg 공식 코드 (수정 없음)" #E8EEF7 {
+  component "텍스트 인코더\nBERT" as bert
+  component "Grounding DINO\nSwin-B + decoder\nID query 900 / UN query 300\n+ objectness head" as gdino
+  component "IE-NMS" as ienms
+  component "SAM ViT-B" as sam
+  component "DetSeg-R 보정\n(box 안 점수 +1.0)" as refine
+}
+
+package "우리 코드 (실행 시 교체)" #FBE9DD {
+  component "run_with_bars.py\n(진입점)" as wrapper
+  component "ie_nms_rules\nbar · C5 · C7" as rules
+  component "speedups.py\nO1~O4 (결과 동일)" as speed
+}
+
+package "외부 모델" #F3F1EA {
+  component "Mask2Anomaly\n(detectron2, 별도 env)" as m2a
+  component "DINOv2 ViT-S/14" as dino
+}
+
+package "오프라인 준비 (1회)" #F3F1EA {
+  artifact "class별 bar\n← Cityscapes val 500장" as bars
+  artifact "prototype 380개\n← Cityscapes train" as bank
+}
+
+interface "이상 mask\n(DetSeg-S)" as outS
+interface "이상 점수 지도\n(DetSeg-R)" as outR
+
+img --> gdino
+img --> m2a
+img --> dino
+bert --> gdino : 텍스트 특징
+gdino --> ienms : ID box / UN box
+ienms --> sam : 이상 box
+ienms --> refine : 이상 box
+sam --> outS
+refine --> outR
+m2a --> refine : 점수 지도
+
+wrapper --> rules
+wrapper --> speed
+rules --> ienms : <<replace>> 판단 규칙
+speed ..> sam : <<replace>>
+speed ..> bert : <<cache>>
+bars --> rules
+bank --> rules
+m2a --> rules : 픽셀 이상 점수 (C5)
+dino --> rules : 패치 특징 (C7)
+@enduml

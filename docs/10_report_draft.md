@@ -87,6 +87,33 @@ flowchart LR
 | threshold 탐색 | 필요 없음 | 필요 (평가 때 최적값 사용) |
 | 지표 | IoU | AP, FPR95, 최적 threshold IoU |
 
+### 2.4 시스템 설계 (UML)
+
+본 프로젝트의 시스템(DetSeg 공식 코드 + 우리가 추가한 규칙)을 UML 다이어그램 세 개로 정리한다. 원본은 `docs/diagrams/*.puml`(PlantUML)이고, `conda run -n uml plantuml -tpng -o ../../assets/figures docs/diagrams/*.puml`로 다시 그릴 수 있다.
+
+**(1) 컴포넌트 다이어그램: 시스템 구조**
+
+![시스템 구조](../assets/figures/architecture_component.png)
+
+| 패키지 | 구성 요소 | 비고 |
+|---|---|---|
+| DetSeg 공식 코드 | BERT, Grounding DINO(+ query head), IE-NMS, SAM, DetSeg-R 보정 | 파일 수정 없음 |
+| 우리 코드 | `run_with_bars.py`(진입점), `ie_nms_rules`(bar·C5·C7), `speedups.py`(O1~O4) | 실행 시점에 교체(monkeypatch). 옵션을 끄면 공식 결과와 동일함을 확인 |
+| 외부 모델 | Mask2Anomaly(C5, DetSeg-R), DINOv2(C7) | Mask2Anomaly는 별도 환경에서 점수 지도를 미리 저장 |
+| 오프라인 준비 | class별 bar(Cityscapes val), prototype 380개(Cityscapes train) | 한 번만 계산 |
+
+**(2) 액티비티 다이어그램: 이미지 한 장의 처리 흐름**
+
+판단 지점(마름모)은 bar 강화, NMS의 삭제 여부와 C5 보호, objectness 0.2 필터, C7 제거, 출력 방식(DetSeg-S/R) 다섯 곳이다.
+
+<img src="../assets/figures/pipeline_activity.png" alt="처리 흐름" width="520">
+
+**(3) 시퀀스 다이어그램: DetSeg-S + C8 실행 시 호출 순서**
+
+![실행 순서](../assets/figures/runtime_sequence.png)
+
+텍스트 인코딩 → 검출 → IE-NMS(C5가 M2A 점수를, C7이 DINOv2 특징을 요청) → SAM 순서이며, 8장의 처리 시간 분석은 이 단계 구분을 따른다.
+
 ---
 
 ## 3. 실험 설정
