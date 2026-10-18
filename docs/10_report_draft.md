@@ -109,7 +109,7 @@ flowchart LR
 
 ### 2.4 시스템 설계 (UML)
 
-본 프로젝트의 시스템(DetSeg 공식 코드 + 우리가 추가한 규칙)을 UML 다이어그램 세 개로 정리한다. 원본은 `docs/diagrams/*.puml`(PlantUML)이고, `conda run -n uml plantuml -tpng -o ../../assets/figures docs/diagrams/*.puml`로 다시 그릴 수 있다.
+본 프로젝트의 시스템(DetSeg 공식 코드 + 우리가 추가한 규칙)을 UML 다이어그램 세 개로 정리한다. 원본은 `docs/diagrams/*.puml`(PlantUML)이고, `conda run -n uml plantuml -tpng -o ../../assets/figures docs/diagrams/*.puml`로 다시 그릴 수 있다. 발표용 가로 3줄판 액티비티 다이어그램은 `docs/diagrams/activity_row{1,2,3}.dot`(Graphviz)이고, `conda run -n uml dot -Tpng -Gdpi=200 docs/diagrams/activity_row1.dot -o assets/figures/activity_row1.png`처럼 줄마다 그린다.
 
 **(1) 컴포넌트 다이어그램: 시스템 구조**
 
