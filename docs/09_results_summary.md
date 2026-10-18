@@ -62,7 +62,7 @@
 
 | 분석 | 발견 | 근거 |
 |---|---|---|
-| 공식 저장소 이력 | 공개 코드는 논문 약 9개월 뒤 재작성, 가중치 재학습. bar 보정 절차 코드 없음, 값(0.2 / 0.5)만 남음 | git 이력, README ([06](06_detseg_code_analysis.md)) |
+| 공식 저장소 이력 | 공개 코드는 논문 약 9개월 뒤 재작성, 가중치 재학습. bar 보정 절차 코드 없음, 값(0.2 / 0.5)만 남음 | git 이력, README ([A3](experiments/A3_ie_nms_bar_calibration.md)) |
 | [A2](experiments/A2_failure_diagnosis.md) 과소 억제 | FS L&F 오탐 후보의 41%가 IE-NMS 뒤 남음. 남은 오탐의 대부분이 차·사람 위이며, 그 ID box 점수(중앙 0.26)가 bar 0.5를 넘지 못함 | IE-NMS 전후 추적 |
 | A2 과잉 억제 | SMIYC Anomaly에서 진짜 이상 물체가 "truck"(0.57) box, "road" box에 지워짐 | 이미지 4, 5 |
 | A2 작은 물체 | FS L&F 16px 미만 정답의 45%는 후보조차 없고 42%는 objectness < 0.2. IE-NMS 손실은 2% | 손실 단계 판정 |
