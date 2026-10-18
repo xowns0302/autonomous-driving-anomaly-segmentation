@@ -24,7 +24,7 @@ fork again
 end fork
 
 partition "IE-NMS (+ C5)" {
-  :ID box 점수 > class별 bar 이면 점수 × 2;
+  :ID box 점수가 class별 신뢰 기준선을 넘으면 점수 × 2;
   :모든 box를 점수 높은 순으로 정렬;
   repeat
     :다음 box 선택;

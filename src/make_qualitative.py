@@ -4,7 +4,7 @@ Per dataset, images are chosen by fixed rules (no hand picking):
   * the 2 images with the largest IoU gain of C5 over the paper-bar baseline
   * the 1 image with the largest IoU loss of C8 relative to C5 (failure case)
 Only images with a real change (> 1 IoU point) are picked.
-Each row: input with GT outline | released | paper bars (baseline) | C5 | C8,
+Each row: input with GT outline | released | baseline (paper-style bars) | C5 | C8,
 prediction in red, GT outline in green, void pixels (ignored by the metric) darkened,
 per-image IoU in the corner.
 Also writes per-image IoU of all methods to results/F1/per_image_iou.csv.
@@ -20,7 +20,7 @@ import numpy as np
 
 D = 'external/DetSeg-official/data'
 METHODS = [('released', '공개본'), ('paper', 'baseline (paper bars)'), ('c5', 'C5'), ('c8', 'C8')]
-LABELS = ['released', 'paper bars', 'C5', 'C8']
+LABELS = ['released', 'baseline', 'C5', 'C8']
 DATASETS = {
     'fs_lostfound': (f'{D}/FS_LostFound/images/{{}}.png', f'{D}/FS_LostFound/labels_masks/{{}}.png', 1),
     'road_anomaly': (f'{D}/RoadAnomaly/frames/{{}}.webp', f'{D}/RoadAnomaly/frames/{{}}.labels/labels_semantic.png', 2),

@@ -20,7 +20,7 @@ participant "M2A 점수 지도" as m2a
 participant "DINOv2\n+ prototype" as dino
 participant "SAM ViT-B" as sam
 
-test -> wrap : 실행 (bar, C5, C7 옵션)
+test -> wrap : 실행 (기준선, C5, C7 옵션)
 wrap -> model : 공식 코드에 규칙 교체 후 test 실행
 loop 이미지마다
   test -> model : predict(이미지)
@@ -31,7 +31,7 @@ loop 이미지마다
   model -> nms : 후보 box
   nms -> m2a : box 안 이상 점수 평균 (C5)
   m2a --> nms : 평균값
-  nms -> nms : bar 강화 → NMS (C5 보호) → ID box 버림 → objectness > 0.2
+  nms -> nms : 신뢰 기준선 넘은 ID box 강화 → NMS (C5 보호) → ID box 버림 → objectness > 0.2
   nms -> dino : 남은 box의 특징 (C7)
   dino --> nms : prototype 거리
   nms --> model : 최종 OoD box
