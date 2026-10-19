@@ -148,23 +148,25 @@ def fig_pipeline():
     print('pipeline', [(int(i), on_gt(d['bboxes'][i], gt), i in keep) for i in cand])
     im = img.copy(); dr = ImageDraw.Draw(im)
     for i in cand:
-        draw_box(dr, d['bboxes'][i], ORANGE, 7)
+        draw_box(dr, d['bboxes'][i], ORANGE, 12)
     for i in cand:
         bj = best_id_over(d, i, 'paper')
         if bj and i not in keep:
-            draw_box(dr, d['bboxes'][bj[0]], BLUE, 5, f"{CLASSES[d['labels'][bj[0]]]} {d['scores'][bj[0]]:.2f}", 30)
+            draw_box(dr, d['bboxes'][bj[0]], BLUE, 10, f"{CLASSES[d['labels'][bj[0]]]} {d['scores'][bj[0]]:.2f}", 64)
     save(im, 'pipe_1_candidates.jpg')
     im = img.copy(); dr = ImageDraw.Draw(im)
     for i in cand:
         if i in keep:
-            draw_box(dr, d['bboxes'][i], ORANGE, 8)
+            draw_box(dr, d['bboxes'][i], ORANGE, 14)
         else:
-            draw_box(dr, d['bboxes'][i], GRAY, 5, dashed=True)
+            draw_box(dr, d['bboxes'][i], GRAY, 9, dashed=True)
             x1, y1, x2, y2 = d['bboxes'][i]
-            dr.line([(x1, y1), (x2, y2)], fill=GRAY, width=5); dr.line([(x1, y2), (x2, y1)], fill=GRAY, width=5)
+            dr.line([(x1, y1), (x2, y2)], fill=GRAY, width=8); dr.line([(x1, y2), (x2, y1)], fill=GRAY, width=8)
     save(im, 'pipe_2_after_nms.jpg')
     m = cv2.imread('results/F1/masks/fs_lostfound/paper/60.png', 0) > 127
     save(overlay(img, m, RED, 0.6), 'pipe_3_mask.jpg')
+    for n in ('pipe_1_candidates', 'pipe_2_after_nms', 'pipe_3_mask'):
+        Image.open(f'{OUT}/{n}.jpg').crop((80, 100, 880, 480)).save(f'{OUT}/{n}_crop.jpg', quality=92)
 
 
 def fig_cause():
