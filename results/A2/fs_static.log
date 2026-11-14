@@ -1,0 +1,29 @@
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+processed 20/30
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+
+== ALL final OoD boxes: 510 boxes
+  source: {'UN': 492, 'ID-objects': 18}
+  overlapping an ID-class box (IoU>=0.5): 445 (87.3%)
+    that ID box class: {'car': 162, 'person': 158, 'motorcycle': 31, 'bicycle': 30, 'bus': 19, 'pole': 14, 'truck': 8, 'traffic sign': 7}
+    that ID box passed bar (boosted): {False: 444, True: 1}
+    that ID box score pct[10,50,90]: [0.132 0.24  0.433]
+
+== FP-like (GT IoU < 0.1): 486 boxes
+  source: {'UN': 473, 'ID-objects': 13}
+  overlapping an ID-class box (IoU>=0.5): 430 (88.5%)
+    that ID box class: {'car': 161, 'person': 153, 'motorcycle': 30, 'bicycle': 28, 'bus': 19, 'pole': 13, 'truck': 8, 'traffic sign': 6}
+    that ID box passed bar (boosted): {False: 429, True: 1}
+    that ID box score pct[10,50,90]: [0.14  0.246 0.436]
+
+== TP-like (GT IoU >= 0.1): 24 boxes
+  source: {'UN': 19, 'ID-objects': 5}
+  overlapping an ID-class box (IoU>=0.5): 15 (62.5%)
+    that ID box class: {'person': 5, 'vegetation': 3, 'bicycle': 2, 'pole': 1, 'car': 1, 'traffic sign': 1, 'rider': 1, 'motorcycle': 1}
+    that ID box passed bar (boosted): {False: 15}
+    that ID box score pct[10,50,90]: [0.094 0.121 0.195]

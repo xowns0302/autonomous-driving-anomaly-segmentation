@@ -1,0 +1,62 @@
+/home/taejun/miniconda3/envs/m2a/lib/python3.8/site-packages/timm/models/layers/__init__.py:49: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+Loading config /home/taejun/projects/autonomous-driving-anomaly-segmentation/external/Mask2Anomaly/configs/cityscapes/semantic-segmentation/Base-Cityscapes-SemanticSegmentation.yaml with yaml.unsafe_load. Your machine may be at risk if the file contains malicious content.
+Some model parameters or buffers are not found in the checkpoint:
+backbone.res2.0.conv1.norm.num_batches_tracked
+backbone.res2.0.conv2.norm.num_batches_tracked
+backbone.res2.0.conv3.norm.num_batches_tracked
+backbone.res2.0.shortcut.norm.num_batches_tracked
+backbone.res2.1.conv1.norm.num_batches_tracked
+backbone.res2.1.conv2.norm.num_batches_tracked
+backbone.res2.1.conv3.norm.num_batches_tracked
+backbone.res2.2.conv1.norm.num_batches_tracked
+backbone.res2.2.conv2.norm.num_batches_tracked
+backbone.res2.2.conv3.norm.num_batches_tracked
+backbone.res3.0.conv1.norm.num_batches_tracked
+backbone.res3.0.conv2.norm.num_batches_tracked
+backbone.res3.0.conv3.norm.num_batches_tracked
+backbone.res3.0.shortcut.norm.num_batches_tracked
+backbone.res3.1.conv1.norm.num_batches_tracked
+backbone.res3.1.conv2.norm.num_batches_tracked
+backbone.res3.1.conv3.norm.num_batches_tracked
+backbone.res3.2.conv1.norm.num_batches_tracked
+backbone.res3.2.conv2.norm.num_batches_tracked
+backbone.res3.2.conv3.norm.num_batches_tracked
+backbone.res3.3.conv1.norm.num_batches_tracked
+backbone.res3.3.conv2.norm.num_batches_tracked
+backbone.res3.3.conv3.norm.num_batches_tracked
+backbone.res4.0.conv1.norm.num_batches_tracked
+backbone.res4.0.conv2.norm.num_batches_tracked
+backbone.res4.0.conv3.norm.num_batches_tracked
+backbone.res4.0.shortcut.norm.num_batches_tracked
+backbone.res4.1.conv1.norm.num_batches_tracked
+backbone.res4.1.conv2.norm.num_batches_tracked
+backbone.res4.1.conv3.norm.num_batches_tracked
+backbone.res4.2.conv1.norm.num_batches_tracked
+backbone.res4.2.conv2.norm.num_batches_tracked
+backbone.res4.2.conv3.norm.num_batches_tracked
+backbone.res4.3.conv1.norm.num_batches_tracked
+backbone.res4.3.conv2.norm.num_batches_tracked
+backbone.res4.3.conv3.norm.num_batches_tracked
+backbone.res4.4.conv1.norm.num_batches_tracked
+backbone.res4.4.conv2.norm.num_batches_tracked
+backbone.res4.4.conv3.norm.num_batches_tracked
+backbone.res4.5.conv1.norm.num_batches_tracked
+backbone.res4.5.conv2.norm.num_batches_tracked
+backbone.res4.5.conv3.norm.num_batches_tracked
+backbone.res5.0.conv1.norm.num_batches_tracked
+backbone.res5.0.conv2.norm.num_batches_tracked
+backbone.res5.0.conv3.norm.num_batches_tracked
+backbone.res5.0.shortcut.norm.num_batches_tracked
+backbone.res5.1.conv1.norm.num_batches_tracked
+backbone.res5.1.conv2.norm.num_batches_tracked
+backbone.res5.1.conv3.norm.num_batches_tracked
+backbone.res5.2.conv1.norm.num_batches_tracked
+backbone.res5.2.conv2.norm.num_batches_tracked
+backbone.res5.2.conv3.norm.num_batches_tracked
+backbone.stem.conv1.norm.num_batches_tracked
+10/30 done (41s)
+20/30 done (71s)
+30/30 done (104s)
+/home/taejun/miniconda3/envs/m2a/lib/python3.8/site-packages/detectron2/layers/wrappers.py:106: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  x = F.conv2d(

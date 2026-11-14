@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>실험별 결과 데모</title>
+<style>
+  :root { --bg:#0F172A; --panel:#1E293B; --text:#F8FAFC; --muted:#94A3B8; --teal:#2DD4BF; --purple:#A78BFA; --best:#FACC15; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:'Malgun Gothic','Apple SD Gothic Neo',sans-serif; height:100vh; display:flex; flex-direction:column; }
+  header { display:flex; align-items:baseline; gap:24px; padding:14px 24px 8px; flex-wrap:wrap; }
+  h1 { font-size:26px; margin:0; }
+  #where { font-size:20px; color:var(--muted); }
+  #why { font-size:22px; color:var(--best); font-weight:700; }
+  .legend { margin-left:auto; font-size:16px; color:var(--muted); }
+  .legend b.r { color:#F87171; } .legend b.g { color:#4ADE80; }
+  main { flex:1; display:grid; grid-template-columns:repeat(3,1fr); grid-template-rows:repeat(2,minmax(0,1fr)); gap:10px; padding:4px 24px; min-height:0; }
+  figure { margin:0; background:var(--panel); border-radius:6px; padding:8px; display:flex; flex-direction:column; min-height:0; border:3px solid transparent; }
+  figure.best { border-color:var(--best); }
+  figure img { width:100%; flex:1; min-height:0; object-fit:contain; }
+  figcaption { display:flex; justify-content:space-between; font-size:20px; font-weight:700; padding-top:6px; }
+  figcaption .iou { font-size:24px; }
+  figure.c5 figcaption .lab { color:var(--teal); } figure.c9 figcaption .lab { color:var(--purple); }
+  nav { display:flex; align-items:center; gap:12px; padding:8px 24px 14px; }
+  nav button { font:inherit; font-size:18px; background:var(--panel); color:var(--text); border:1px solid #334155; border-radius:6px; padding:6px 14px; cursor:pointer; }
+  nav button.on { background:#2563EB; border-color:#2563EB; }
+  #count { margin-left:auto; color:var(--muted); font-size:18px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>실험별 결과</h1><span id="where"></span><span id="why"></span>
+  <span class="legend"><b class="r">빨강</b> = 이상 물체로 칠한 곳 · <b class="g">초록 선</b> = 정답 · 어두운 곳 = 평가 제외 · 숫자 = IoU · <b style="color:var(--best)">노란 테두리</b> = 이 사진 최고</span>
+</header>
+<main id="grid"></main>
+<nav id="nav"></nav>
+<script>
+const S = __SCENES__;
+let i = 0;
+const grid = document.getElementById('grid'), nav = document.getElementById('nav');
+const cls = ['', 'released', 'paper', 'c5', 'c8', 'c9'];
+S.forEach((s, k) => {
+  const b = document.createElement('button');
+  b.textContent = (k + 1); b.title = s.ds + ' ' + s.img; b.onclick = () => show(k); nav.appendChild(b);
+});
+const cnt = document.createElement('span'); cnt.id = 'count'; nav.appendChild(cnt);
+function show(k) {
+  i = (k + S.length) % S.length;
+  const s = S[i], best = Math.max(...s.tiles.filter(t => t.iou !== null).map(t => t.iou));
+  document.getElementById('where').textContent = s.ds + ' · 사진 ' + s.img;
+  document.getElementById('why').textContent = s.why;
+  grid.innerHTML = '';
+  s.tiles.forEach((t, j) => {
+    const f = document.createElement('figure');
+    f.className = cls[j] + (t.iou !== null && t.iou === best && best > 0 ? ' best' : '');
+    f.innerHTML = '<img alt=""><figcaption><span class="lab"></span><span class="iou"></span></figcaption>';
+    f.querySelector('img').src = t.src;
+    f.querySelector('.lab').textContent = t.label;
+    f.querySelector('.iou').textContent = t.iou === null ? '' : t.iou.toFixed(1);
+    grid.appendChild(f);
+  });
+  [...nav.querySelectorAll('button')].forEach((b, j) => b.classList.toggle('on', j === i));
+  cnt.textContent = '← → 키로 넘기기 · ' + (i + 1) + ' / ' + S.length;
+}
+document.addEventListener('keydown', e => {
+  if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') show(i + 1);
+  if (e.key === 'ArrowLeft' || e.key === 'PageUp') show(i - 1);
+});
+show(0);
+</script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+[
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/0.webp",
+  "n_boxes": 2,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/1.webp",
+  "n_boxes": 4,
+  "iou": 0.0019626424073957084,
+  "f1": 0.003917595974796239
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/10.webp",
+  "n_boxes": 4,
+  "iou": 0.01850334152038858,
+  "f1": 0.036334375678664724
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/11.webp",
+  "n_boxes": 6,
+  "iou": 0.0009487818283206361,
+  "f1": 0.0018957649892686877
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/12.webp",
+  "n_boxes": 5,
+  "iou": 0.0009473930723212195,
+  "f1": 0.0018929927364379833
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/13.webp",
+  "n_boxes": 5,
+  "iou": 0.01077874625814404,
+  "f1": 0.02132760764518735
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/14.webp",
+  "n_boxes": 5,
+  "iou": 0.00018945997329140654,
+  "f1": 0.00037884817001863983
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/15.webp",
+  "n_boxes": 3,
+  "iou": 0.0003936693236879416,
+  "f1": 0.0007870288182732706
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/16.webp",
+  "n_boxes": 4,
+  "iou": 0.001017345967690143,
+  "f1": 0.002032624053495632
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/17.webp",
+  "n_boxes": 3,
+  "iou": 0.004309198455421679,
+  "f1": 0.008581417878177388
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/18.webp",
+  "n_boxes": 2,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/19.webp",
+  "n_boxes": 4,
+  "iou": 0.8858235454793773,
+  "f1": 0.9394553881807648
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/2.webp",
+  "n_boxes": 4,
+  "iou": 0.005105436983754847,
+  "f1": 0.010159007793403
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/20.webp",
+  "n_boxes": 4,
+  "iou": 0.9286283891547049,
+  "f1": 0.9629935910688443
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/21.webp",
+  "n_boxes": 3,
+  "iou": 0.9456582633053221,
+  "f1": 0.9720702562625971
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/22.webp",
+  "n_boxes": 4,
+  "iou": 0.9555492235361163,
+  "f1": 0.9772694157074165
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/23.webp",
+  "n_boxes": 3,
+  "iou": 0.9659605551497443,
+  "f1": 0.9826855911421565
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/24.webp",
+  "n_boxes": 4,
+  "iou": 0.9717930433404643,
+  "f1": 0.9856947681427308
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/25.webp",
+  "n_boxes": 3,
+  "iou": 0.8948529411764706,
+  "f1": 0.9445091191307722
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/26.webp",
+  "n_boxes": 3,
+  "iou": 0.9515044247787611,
+  "f1": 0.9751496462905859
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/27.webp",
+  "n_boxes": 1,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/28.webp",
+  "n_boxes": 1,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/29.webp",
+  "n_boxes": 2,
+  "iou": 0.9626798191533087,
+  "f1": 0.9809850896297537
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/3.webp",
+  "n_boxes": 5,
+  "iou": 0.0012323892215492785,
+  "f1": 0.002461744615568124
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/4.webp",
+  "n_boxes": 3,
+  "iou": 0.9042424242424243,
+  "f1": 0.9497135582431572
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/5.webp",
+  "n_boxes": 3,
+  "iou": 0.0,
+  "f1": 0.0
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/6.webp",
+  "n_boxes": 5,
+  "iou": 0.0016171145518819774,
+  "f1": 0.0032290074288626063
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/7.webp",
+  "n_boxes": 3,
+  "iou": 0.8801198801198801,
+  "f1": 0.9362380446333688
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/8.webp",
+  "n_boxes": 5,
+  "iou": 0.8274398868458275,
+  "f1": 0.9055727554179567
+ },
+ {
+  "img_path": "data/SMIYC_Obstacle_val/images/9.webp",
+  "n_boxes": 4,
+  "iou": 0.6234596074851666,
+  "f1": 0.7680629744166433
+ }
+]

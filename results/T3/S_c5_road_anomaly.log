@@ -1,0 +1,25 @@
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([720, 1280]) to torch.Size([1, 720, 1280])
+  warnings.warn('The shape of value will convert from '
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-s_road_anomaly.py | 3 runs x 30 images (after 5 warm-up) | peak GPU memory 3.60 GiB
+  data                   46.9 ms   10.5%
+  c5_box_means           10.0 ms    2.2%
+  preprocess              1.9 ms    0.4%
+  backbone               69.2 ms   15.5%
+  neck                    1.1 ms    0.2%
+  text                    0.3 ms    0.1%
+  encoder                64.1 ms   14.4%
+  query_sel               7.2 ms    1.6%
+  decoder                23.7 ms    5.3%
+  head_excl_ie_nms        8.8 ms    2.0%
+  ie_nms                 15.2 ms    3.4%
+  sam_total             184.5 ms   41.3%
+  other_in_model         23.4 ms    5.2%
+  model_total           399.4 ms  (std over runs 1.5, runs [401.3, 399.4, 397.5])
+  total                 446.3 ms  (std over runs 1.8, runs [448.6, 446.1, 444.2])

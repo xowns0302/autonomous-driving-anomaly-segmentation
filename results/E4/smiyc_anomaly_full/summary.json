@@ -1,0 +1,51 @@
+{
+  "config": "../../configs/detseg-s_smiyc_anomaly.py",
+  "checkpoint": "ckpts/detseg_swin-b_coco_20260623-207453f5.pth",
+  "cfg_options": null,
+  "ie_nms_bars": null,
+  "small_area": 0,
+  "small_thr": 0.2,
+  "road_aware": "none",
+  "road_alpha": 0.5,
+  "images": 10,
+  "images_with_ood": 10,
+  "iou_mean_per_image": 69.12,
+  "f1_mean_per_image": 75.08,
+  "iou_mean_ood_images_only": 69.12,
+  "iou_global": 55.86,
+  "iou_percentiles": {
+    "10": 10.55,
+    "25": 62.19,
+    "50": 87.54,
+    "75": 94.14,
+    "90": 96.07
+  },
+  "images_iou_zero": 1,
+  "images_no_pred_box": 0,
+  "boxes_per_image_mean": 12.8,
+  "gt_components": 16,
+  "box_recall": 87.5,
+  "box_recall_iou_thr": 0.5,
+  "box_recall_by_area": {
+    "[0,1024)": {
+      "n": 0,
+      "recall": null
+    },
+    "[1024,9216)": {
+      "n": 7,
+      "recall": 100.0
+    },
+    "[9216,inf)": {
+      "n": 9,
+      "recall": 77.78
+    }
+  },
+  "component": {
+    "sIoU_gt": 77.72,
+    "PPV": 25.06,
+    "mean_F1": 26.67,
+    "n_gt_components": 16,
+    "n_pred_components": 101,
+    "F1_at_0_5": 26.67
+  }
+}

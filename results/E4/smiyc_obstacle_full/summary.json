@@ -1,0 +1,51 @@
+{
+  "config": "../../configs/detseg-s_smiyc_obstacle.py",
+  "checkpoint": "ckpts/detseg_swin-b_coco_20260623-207453f5.pth",
+  "cfg_options": null,
+  "ie_nms_bars": null,
+  "small_area": 0,
+  "small_thr": 0.2,
+  "road_aware": "none",
+  "road_alpha": 0.5,
+  "images": 30,
+  "images_with_ood": 30,
+  "iou_mean_per_image": 77.93,
+  "f1_mean_per_image": 83.21,
+  "iou_mean_ood_images_only": 77.93,
+  "iou_global": 90.4,
+  "iou_percentiles": {
+    "10": 19.86,
+    "25": 75.93,
+    "50": 90.81,
+    "75": 94.15,
+    "90": 95.52
+  },
+  "images_iou_zero": 2,
+  "images_no_pred_box": 0,
+  "boxes_per_image_mean": 2.67,
+  "gt_components": 45,
+  "box_recall": 80.0,
+  "box_recall_iou_thr": 0.5,
+  "box_recall_by_area": {
+    "[0,1024)": {
+      "n": 22,
+      "recall": 63.64
+    },
+    "[1024,9216)": {
+      "n": 19,
+      "recall": 94.74
+    },
+    "[9216,inf)": {
+      "n": 4,
+      "recall": 100.0
+    }
+  },
+  "component": {
+    "sIoU_gt": 70.38,
+    "PPV": 85.41,
+    "mean_F1": 84.67,
+    "n_gt_components": 45,
+    "n_pred_components": 39,
+    "F1_at_0_5": 85.71
+  }
+}

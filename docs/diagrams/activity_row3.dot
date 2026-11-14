@@ -1,0 +1,25 @@
+// UML 액티비티 다이어그램 가로판 ③ 최종 선택(C7)과 출력
+// 렌더: dot -Tpng -Gdpi=200 activity_row3.dot -o ../../assets/figures/activity_row3.png
+digraph R3 {
+  rankdir=LR; nodesep=0.25; ranksep=0.35; bgcolor="#FFFFFF"; pad=0.1;
+  node [fontname="NanumGothic", fontsize=15, shape=box, style="rounded,filled", fillcolor="#FFFFFC", color="#14213D", penwidth=1.3, margin="0.12,0.08"];
+  edge [fontname="NanumGothic", fontsize=14, color="#14213D", arrowsize=0.8, penwidth=1.3];
+  c2   [shape=circle, label="B", width=0.42, fixedsize=true];
+  obj  [label="objectness > 0.2인\nUN box = 이상 box"];
+  q7   [shape=hexagon, style=filled, fillcolor="#FBE9DD", color="#C2410C", label="C7 (C8일 때만):\nDINOv2 prototype\n거리 < 0.35?"];
+  rm   [label="box 제거"];
+  m1   [shape=diamond, label="", width=0.28, height=0.28, style=filled, fillcolor="#FBE9DD", color="#C2410C"];
+  out  [shape=hexagon, style=filled, fillcolor="#FBE9DD", color="#C2410C", label="출력 방식"];
+  sam  [label="SAM: box → mask\n→ 이상 mask (IoU)"];
+  ref  [label="M2A 점수 + 1.0 (box 안)\n→ 점수 지도 (AP·IoU)"];
+  m2   [shape=diamond, label="", width=0.28, height=0.28, style=filled, fillcolor="#FBE9DD", color="#C2410C"];
+  end  [shape=doublecircle, label="", width=0.2, style=filled, fillcolor="#14213D"];
+  c2 -> obj -> q7;
+  q7 -> rm [label="예"];
+  q7 -> m1 [label="아니오"];
+  rm -> m1 -> out;
+  out -> sam [label="DetSeg-S"];
+  out -> ref [label="DetSeg-R"];
+  sam -> m2; ref -> m2;
+  m2 -> end;
+}

@@ -1,0 +1,1282 @@
+[
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.6520195007324219,
+  "gt_iou": 0.9289373755455017,
+  "best_id_iou": 0.9820820689201355,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.04133429378271103,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.6302453279495239,
+  "gt_iou": 0.9314149618148804,
+  "best_id_iou": 0.9846183657646179,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.041248392313718796,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.6203287839889526,
+  "gt_iou": 0.9330483078956604,
+  "best_id_iou": 0.9587185978889465,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.039673447608947754,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.5677337646484375,
+  "gt_iou": 0.238416388630867,
+  "best_id_iou": 0.2432781606912613,
+  "best_id_class": "pole",
+  "best_id_score": 0.04351859539747238,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.543941080570221,
+  "gt_iou": 0.8726716637611389,
+  "best_id_iou": 0.9971000552177429,
+  "best_id_class": "pole",
+  "best_id_score": 0.039447952061891556,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.5373430252075195,
+  "gt_iou": 0.9356142282485962,
+  "best_id_iou": 0.022998401895165443,
+  "best_id_class": "terrain",
+  "best_id_score": 0.049161382019519806,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.5352542996406555,
+  "gt_iou": 0.8161412477493286,
+  "best_id_iou": 0.9714290499687195,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.04419849067926407,
+  "best_id_boosted": false
+ },
+ {
+  "img": 0,
+  "source": "UN",
+  "score": 0.47115522623062134,
+  "gt_iou": 0.917712390422821,
+  "best_id_iou": 0.9612573385238647,
+  "best_id_class": "pole",
+  "best_id_score": 0.04351859539747238,
+  "best_id_boosted": false
+ },
+ {
+  "img": 1,
+  "source": "UN",
+  "score": 0.7815327048301697,
+  "gt_iou": 0.9945924282073975,
+  "best_id_iou": 0.9899240136146545,
+  "best_id_class": "person",
+  "best_id_score": 0.05376293137669563,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.779970645904541,
+  "gt_iou": 0.9765346050262451,
+  "best_id_iou": 0.9900473952293396,
+  "best_id_class": "person",
+  "best_id_score": 0.16411134600639343,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.26982930302619934,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9787715077400208,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.14651937782764435,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.2576332092285156,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9776124954223633,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.10381194204092026,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.24264249205589294,
+  "gt_iou": 0.045083340257406235,
+  "best_id_iou": 0.9885435104370117,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.16637560725212097,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.21362030506134033,
+  "gt_iou": 0.002533634891733527,
+  "best_id_iou": 0.959500789642334,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.06614351272583008,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.21086089313030243,
+  "gt_iou": 0.0018029072089120746,
+  "best_id_iou": 0.9963012933731079,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.14236201345920563,
+  "best_id_boosted": false
+ },
+ {
+  "img": 2,
+  "source": "UN",
+  "score": 0.20008647441864014,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9952020645141602,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.12327216565608978,
+  "best_id_boosted": false
+ },
+ {
+  "img": 3,
+  "source": "UN",
+  "score": 0.7317408919334412,
+  "gt_iou": 0.9902111291885376,
+  "best_id_iou": 0.997970461845398,
+  "best_id_class": "person",
+  "best_id_score": 0.12341310828924179,
+  "best_id_boosted": false
+ },
+ {
+  "img": 4,
+  "source": "UN",
+  "score": 0.23624509572982788,
+  "gt_iou": 0.0033258479088544846,
+  "best_id_iou": 0.993816614151001,
+  "best_id_class": "traffic sign",
+  "best_id_score": 0.14947766065597534,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.7141030430793762,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9941138029098511,
+  "best_id_class": "car",
+  "best_id_score": 0.475228488445282,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.6771805286407471,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9942595362663269,
+  "best_id_class": "car",
+  "best_id_score": 0.41863155364990234,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.6099736094474792,
+  "gt_iou": 0.05945161357522011,
+  "best_id_iou": 0.07534854114055634,
+  "best_id_class": "building",
+  "best_id_score": 0.1106199249625206,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5894513130187988,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9842384457588196,
+  "best_id_class": "car",
+  "best_id_score": 0.4603574573993683,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5831345319747925,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.991134762763977,
+  "best_id_class": "car",
+  "best_id_score": 0.3885529935359955,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5498263239860535,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9877797961235046,
+  "best_id_class": "car",
+  "best_id_score": 0.43832144141197205,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.5478720664978027,
+  "gt_iou": 0.050388213247060776,
+  "best_id_iou": 0.06710539013147354,
+  "best_id_class": "building",
+  "best_id_score": 0.1106199249625206,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.44820231199264526,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9925971627235413,
+  "best_id_class": "car",
+  "best_id_score": 0.2628624737262726,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "UN",
+  "score": 0.26555463671684265,
+  "gt_iou": 0.050450656563043594,
+  "best_id_iou": 0.13978728652000427,
+  "best_id_class": "building",
+  "best_id_score": 0.1106199249625206,
+  "best_id_boosted": false
+ },
+ {
+  "img": 5,
+  "source": "ID-objects",
+  "score": 0.20474573969841003,
+  "gt_iou": 0.12734059989452362,
+  "best_id_iou": 0.15200890600681305,
+  "best_id_class": "building",
+  "best_id_score": 0.1106199249625206,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.6619959473609924,
+  "gt_iou": 0.0031837692949920893,
+  "best_id_iou": 0.959436297416687,
+  "best_id_class": "car",
+  "best_id_score": 0.4005660116672516,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.5418171286582947,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9844111800193787,
+  "best_id_class": "car",
+  "best_id_score": 0.3170244097709656,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.4728776812553406,
+  "gt_iou": 0.9588708877563477,
+  "best_id_iou": 0.9957764744758606,
+  "best_id_class": "person",
+  "best_id_score": 0.11681558191776276,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.3834528625011444,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9820643663406372,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.1799081712961197,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.35495230555534363,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9791879057884216,
+  "best_id_class": "vegetation",
+  "best_id_score": 0.16708803176879883,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.3308243453502655,
+  "gt_iou": 0.015316717326641083,
+  "best_id_iou": 0.9772050380706787,
+  "best_id_class": "car",
+  "best_id_score": 0.2329528033733368,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.30735817551612854,
+  "gt_iou": 0.041477270424366,
+  "best_id_iou": 0.9816398620605469,
+  "best_id_class": "car",
+  "best_id_score": 0.23564951121807098,
+  "best_id_boosted": false
+ },
+ {
+  "img": 6,
+  "source": "UN",
+  "score": 0.2713671922683716,
+  "gt_iou": 0.021752413362264633,
+  "best_id_iou": 0.953402042388916,
+  "best_id_class": "fence",
+  "best_id_score": 0.14852923154830933,
+  "best_id_boosted": false
+ },
+ {
+  "img": 7,
+  "source": "UN",
+  "score": 0.7430646419525146,
+  "gt_iou": 0.9869840145111084,
+  "best_id_iou": 0.9980149865150452,
+  "best_id_class": "person",
+  "best_id_score": 0.04085757955908775,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.557583749294281,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9809764623641968,
+  "best_id_class": "person",
+  "best_id_score": 0.16226695477962494,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.5324894785881042,
+  "gt_iou": 0.9935389757156372,
+  "best_id_iou": 0.993176281452179,
+  "best_id_class": "truck",
+  "best_id_score": 0.4969257712364197,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.5178687572479248,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9941808581352234,
+  "best_id_class": "person",
+  "best_id_score": 0.17727121710777283,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.5012807250022888,
+  "gt_iou": 0.011355120688676834,
+  "best_id_iou": 0.9936944246292114,
+  "best_id_class": "person",
+  "best_id_score": 0.2510431706905365,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.4950072169303894,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9887553453445435,
+  "best_id_class": "person",
+  "best_id_score": 0.16478469967842102,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.46409910917282104,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9637370109558105,
+  "best_id_class": "person",
+  "best_id_score": 0.18895377218723297,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.4590452313423157,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9922640323638916,
+  "best_id_class": "person",
+  "best_id_score": 0.11995568871498108,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.4584210216999054,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9958558678627014,
+  "best_id_class": "person",
+  "best_id_score": 0.1166892871260643,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.4146853983402252,
+  "gt_iou": 0.016279594972729683,
+  "best_id_iou": 0.994921088218689,
+  "best_id_class": "person",
+  "best_id_score": 0.11902662366628647,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.40108615159988403,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9921212792396545,
+  "best_id_class": "person",
+  "best_id_score": 0.08591627329587936,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.39700764417648315,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9914236664772034,
+  "best_id_class": "person",
+  "best_id_score": 0.10243266820907593,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.3924311697483063,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8131557106971741,
+  "best_id_class": "person",
+  "best_id_score": 0.09885161370038986,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.39123860001564026,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9791303873062134,
+  "best_id_class": "person",
+  "best_id_score": 0.07267606258392334,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.38618165254592896,
+  "gt_iou": 0.020446931943297386,
+  "best_id_iou": 0.975622296333313,
+  "best_id_class": "person",
+  "best_id_score": 0.13299071788787842,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.38322287797927856,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9669056534767151,
+  "best_id_class": "person",
+  "best_id_score": 0.07280109077692032,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.37242862582206726,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.5026164054870605,
+  "best_id_class": "pole",
+  "best_id_score": 0.08887436985969543,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.36976081132888794,
+  "gt_iou": 0.00644263019785285,
+  "best_id_iou": 0.9849591851234436,
+  "best_id_class": "person",
+  "best_id_score": 0.09540984034538269,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.3695817291736603,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9916809797286987,
+  "best_id_class": "person",
+  "best_id_score": 0.07493240386247635,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.3592212498188019,
+  "gt_iou": 0.005332108121365309,
+  "best_id_iou": 0.013310197740793228,
+  "best_id_class": "building",
+  "best_id_score": 0.11224942654371262,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.35584911704063416,
+  "gt_iou": 0.006149237509816885,
+  "best_id_iou": 0.9947341084480286,
+  "best_id_class": "person",
+  "best_id_score": 0.11400707811117172,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.35341477394104004,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9926336407661438,
+  "best_id_class": "person",
+  "best_id_score": 0.08876219391822815,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.34658679366111755,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.07008010894060135,
+  "best_id_class": "person",
+  "best_id_score": 0.07493240386247635,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.34578073024749756,
+  "gt_iou": 0.019497595727443695,
+  "best_id_iou": 0.9845608472824097,
+  "best_id_class": "person",
+  "best_id_score": 0.11028943210840225,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.3352333605289459,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9783406257629395,
+  "best_id_class": "person",
+  "best_id_score": 0.15274210274219513,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.33316105604171753,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9899622797966003,
+  "best_id_class": "person",
+  "best_id_score": 0.09988956153392792,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.32802826166152954,
+  "gt_iou": 0.0012292866595089436,
+  "best_id_iou": 0.9539337158203125,
+  "best_id_class": "person",
+  "best_id_score": 0.08312412351369858,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.32531142234802246,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9480556845664978,
+  "best_id_class": "person",
+  "best_id_score": 0.08960490673780441,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.3247080147266388,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9824702739715576,
+  "best_id_class": "person",
+  "best_id_score": 0.07831504940986633,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.32322952151298523,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.8998720645904541,
+  "best_id_class": "person",
+  "best_id_score": 0.0758972316980362,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.32265564799308777,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9951935410499573,
+  "best_id_class": "person",
+  "best_id_score": 0.09645046293735504,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.32060959935188293,
+  "gt_iou": 0.003387132892385125,
+  "best_id_iou": 0.472532719373703,
+  "best_id_class": "person",
+  "best_id_score": 0.08078122138977051,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.3189694285392761,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9945303797721863,
+  "best_id_class": "person",
+  "best_id_score": 0.11796990782022476,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.3171640932559967,
+  "gt_iou": 0.012748335488140583,
+  "best_id_iou": 0.9905992746353149,
+  "best_id_class": "person",
+  "best_id_score": 0.11188923567533493,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.31262660026550293,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9901585578918457,
+  "best_id_class": "sky",
+  "best_id_score": 0.1218409463763237,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.29946425557136536,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9675213694572449,
+  "best_id_class": "person",
+  "best_id_score": 0.10144520550966263,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.296566903591156,
+  "gt_iou": 0.0011089183390140533,
+  "best_id_iou": 0.9877185225486755,
+  "best_id_class": "person",
+  "best_id_score": 0.11747739464044571,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.29631561040878296,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9956076145172119,
+  "best_id_class": "person",
+  "best_id_score": 0.10729068517684937,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2940800189971924,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9654279351234436,
+  "best_id_class": "person",
+  "best_id_score": 0.07572657614946365,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2928176820278168,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9933806657791138,
+  "best_id_class": "person",
+  "best_id_score": 0.09368088096380234,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2913702726364136,
+  "gt_iou": 0.0034455922432243824,
+  "best_id_iou": 0.9705118536949158,
+  "best_id_class": "person",
+  "best_id_score": 0.07175030559301376,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2878924310207367,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9862039685249329,
+  "best_id_class": "person",
+  "best_id_score": 0.1145404726266861,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.287516325712204,
+  "gt_iou": 0.0034195834305137396,
+  "best_id_iou": 0.9828094244003296,
+  "best_id_class": "person",
+  "best_id_score": 0.08762121945619583,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.284213125705719,
+  "gt_iou": 0.005949151702225208,
+  "best_id_iou": 0.98948734998703,
+  "best_id_class": "person",
+  "best_id_score": 0.08078122138977051,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2817695140838623,
+  "gt_iou": 0.00965282041579485,
+  "best_id_iou": 0.9856752157211304,
+  "best_id_class": "person",
+  "best_id_score": 0.0773133710026741,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2759750783443451,
+  "gt_iou": 0.002629913156852126,
+  "best_id_iou": 0.9918902516365051,
+  "best_id_class": "person",
+  "best_id_score": 0.09733784198760986,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.27584177255630493,
+  "gt_iou": 0.002912802156060934,
+  "best_id_iou": 0.004928027279675007,
+  "best_id_class": "building",
+  "best_id_score": 0.11224942654371262,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.27522754669189453,
+  "gt_iou": 0.027681410312652588,
+  "best_id_iou": 0.028013022616505623,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.12828581035137177,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.26881757378578186,
+  "gt_iou": 0.0032183921430259943,
+  "best_id_iou": 0.11599453538656235,
+  "best_id_class": "person",
+  "best_id_score": 0.0758972316980362,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "ID-objects",
+  "score": 0.26212409138679504,
+  "gt_iou": 0.02094707079231739,
+  "best_id_iou": 1.0,
+  "best_id_class": "pole",
+  "best_id_score": 0.08563052117824554,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2544184923171997,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.1172226220369339,
+  "best_id_class": "person",
+  "best_id_score": 0.09645046293735504,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.25408321619033813,
+  "gt_iou": 0.008741681464016438,
+  "best_id_iou": 0.07031401246786118,
+  "best_id_class": "person",
+  "best_id_score": 0.11188923567533493,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.249737948179245,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.15014903247356415,
+  "best_id_class": "person",
+  "best_id_score": 0.08197162300348282,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.24316096305847168,
+  "gt_iou": 0.0052724252454936504,
+  "best_id_iou": 0.9534041285514832,
+  "best_id_class": "person",
+  "best_id_score": 0.07968267798423767,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.24172918498516083,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.09919164329767227,
+  "best_id_class": "person",
+  "best_id_score": 0.07792408764362335,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2408352643251419,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.021984875202178955,
+  "best_id_class": "person",
+  "best_id_score": 0.11796990782022476,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2400759756565094,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.08393562585115433,
+  "best_id_class": "person",
+  "best_id_score": 0.09645046293735504,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2392818182706833,
+  "gt_iou": 0.01097977813333273,
+  "best_id_iou": 0.9672778248786926,
+  "best_id_class": "person",
+  "best_id_score": 0.07550612837076187,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.23915450274944305,
+  "gt_iou": 0.0006228602142073214,
+  "best_id_iou": 0.0373724028468132,
+  "best_id_class": "person",
+  "best_id_score": 0.08879169076681137,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2383163571357727,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9694402813911438,
+  "best_id_class": "person",
+  "best_id_score": 0.07764555513858795,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.23779886960983276,
+  "gt_iou": 0.0037943569477647543,
+  "best_id_iou": 0.008058838546276093,
+  "best_id_class": "person",
+  "best_id_score": 0.08524934202432632,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.23422318696975708,
+  "gt_iou": 0.003141879802569747,
+  "best_id_iou": 0.9910064339637756,
+  "best_id_class": "person",
+  "best_id_score": 0.0818728432059288,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.233234703540802,
+  "gt_iou": 0.006539445836097002,
+  "best_id_iou": 0.9926403164863586,
+  "best_id_class": "person",
+  "best_id_score": 0.0934179276227951,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2285982370376587,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.036327920854091644,
+  "best_id_class": "wall",
+  "best_id_score": 0.15742938220500946,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.22858811914920807,
+  "gt_iou": 0.002536964137107134,
+  "best_id_iou": 0.949493944644928,
+  "best_id_class": "person",
+  "best_id_score": 0.08697357028722763,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.22833654284477234,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.09453042596578598,
+  "best_id_class": "person",
+  "best_id_score": 0.07493240386247635,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.22635261714458466,
+  "gt_iou": 0.0053166598081588745,
+  "best_id_iou": 0.08555446565151215,
+  "best_id_class": "person",
+  "best_id_score": 0.07721404731273651,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2240285575389862,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.3981204926967621,
+  "best_id_class": "person",
+  "best_id_score": 0.16226695477962494,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.22377851605415344,
+  "gt_iou": 0.0014838352799415588,
+  "best_id_iou": 0.019767101854085922,
+  "best_id_class": "person",
+  "best_id_score": 0.07710086554288864,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.22179752588272095,
+  "gt_iou": 0.0027512935921549797,
+  "best_id_iou": 0.9757435917854309,
+  "best_id_class": "pole",
+  "best_id_score": 0.09438347071409225,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2194683700799942,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.3760868310928345,
+  "best_id_class": "person",
+  "best_id_score": 0.09199085831642151,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.21687152981758118,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.09703180193901062,
+  "best_id_class": "person",
+  "best_id_score": 0.09645046293735504,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.21535785496234894,
+  "gt_iou": 0.004790743347257376,
+  "best_id_iou": 0.2958327829837799,
+  "best_id_class": "person",
+  "best_id_score": 0.0818728432059288,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.21519361436367035,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.16102424263954163,
+  "best_id_class": "person",
+  "best_id_score": 0.07764555513858795,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.21234731376171112,
+  "gt_iou": 0.006069135386496782,
+  "best_id_iou": 0.9585245251655579,
+  "best_id_class": "person",
+  "best_id_score": 0.08376605063676834,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2114650309085846,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9828566312789917,
+  "best_id_class": "person",
+  "best_id_score": 0.07792408764362335,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.21082261204719543,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.022996116429567337,
+  "best_id_class": "wall",
+  "best_id_score": 0.15742938220500946,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.20925398170948029,
+  "gt_iou": 0.005383084993809462,
+  "best_id_iou": 0.9779201745986938,
+  "best_id_class": "person",
+  "best_id_score": 0.07499848306179047,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.20916076004505157,
+  "gt_iou": 0.002214740728959441,
+  "best_id_iou": 0.9878369569778442,
+  "best_id_class": "person",
+  "best_id_score": 0.07494981586933136,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.20499654114246368,
+  "gt_iou": 0.0029512131586670876,
+  "best_id_iou": 0.5137075185775757,
+  "best_id_class": "person",
+  "best_id_score": 0.07390181720256805,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.20482440292835236,
+  "gt_iou": 0.0032565954606980085,
+  "best_id_iou": 0.0032956080976873636,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.12828581035137177,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.20412099361419678,
+  "gt_iou": 0.0063258023001253605,
+  "best_id_iou": 0.8533857464790344,
+  "best_id_class": "person",
+  "best_id_score": 0.08524934202432632,
+  "best_id_boosted": false
+ },
+ {
+  "img": 8,
+  "source": "UN",
+  "score": 0.2036888748407364,
+  "gt_iou": 0.002525622257962823,
+  "best_id_iou": 0.002555878134444356,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.12828581035137177,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.5662863254547119,
+  "gt_iou": 0.2910515367984772,
+  "best_id_iou": 0.9961660504341125,
+  "best_id_class": "truck",
+  "best_id_score": 0.30986449122428894,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.4829563498497009,
+  "gt_iou": 0.5750631093978882,
+  "best_id_iou": 0.9985023736953735,
+  "best_id_class": "motorcycle",
+  "best_id_score": 0.36549708247184753,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.43475401401519775,
+  "gt_iou": 0.001910666935145855,
+  "best_id_iou": 0.9901779294013977,
+  "best_id_class": "person",
+  "best_id_score": 0.3876902163028717,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.42915669083595276,
+  "gt_iou": 0.009041867218911648,
+  "best_id_iou": 0.9890491962432861,
+  "best_id_class": "car",
+  "best_id_score": 0.39177703857421875,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.38168197870254517,
+  "gt_iou": 0.03550602123141289,
+  "best_id_iou": 0.9847220778465271,
+  "best_id_class": "rider",
+  "best_id_score": 0.22565190494060516,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.32492467761039734,
+  "gt_iou": 0.0,
+  "best_id_iou": 0.9920175075531006,
+  "best_id_class": "person",
+  "best_id_score": 0.2606531083583832,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "ID-objects",
+  "score": 0.21884267032146454,
+  "gt_iou": 0.0,
+  "best_id_iou": 1.0,
+  "best_id_class": "fence",
+  "best_id_score": 0.09280049055814743,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.21241439878940582,
+  "gt_iou": 0.002085932530462742,
+  "best_id_iou": 0.00715373270213604,
+  "best_id_class": "truck",
+  "best_id_score": 0.30986449122428894,
+  "best_id_boosted": false
+ },
+ {
+  "img": 9,
+  "source": "UN",
+  "score": 0.2085796743631363,
+  "gt_iou": 0.02725180611014366,
+  "best_id_iou": 0.9965903759002686,
+  "best_id_class": "bicycle",
+  "best_id_score": 0.09147590398788452,
+  "best_id_boosted": false
+ }
+]

@@ -1,0 +1,30 @@
+// UML 액티비티 다이어그램 가로판 ② IE-NMS 반복 (+ C5)
+// 렌더: dot -Tpng -Gdpi=200 activity_row2.dot -o ../../assets/figures/activity_row2.png
+digraph R2 {
+  rankdir=LR; nodesep=0.25; ranksep=0.35; bgcolor="#FFFFFF"; pad=0.1;
+  node [fontname="NanumGothic", fontsize=15, shape=box, style="rounded,filled", fillcolor="#FFFFFC", color="#14213D", penwidth=1.3, margin="0.12,0.08"];
+  edge [fontname="NanumGothic", fontsize=14, color="#14213D", arrowsize=0.8, penwidth=1.3];
+  c1 [shape=circle, label="A", width=0.42, fixedsize=true];
+  subgraph cluster_nms {
+    label="IE-NMS 반복 (+ C5)"; labeljust=l; fontname="NanumGothic"; fontsize=16; color="#14213D"; penwidth=1.3;
+    m0    [shape=diamond, label="", width=0.28, height=0.28, style=filled, fillcolor="#FBE9DD", color="#C2410C"];
+    q1    [shape=hexagon, style=filled, fillcolor="#FBE9DD", color="#C2410C", label="다음 box가\n높은 점수 box와\nIoU ≥ 0.5?"];
+    q2    [shape=hexagon, style=filled, fillcolor="#FBE9DD", color="#C2410C", label="C5: ID가 UN을 지움\n& M2A 평균 ≥ 0.5?"];
+    keep  [label="보호", fillcolor="#FBE9DD"];
+    del   [label="삭제"];
+    mg    [shape=diamond, label="", width=0.28, height=0.28, style=filled, fillcolor="#FBE9DD", color="#C2410C"];
+    more  [shape=hexagon, style=filled, fillcolor="#FBE9DD", color="#C2410C", label="남은 box?"];
+  }
+  drop [label="ID box\n모두 버림"];
+  c2  [shape=circle, label="B", width=0.42, fixedsize=true];
+  c1 -> m0 -> q1;
+  q1 -> q2 [label="예"];
+  q1 -> mg [label="아니오\n(남김)"];
+  q2 -> keep [label="예"];
+  q2 -> del [label="아니오"];
+  keep -> mg; del -> mg;
+  mg -> more;
+  more -> m0 [label="예", constraint=false];
+  more -> drop [label="아니오"];
+  drop -> c2;
+}

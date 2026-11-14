@@ -1,0 +1,47 @@
+{
+  "config": "/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-s_smiyc_obstacle.py",
+  "images": 30,
+  "warmup": 5,
+  "repeats": 3,
+  "bars": "/home/taejun/projects/autonomous-driving-anomaly-segmentation/results/A3/bars_things.json",
+  "verify_t": null,
+  "run_means": {
+    "model_total": [
+      541.3538731998415,
+      543.8161665651327,
+      539.3535046018466
+    ],
+    "total": [
+      658.7521874316735,
+      661.2389543307169,
+      656.5806418017019
+    ],
+    "data": [
+      117.39831423183205,
+      117.42278776558426,
+      117.22713719985525
+    ]
+  },
+  "peak_gpu_gib": 3.599884033203125,
+  "mean_ms": {
+    "data": 117.34941306575719,
+    "preprocess": 2.083707643840979,
+    "backbone": 69.0634875338421,
+    "neck": 1.06869891088637,
+    "text": 27.54771205541652,
+    "encoder": 63.87155308879705,
+    "query_sel": 7.230005755102159,
+    "decoder": 22.959741189131616,
+    "head": 9.787818801285336,
+    "ie_nms": 0.9951586899761524,
+    "sam_prep": 138.17452674379132,
+    "sam_image_encoder": 119.01778381094725,
+    "sam_mask_decoder": 7.965155367209162,
+    "sam_post": 42.61660338880675,
+    "model_total": 541.5078481222736,
+    "total": 658.8572611880307,
+    "other_in_model": 30.121053833216934,
+    "head_excl_ie_nms": 8.792660111309184
+  },
+  "gpu": "NVIDIA GeForce RTX 4070 Ti"
+}

@@ -1,0 +1,27 @@
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/nn/modules/conv.py:456: UserWarning: Applied workaround for CuDNN issue, install nvrtc.so (Triggered internally at ../aten/src/ATen/native/cudnn/Conv_v8.cpp:80.)
+  return F.conv2d(input, weight, bias, self.stride,
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3526.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmcv/cnn/bricks/transformer.py:524: UserWarning: position encoding of key ismissing in MultiheadAttention.
+  warnings.warn(f'position encoding of key is'
+/home/taejun/miniconda3/envs/detseg/lib/python3.8/site-packages/mmengine/structures/pixel_data.py:83: UserWarning: The shape of value will convert from torch.Size([720, 1280]) to torch.Size([1, 720, 1280])
+  warnings.warn('The shape of value will convert from '
+Loads checkpoint by local backend from path: ckpts/detseg_swin-b_coco_20260623-207453f5.pth
+/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-s_smiyc_anomaly.py | 3 runs x 30 images (after 5 warm-up) | peak GPU memory 3.60 GiB
+  data                   36.2 ms    6.0%
+  preprocess              2.0 ms    0.3%
+  backbone               69.1 ms   11.4%
+  neck                    1.1 ms    0.2%
+  text                   28.1 ms    4.6%
+  encoder                64.4 ms   10.6%
+  query_sel               7.4 ms    1.2%
+  decoder                24.3 ms    4.0%
+  head_excl_ie_nms        9.3 ms    1.5%
+  ie_nms                  1.1 ms    0.2%
+  sam_prep               61.7 ms   10.1%
+  sam_image_encoder     108.0 ms   17.8%
+  sam_mask_decoder       16.1 ms    2.6%
+  sam_post              136.9 ms   22.5%
+  other_in_model         42.6 ms    7.0%
+  model_total           572.1 ms  (std over runs 3.8, runs [567.2, 572.7, 576.4])
+  total                 608.3 ms  (std over runs 3.9, runs [603.0, 609.2, 612.6])

@@ -1,0 +1,9 @@
+{
+  "config": "../../configs/detseg-s_fs_lostfound.py",
+  "checkpoint": "ckpts/grounding_dino_swin-b_pretrain_all-f9818a7c.pth",
+  "tau": 0.2,
+  "images": 100,
+  "iou_mean_per_image": 2.72,
+  "f1_mean_per_image": 3.91,
+  "boxes_per_image_mean": 3.53
+}

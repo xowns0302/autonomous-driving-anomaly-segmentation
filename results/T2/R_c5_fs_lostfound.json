@@ -1,0 +1,45 @@
+{
+  "config": "/home/taejun/projects/autonomous-driving-anomaly-segmentation/configs/detseg-r_m2a_fs_lostfound.py",
+  "images": 30,
+  "warmup": 5,
+  "repeats": 3,
+  "bars": "/home/taejun/projects/autonomous-driving-anomaly-segmentation/results/A3/bars_things.json",
+  "verify_t": 0.5,
+  "run_means": {
+    "model_total": [
+      279.2064723005751,
+      280.01471853252343,
+      278.8656850316329
+    ],
+    "total": [
+      358.53707880014554,
+      359.82241833359393,
+      358.75290016459377
+    ],
+    "data": [
+      79.33060649957042,
+      79.80769980107046,
+      79.88721513296089
+    ]
+  },
+  "peak_gpu_gib": 1.4439191818237305,
+  "mean_ms": {
+    "data": 79.6751738112006,
+    "c5_box_means": 37.57787322263337,
+    "preprocess": 3.829190288443998,
+    "backbone": 63.790412400299424,
+    "neck": 1.1134540007333271,
+    "text": 28.410880732958,
+    "encoder": 56.594045744309874,
+    "query_sel": 7.0905790441126255,
+    "decoder": 24.04933531070128,
+    "head": 59.906081488588825,
+    "ie_nms": 50.88218766597694,
+    "boost": 0.6116301666932284,
+    "model_total": 279.36229195491046,
+    "total": 359.0374657661111,
+    "other_in_model": 33.96668277806987,
+    "head_excl_ie_nms": 9.023893822611882
+  },
+  "gpu": "NVIDIA GeForce RTX 4070 Ti"
+}

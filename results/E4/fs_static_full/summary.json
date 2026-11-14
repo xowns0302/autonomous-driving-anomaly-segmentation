@@ -1,0 +1,51 @@
+{
+  "config": "../../configs/detseg-s_fs_static.py",
+  "checkpoint": "ckpts/detseg_swin-b_coco_20260623-207453f5.pth",
+  "cfg_options": null,
+  "ie_nms_bars": null,
+  "small_area": 0,
+  "small_thr": 0.2,
+  "road_aware": "none",
+  "road_alpha": 0.5,
+  "images": 30,
+  "images_with_ood": 20,
+  "iou_mean_per_image": 33.51,
+  "f1_mean_per_image": 41.41,
+  "iou_mean_ood_images_only": 50.26,
+  "iou_global": 29.88,
+  "iou_percentiles": {
+    "10": 0.0,
+    "25": 0.0,
+    "50": 33.12,
+    "75": 58.07,
+    "90": 83.35
+  },
+  "images_iou_zero": 11,
+  "images_no_pred_box": 0,
+  "boxes_per_image_mean": 17.0,
+  "gt_components": 111,
+  "box_recall": 19.82,
+  "box_recall_iou_thr": 0.5,
+  "box_recall_by_area": {
+    "[0,1024)": {
+      "n": 87,
+      "recall": 0.0
+    },
+    "[1024,9216)": {
+      "n": 4,
+      "recall": 75.0
+    },
+    "[9216,inf)": {
+      "n": 20,
+      "recall": 95.0
+    }
+  },
+  "component": {
+    "sIoU_gt": 58.98,
+    "PPV": 5.35,
+    "mean_F1": 6.77,
+    "n_gt_components": 50,
+    "n_pred_components": 857,
+    "F1_at_0_5": 6.73
+  }
+}

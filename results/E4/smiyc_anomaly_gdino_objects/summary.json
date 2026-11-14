@@ -1,0 +1,9 @@
+{
+  "config": "../../configs/detseg-s_smiyc_anomaly.py",
+  "checkpoint": "ckpts/grounding_dino_swin-b_pretrain_all-f9818a7c.pth",
+  "tau": 0.2,
+  "images": 10,
+  "iou_mean_per_image": 85.62,
+  "f1_mean_per_image": 88.01,
+  "boxes_per_image_mean": 1.5
+}
