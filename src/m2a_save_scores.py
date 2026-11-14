@@ -77,13 +77,21 @@ def main():
     assert paths, f'no images match {args.images}'
     t0 = time.time()
     for i, path in enumerate(paths):
+        dst = os.path.join(args.out_dir, os.path.basename(path) + '.npy')
+        if os.path.exists(dst):            # resume: keep maps that load completely
+            try:
+                np.load(dst, mmap_mode='r').sum()
+                continue
+            except Exception:
+                os.remove(dst)
         img = read_image(path, format='BGR')
         pred_na, _ = demo.run_on_image(img)
         pred_lr, _ = demo.run_on_image(np.fliplr(img))
         out_na = official_score(pred_na)
         out_lr = np.flip(official_score(pred_lr).squeeze(), 1)
         score = ((out_lr + out_na) / 2.0).astype(np.float32)
-        np.save(os.path.join(args.out_dir, os.path.basename(path) + '.npy'), score)
+        np.save(dst + '.tmp.npy', score)
+        os.replace(dst + '.tmp.npy', dst)      # never leave a half-written map
         if (i + 1) % 10 == 0 or i + 1 == len(paths):
             print(f'{i + 1}/{len(paths)} done ({time.time() - t0:.0f}s)', flush=True)
 

@@ -47,6 +47,7 @@ def main():
     p.add_argument('--verify-t', type=float, default=None, help='C5 threshold')
     p.add_argument('--prowl-bank', default=None, help='C7: prototype bank npz')
     p.add_argument('--reject-t7', type=float, default=None, help='C7 threshold')
+    p.add_argument('--amp', action='store_true', help='L1: FP16 detector (src/speedups.patch_amp); may change results')
     p.add_argument('--fast', action='store_true', help='T3 speed-ups (src/speedups.py)')
     args = p.parse_args()
 
@@ -57,6 +58,9 @@ def main():
     if args.fast:
         import speedups
         speedups.apply_all()
+    if args.amp:
+        import speedups
+        speedups.patch_amp()
 
     cfg = Config.fromfile(args.config)
     init_default_scope('mmdet')

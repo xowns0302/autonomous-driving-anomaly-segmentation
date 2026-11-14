@@ -57,6 +57,13 @@ def main():
                    help='C6: OoD boxes with proto_box >= t6 cannot be suppressed by ID boxes')
     p.add_argument('--reject-t7', type=float, default=None,
                    help='C7: kept OoD boxes with proto_box < t7 are dropped')
+    p.add_argument('--veto-v', type=float, default=None,
+                   help='C9: C7 cannot drop an OoD box whose mean M2A score is >= v (needs --m2a-dir)')
+    p.add_argument('--reject-mask-t7', type=float, default=None,
+                   help='C10: DetSeg-S, drop SAM masks whose PROWL signal (inside the mask) is < t')
+    p.add_argument('--dump-boxes', default=None,
+                   help='save the boxes left after IE-NMS (and C7) per image as <dir>/<image name>.npz (L2: VPHM)')
+    p.add_argument('--amp', action='store_true', help='L1: FP16 detector (src/speedups.patch_amp); may change results')
     p.add_argument('--fast', action='store_true', help='T3 speed-ups (src/speedups.py), results must not change')
     p.add_argument('--save-masks', default=None, help='DetSeg-S: save each predicted mask as <dir>/<image stem>.png')
     args = p.parse_args(sys.argv[1:i])
@@ -64,7 +71,8 @@ def main():
     print('IE-NMS bars:', {c: round(b, 4) for c, b in zip(CLASSES[1:], bar_list)}, flush=True)
     print('rules: background_exempt =', args.background_exempt, '| protect_gamma =', args.protect_gamma,
           '| road_alpha =', args.road_alpha, '| verify_t =', args.verify_t, args.m2a_dir, flush=True)
-    print('PROWL: bank =', args.prowl_bank, '| t6 =', args.protect_t6, '| t7 =', args.reject_t7, flush=True)
+    print('PROWL: bank =', args.prowl_bank, '| t6 =', args.protect_t6, '| t7 =', args.reject_t7,
+          '| veto_v =', args.veto_v, '| mask_t7 =', args.reject_mask_t7, flush=True)
     use_rules = (args.background_exempt or args.protect_gamma is not None or args.verify_t is not None
                  or args.protect_t6 is not None)
     current = {}
@@ -75,8 +83,8 @@ def main():
         prowl['model'] = load_model()
         prowl['P'] = torch.from_numpy(np.load(args.prowl_bank)['prototypes']).cuda()
 
-    def proto_box(img_path, B):
-        """PROWL signal per box: 1 - max cosine(mean DINOv2 patch feature in box, prototypes)."""
+    def proto_feats(img_path):
+        """DINOv2 patch features of the image (cached, one pass per image)."""
         import numpy as np
         from PIL import Image
         if prowl.get('img_path') != img_path:          # one DINOv2 pass per image
@@ -87,7 +95,32 @@ def main():
                 img = np.array(Image.open(img_path).convert('RGB'))
             prowl['feat'], _ = patch_features(prowl['model'], img)
             prowl['HW'], prowl['img_path'] = img.shape[:2], img_path
-        feat, (H, W) = prowl['feat'], prowl['HW']
+        return prowl['feat'], prowl['HW']
+
+    def proto_mask(img_path, masks):
+        """C10: 1 - max cosine(mean feature of the patches a SAM mask covers by >= half, prototypes).
+        If no patch is half covered, the most covered patch is used."""
+        import numpy as np
+        feat, _ = proto_feats(img_path)
+        h, w, D = feat.shape
+        P = prowl['P'].reshape(-1, D)
+        cov = torch.nn.functional.interpolate((masks > 0).float()[:, None], size=(h, w), mode='area')[:, 0]
+        out = np.ones(len(masks), np.float32)      # empty mask -> 1 (never dropped)
+        for j in range(len(masks)):
+            c = cov[j]
+            if c.max() <= 0:
+                continue
+            sel = c >= 0.5
+            if not sel.any():
+                sel = c == c.max()
+            v = torch.nn.functional.normalize(feat[sel.to(feat.device)].mean(0), dim=0)
+            out[j] = 1 - float((P @ v).max())
+        return out
+
+    def proto_box(img_path, B):
+        """PROWL signal per box: 1 - max cosine(mean DINOv2 patch feature in box, prototypes)."""
+        import numpy as np
+        feat, (H, W) = proto_feats(img_path)
         if args.fast:
             import speedups
             return speedups.box_proto_signal(feat, B, H, W, prowl['P'])
@@ -110,6 +143,10 @@ def main():
         import speedups
         speedups.apply_all()
         print('speed-ups: on', flush=True)
+    if args.amp:
+        import speedups
+        speedups.patch_amp()
+        print('FP16 detector: on', flush=True)
     from mmdet.detseg_utils.models import GroundingDINOHeadWithUniversalObjectness
 
     def box_means(img_path, B):
@@ -146,9 +183,18 @@ def main():
             ood = (r.labels == 0).cpu().numpy()
             if ood.any():
                 pb = proto_box(current['img_path'], r.bboxes.cpu().numpy())
-                drop = torch.as_tensor(ood & (pb < args.reject_t7), device=r.scores.device)
+                d = ood & (pb < args.reject_t7)
+                if args.veto_v is not None:          # C9: M2A veto
+                    d &= box_means(current['img_path'], r.bboxes.cpu().numpy()) < args.veto_v
+                drop = torch.as_tensor(d, device=r.scores.device)
                 r.scores = r.scores.clone()
                 r.scores[drop] = 0.0
+        if args.dump_boxes:
+            import numpy as np
+            os.makedirs(args.dump_boxes, exist_ok=True)
+            np.savez(os.path.join(args.dump_boxes, os.path.basename(current['img_path']) + '.npz'),
+                     bboxes=r.bboxes.float().cpu().numpy(), scores=r.scores.float().cpu().numpy(),
+                     labels=r.labels.cpu().numpy())
         if args.road_alpha is not None:
             road = bboxes[(labels == CLASSES.index('road')) & (scores > args.road_score_thr)]
             if len(road):
@@ -170,6 +216,21 @@ def main():
         current['img_path'] = batch_data_samples[0].metainfo['img_path']
         return orig_predict(self, *a, batch_data_samples=batch_data_samples, **kw)
     GroundingDINOHeadWithUniversalObjectness.predict = predict
+
+    if args.reject_mask_t7 is not None:
+        from mmdet.detseg_utils.models import DetSegS
+        orig_sam = DetSegS.sam_masks_from_boxes
+
+        def sam_masks_c10(self, img_path, boxes, output_shape, device):
+            masks = orig_sam(self, img_path, boxes, output_shape, device)
+            if len(boxes):
+                pm = proto_mask(img_path, masks)
+                drop = torch.as_tensor(pm < args.reject_mask_t7, device=masks.device)
+                if drop.any():
+                    masks = masks.clone()
+                    masks[drop] = 0
+            return masks
+        DetSegS.sam_masks_from_boxes = sam_masks_c10
 
     if args.save_masks:
         import numpy as np

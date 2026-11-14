@@ -37,3 +37,9 @@ results/score_maps/
 
 # Per-image masks for figures (regenerate with scripts/save_masks_for_figures.sh)
 results/F1/masks/
+
+# Regenerable intermediates and run logs (L2 box dumps: scripts/l2_dump.sh; demo: src/make_demo_page.py)
+results/L2/boxes_*/
+results/demo/
+results/*.log
+results/*/*.log

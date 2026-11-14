@@ -74,6 +74,29 @@ def patch_text_cache():
     BertModel.forward = forward
 
 
+def patch_amp():
+    """L1 (paper limitation 'Efficiency'): run the Grounding DINO detector in FP16
+    (torch.autocast). Unlike O1-O3 this CAN change results; it is measured, not assumed.
+    DetSeg-S: only the detection part (DetSeg.predict); SAM stays FP32.
+    DetSeg-R: the whole predict (detection + box boost)."""
+    from mmdet.detseg_utils.models import DetSeg, DetSegR
+
+    def wrap(fn):
+        def f(self, *a, **k):
+            with torch.autocast('cuda', dtype=torch.float16):
+                out = fn(self, *a, **k)
+            for ds in out:                       # hand FP32 boxes/scores to the rules downstream
+                pi = getattr(ds, 'pred_instances', None)
+                if pi is not None:
+                    for key in ('bboxes', 'scores'):
+                        if key in pi and torch.is_floating_point(pi[key]):
+                            pi[key] = pi[key].float()
+            return out
+        return f
+    DetSeg.predict = wrap(DetSeg.predict)
+    DetSegR.predict = wrap(DetSegR.predict)
+
+
 def apply_all():
     patch_sam()
     patch_text_cache()

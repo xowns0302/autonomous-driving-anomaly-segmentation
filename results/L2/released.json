@@ -1,0 +1,56 @@
+{
+  "tag": "released",
+  "sequences": 53,
+  "frames": 955,
+  "stability": {
+    "matched_pairs": 6991,
+    "mean_abs_change_raw": 0.048370214951019605,
+    "mean_abs_change_smoothed": 0.028063665930656984
+  },
+  "without_vphm": {
+    "gt_objects": 1096,
+    "missed": 538,
+    "false_positive_boxes": 52,
+    "AP": 89.25027495826409,
+    "FPR95": 1.0118111377230259
+  },
+  "with_vphm": {
+    "gt_objects": 1096,
+    "missed": 531,
+    "false_positive_boxes": 60,
+    "AP": 88.72519522930149,
+    "FPR95": 1.1608233361415663
+  },
+  "lateral_motion": {
+    "0": {
+      "vphm": 1.0,
+      "vphm_velocity": 1.0,
+      "vphm_velocity_half": 1.0
+    },
+    "0.25": {
+      "vphm": 0.7109140323272779,
+      "vphm_velocity": 0.9465026462594764,
+      "vphm_velocity_half": 0.8851380346159348
+    },
+    "0.5": {
+      "vphm": 0.08782720640823917,
+      "vphm_velocity": 0.8978686883135459,
+      "vphm_velocity_half": 0.7390931197253612
+    },
+    "1.0": {
+      "vphm": 0.0,
+      "vphm_velocity": 0.812187097697039,
+      "vphm_velocity_half": 0.14575883278500928
+    },
+    "1.5": {
+      "vphm": 0.0,
+      "vphm_velocity": 0.7569732513231298,
+      "vphm_velocity_half": 0.036189386353883565
+    },
+    "2.0": {
+      "vphm": 0.0,
+      "vphm_velocity": 0.7099127449578029,
+      "vphm_velocity_half": 0.017594049492204264
+    }
+  }
+}

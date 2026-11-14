@@ -23,7 +23,12 @@ D = 'external/DetSeg-official/data'
 MIN_AREA = 50
 COVER = 0.5
 METHODS = ['released', 'paper', 'c5', 'c8']
-NAMES = {'released': '공개 코드', 'paper': '베이스라인 (보정 기준선)', 'c5': 'C5 (제안)', 'c8': 'C8 (대안)'}
+NAMES = {'released': '공개 코드', 'paper': '베이스라인 (보정 기준선)', 'c5': 'C5', 'c8': 'C8',
+         'c9': 'C9 (C8 + M2A 거부권)', 'c10': 'C10 (C5 + mask 단위 C7)'}
+# I7 methods are counted when their masks exist for every dataset
+METHODS += [m for m in ('c9', 'c10')
+            if all(os.path.isdir(f'results/F1/masks/{ds}/{m}')
+                   for ds in ('fs_lostfound', 'road_anomaly', 'smiyc_obstacle', 'smiyc_anomaly'))]
 DATASETS = {
     'fs_lostfound': ('FS L&F', f'{D}/FS_LostFound/labels_masks/{{}}.png', 1),
     'road_anomaly': ('Road Anomaly', f'{D}/RoadAnomaly/frames/{{}}.labels/labels_semantic.png', 2),

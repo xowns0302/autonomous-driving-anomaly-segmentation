@@ -286,6 +286,83 @@ def fig_iou():
         save(Image.fromarray(a.astype(np.uint8)), f'iou_{k}.jpg')
 
 
+def outline(im, mask, color=GREEN, width=4):
+    a = np.array(im)
+    cs, _ = cv2.findContours(mask.astype(np.uint8), cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+    cv2.drawContours(a, cs, -1, color, width)
+    return Image.fromarray(a)
+
+
+def fig_c8():
+    """Final method C8 = C5 + C7.
+    Step 1 (C5): SMIYC Anomaly 9, a candidate a 'motorcycle' box would delete; M2A protects it.
+    Step 2 (C7): FS L&F 7, false alarms that C5 keeps and C7 removes (C5 vs C8 masks)."""
+    name = '9.png'
+    d = load('smiyc_anomaly', name)
+    img = Image.open(f'{D}/SMIYC_Anomaly_val/images/{name}').convert('RGB')
+    m2a = np.load(f'results/score_maps/m2a/SMIYC_Anomaly_val/{name}.npy').astype(np.float32)
+    if m2a.shape != (img.height, img.width):
+        m2a = cv2.resize(m2a, (img.width, img.height))
+    gt, _ = gt_mask(f'{D}/SMIYC_Anomaly_val/labels_masks/{name}')
+    B = d['bboxes']
+    best, bi = -1, None
+    for i in np.where((d['labels'] == 0) & (d['scores'] > 0.2))[0]:
+        x1, y1, x2, y2 = [int(v) for v in B[i]]
+        inter = gt[y1:y2, x1:x2].sum(); union = gt.sum() + (x2 - x1) * (y2 - y1) - inter
+        if inter / union > best:
+            best, bi = inter / union, int(i)
+    bj = best_id_over(d, bi, 'paper')
+    mean = box_mean(m2a, B[bi])
+    print('smiyc_a 9 cand', bi, round(float(d['scores'][bi]), 3), 'kept paper', bi in run_nms(d, 'paper'),
+          'kept c5', bi in run_nms(d, 'paper', m2a), 'id', CLASSES[d['labels'][bj[0]]], round(float(d['scores'][bj[0]]), 3),
+          'm2a mean', round(mean, 3))
+    im = img.copy(); dr = ImageDraw.Draw(im)
+    draw_box(dr, B[bi], ORANGE, 8, f"이상 물체 후보 ({d['scores'][bi]:.2f})", 30)
+    draw_box(dr, B[bj[0]], BLUE, 5, f"검출 모델: “{CLASSES[d['labels'][bj[0]]]}” {d['scores'][bj[0]]:.2f} → 지우려 함", 30, below=True)
+    save(im, 'c8_1_boxes.jpg')
+    heat = cv2.applyColorMap((np.clip(m2a, 0, 1) * 255).astype(np.uint8), cv2.COLORMAP_INFERNO)[:, :, ::-1]
+    mix = Image.fromarray((0.35 * np.array(img) + 0.65 * heat).astype(np.uint8))
+    draw_box(ImageDraw.Draw(mix), B[bi], ORANGE, 8, f'상자 안 평균 {mean:.2f} ≥ 0.5', 30)
+    save(mix, 'c8_2_heatmap.jpg')
+    for k in ('paper', 'c8', 'c9'):
+        m = cv2.imread(f'results/F1/masks/smiyc_anomaly/{k}/9.png', 0) > 127
+        save(outline(overlay(img, m, RED, 0.6), gt), f'c8_3_{k}.jpg')
+
+    name = '7.png'
+    img = Image.open(f'{D}/FS_LostFound/images/{name}').convert('RGB')
+    gt, void = gt_mask(f'{D}/FS_LostFound/labels_masks/{name}')
+    for k in ('c5', 'c8'):
+        m = cv2.imread(f'results/F1/masks/fs_lostfound/{k}/7.png', 0) > 127
+        im = overlay(img, void, (0, 0, 0), 0.5)
+        save(outline(overlay(im, m, RED, 0.6), gt), f'c7_{k}.jpg')
+
+
+def fig_veto():
+    """C9 veto on SMIYC Anomaly 5: the trailer candidate's M2A mean against v = 0.7."""
+    name = '5.png'
+    d = load('smiyc_anomaly', name)
+    img = Image.open(f'{D}/SMIYC_Anomaly_val/images/{name}').convert('RGB')
+    m2a = np.load(f'results/score_maps/m2a/SMIYC_Anomaly_val/{name}.npy').astype(np.float32)
+    if m2a.shape != (img.height, img.width):
+        m2a = cv2.resize(m2a, (img.width, img.height))
+    gt, _ = gt_mask(f'{D}/SMIYC_Anomaly_val/labels_masks/{name}')
+    B = d['bboxes']
+    best, bi = -1, None
+    for i in np.where((d['labels'] == 0) & (d['scores'] > 0.2))[0]:
+        x1, y1, x2, y2 = [int(v) for v in B[i]]
+        inter = gt[y1:y2, x1:x2].sum(); union = gt.sum() + (x2 - x1) * (y2 - y1) - inter
+        if inter / union > best:
+            best, bi = inter / union, int(i)
+    mean = box_mean(m2a, B[bi])
+    heat = cv2.applyColorMap((np.clip(m2a, 0, 1) * 255).astype(np.uint8), cv2.COLORMAP_INFERNO)[:, :, ::-1]
+    mix = Image.fromarray((0.35 * np.array(img) + 0.65 * heat).astype(np.uint8))
+    draw_box(ImageDraw.Draw(mix), B[bi], ORANGE, 8, f'상자 안 평균 {mean:.2f} ≥ 0.7', 30)
+    save(mix, 'veto_heatmap.jpg')
+    for k in ('c8', 'c9'):
+        m = cv2.imread(f'results/F1/masks/smiyc_anomaly/{k}/5.png', 0) > 127
+        save(outline(overlay(img, m, RED, 0.6), gt), f'veto_{k}.jpg')
+
+
 def fig_thumbs():
     """Dataset thumbnails cut from the qualitative figures (GT tiles)."""
     for src, row, th, out in [('qual_fs_lostfound.jpg', 0, 320, 'thumb_fs.jpg'),
@@ -297,8 +374,55 @@ def fig_thumbs():
         print(out)
 
 
+def fig_vphm(boxdir='results/L2/boxes_released'):
+    """L2: VPHM fan region on a real LAF pair (static object matched) and the same object moved
+    sideways by one box width (no longer inside the fan -> not matched)."""
+    import vphm
+    best = None
+    for frames in vphm.load_seq(boxdir).values():
+        for prev, cur in zip(frames, frames[1:]):
+            g = cv2.imread(f'{vphm.GT}/{cur["stem"]}.png', cv2.IMREAD_UNCHANGED) == 1
+            vp = vphm.vanishing_point(cur['stem'])
+            ip, jc = np.where(prev['scores'] > 0.2)[0], np.where(cur['scores'] > 0.2)[0]
+            for i, j, c in vphm.match(prev['boxes'][ip], cur['boxes'][jc], vp):
+                a, b = prev['boxes'][ip[i]], cur['boxes'][jc[j]]
+                x1, y1, x2, y2 = b.astype(int)
+                w = x2 - x1
+                if 60 < w < 250 and g[y1:y2, x1:x2].mean() > 0.3 and (best is None or w > best[0]):
+                    best = (w, cur['stem'], a, b, vp, c)
+    w, stem, a, b, vp, c = best
+    print('vphm example', stem, round(c, 2))
+    img = Image.open(f'{D}/LAF_test/images/{stem}.png').convert('RGB')
+    vx, vy = vp
+    cx0 = int(np.clip((a[0] + b[2]) / 2 - 650, 0, img.width - 1300))
+    crop = (cx0, int(vy - 120), cx0 + 1300, img.height)
+    b2 = b + np.array([w, 0, w, 0])
+    for name, cur, ok in (('vphm_static.jpg', b, True), ('vphm_moving.jpg', b2, False)):
+        im = img.copy()
+        lay = Image.new('RGBA', im.size, (0, 0, 0, 0)); dl = ImageDraw.Draw(lay)
+        ya = (a[1] + a[3]) / 2
+        far = img.height + 200
+        s = (far - vy) / (ya - vy)
+        dl.polygon([(vx, vy), (vx + s * (a[0] - vx), far), (vx + s * (a[2] - vx), far)], fill=(255, 210, 0, 70))
+        im = Image.alpha_composite(im.convert('RGBA'), lay).convert('RGB')
+        dr = ImageDraw.Draw(im)
+        for x in (a[0], a[2]):
+            dr.line([(vx, vy), (vx + s * (x - vx), far)], fill=(255, 210, 0), width=3)
+        dr.ellipse([vx - 12, vy - 12, vx + 12, vy + 12], fill=(255, 210, 0), outline=(0, 0, 0), width=3)
+        dr.text((vx + 18, vy - 40), '소실점', font=font(30), fill=(255, 210, 0))
+        draw_box(dr, a, GRAY, 5, '이전 프레임', 26, dashed=True)
+        pb = vphm.pseudo_box(a, cur, vp)
+        draw_box(dr, pb, ORANGE, 5, None, dashed=True)
+        iou = vphm.iou(pb, cur)
+        draw_box(dr, cur, GREEN if ok else RED, 6, (f'현재 · IoU {iou:.2f}' if ok else f'옆으로 1칸 움직였다면 · IoU {iou:.2f}'), 28, below=True)
+        save(im.crop(crop), name)
+
+
 if __name__ == '__main__':
     os.makedirs(OUT, exist_ok=True)
+    if len(sys.argv) > 1:
+        globals()[sys.argv[1]]()
+        sys.exit()
     fig_pipeline()
     fig_cause()
     fig_c5()
